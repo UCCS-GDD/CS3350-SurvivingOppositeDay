@@ -11,6 +11,13 @@ using Microsoft.Xna.Framework.Media;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
+// Surviving Opposite Day
+// Collin Wilson
+// Cary McDavid
+// Thai Tao
+// Bruno Andrade
+// Roby Beamer
+
 namespace SurvivingOppositeDay
 {
     /// <summary>
