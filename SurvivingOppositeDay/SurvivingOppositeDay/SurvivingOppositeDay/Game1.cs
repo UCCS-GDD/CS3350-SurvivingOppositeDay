@@ -39,6 +39,14 @@ namespace SurvivingOppositeDay
         BasicEnemy enemy3;
         BasicEnemy enemy4;
         BasicEnemy enemy5;
+        
+        //Enemy Counters
+        int enemyCounter;
+        int enemy2Counter;
+        int enemy3Counter;
+        int enemy4Counter;
+        int enemy5Counter;
+
         //Score 
         SpriteFont scoreFont;
         int score;
@@ -102,7 +110,7 @@ namespace SurvivingOppositeDay
             enemy2 = new BasicEnemy(this, spriteBatch, spriteDictionary["player"], new Vector2(Screen.Width, 0));
             enemy3 = new BasicEnemy(this, spriteBatch, spriteDictionary["player"], new Vector2(Screen.Width * 0.25f, 0));
             enemy4 = new BasicEnemy(this, spriteBatch, spriteDictionary["player"], new Vector2(Screen.Width / 3, 0));
-            enemy5 = new BasicEnemy(this, spriteBatch, spriteDictionary["player"], new Vector2(Screen.Width / 4, 0));
+            enemy5 = new BasicEnemy(this, spriteBatch, spriteDictionary["player"], new Vector2(Screen.Width / 1.5f, 0));
             Components.Add(enemy);
             Components.Add(enemy2);
             Components.Add(enemy3);
@@ -193,48 +201,79 @@ namespace SurvivingOppositeDay
 	        {
                 if (enemy.collisionRectangle.Contains(bullet.collisionRectangle))
                 {
-                    Components.Remove(enemy);
+                    enemy.Position = new Vector2(Screen.Width / 2, 0);
                     Components.Remove(bullet);
                     score += 10;
                     scoreText = SCORE_STRING + score;
+                    enemyCounter += 1;
+                 
+                    if (enemyCounter == 5)
+                    {
+                        Components.Remove(enemy);
+                    }
                 }
                 
                 if (enemy2.collisionRectangle.Contains(bullet.collisionRectangle))
                 {
-                    Components.Remove(enemy2);
+                    enemy2.Position = new Vector2(Screen.Width, 0);
                     Components.Remove(bullet);
                     score += 10;
                     scoreText = SCORE_STRING + score;
+                    enemy2Counter += 1;
+                 
+                    if (enemy2Counter == 5)
+                    {
+                        Components.Remove(enemy2);
+                    }
                 }
                 
                 if (enemy3.collisionRectangle.Contains(bullet.collisionRectangle))
                 {
-                    Components.Remove(enemy3);
+                    enemy3.Position = new Vector2(Screen.Width * 0.25f, 0);
                     Components.Remove(bullet);
                     score += 10;
                     scoreText = SCORE_STRING + score;
+                    enemy3Counter += 1;
+                 
+                    if (enemy3Counter == 5)
+                    {
+                        Components.Remove(enemy3);
+                    }
                 }
                 
                 if (enemy4.collisionRectangle.Contains(bullet.collisionRectangle))
                 {
-                    Components.Remove(enemy4);
+                    enemy4.Position = new Vector2(Screen.Width / 3, 0);
                     Components.Remove(bullet);
                     score += 10;
                     scoreText = SCORE_STRING + score;
+                    enemy4Counter += 1;
+                 
+                    if (enemy4Counter == 5)
+                    {
+                        Components.Remove(enemy4);
+                    }
                 }
                 
                 if (enemy5.collisionRectangle.Contains(bullet.collisionRectangle))
                 {
-                    Components.Remove(enemy5);
+                    enemy5.Position = new Vector2(Screen.Width / 1.5f, 0);
+                    
                     Components.Remove(bullet);
                     score += 10;
                     scoreText = SCORE_STRING + score;
+                    enemy5Counter += 1;
+                   
+                    if (enemy5Counter == 5)
+                    {
+                        Components.Remove(enemy5);
+                    }
                 }
 	        }
 
             if (enemy.collisionRectangle.Contains(player.collisionRectangle))
             {
-                player.Health -= 1;
+                player.Health -= 10;
             }
 
             if (player.Health == 0)
