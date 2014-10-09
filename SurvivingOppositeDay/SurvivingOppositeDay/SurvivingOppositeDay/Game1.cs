@@ -55,6 +55,21 @@ namespace SurvivingOppositeDay
         string scoreText;
         Vector2 scoreTextLocation;
 
+        //Health
+        SpriteFont healthFont;
+        const string HEALTH_STRING = "Health: ";
+        const int HEALTH_TEXT_OFFSET = 50;
+        string healthText;
+        Vector2 healthTextLocation;
+
+        //Win and Death Screens
+        Texture2D youWin;
+        Texture2D youDied;
+        Rectangle drawRectangleWin;
+        Rectangle drawRectangleDied;
+        bool gameWin = false;
+        bool gameDied = false;
+
         // for testing
         //BasicSprite example;
         //Animation animation;
@@ -117,11 +132,23 @@ namespace SurvivingOppositeDay
             Components.Add(enemy4);
             Components.Add(enemy5);
 
-            //score stuff
+            //Score Stuff
             scoreFont = Content.Load<SpriteFont>("Arial");
             score = 0;
             scoreText = SCORE_STRING + score;
             scoreTextLocation = new Vector2(TEXT_OFFSET, 20);
+
+            //Health Stuff
+            healthFont = Content.Load<SpriteFont>("Arial");
+            healthText = HEALTH_STRING + player.Health;
+            healthTextLocation = new Vector2(HEALTH_TEXT_OFFSET, 20);
+
+            //Win and Died Screens
+            youWin = Content.Load<Texture2D>("youWin");
+            youDied = Content.Load<Texture2D>("youDied");
+
+            drawRectangleWin = new Rectangle(0, 0, youWin.Width, youWin.Height);
+            drawRectangleDied = new Rectangle(0, 0, youDied.Width, youDied.Height);
 
             // Example 
             //example = new BasicSprite(this, spriteBatch, spriteDictionary["exampleSprite"], Tools.Math.Vectors.FromPoint(Screen.Center));
@@ -269,16 +296,60 @@ namespace SurvivingOppositeDay
                         Components.Remove(enemy5);
                     }
                 }
-	        }
 
+                
+	        }
+            if (enemyCounter >= 5 && enemy2Counter >= 5 && enemy3Counter >= 5 && enemy4Counter >= 5
+                    && enemy5Counter >= 5)
+            {
+                gameWin = true;
+                Components.Remove(player);
+                Components.Remove(enemy);
+                Components.Remove(enemy2);
+                Components.Remove(enemy3);
+                Components.Remove(enemy4);
+                Components.Remove(enemy5);
+
+            }
             if (enemy.collisionRectangle.Contains(player.collisionRectangle))
             {
-                player.Health -= 10;
+                player.Health -= 1;
+                healthText = HEALTH_STRING + player.Health;
+            }
+          
+            if (enemy2.collisionRectangle.Contains(player.collisionRectangle))
+            {
+                player.Health -= 1;
+                healthText = HEALTH_STRING + player.Health;
+            }
+            
+            if (enemy3.collisionRectangle.Contains(player.collisionRectangle))
+            {
+                player.Health -= 1;
+                healthText = HEALTH_STRING + player.Health;
+            }
+            
+            if (enemy4.collisionRectangle.Contains(player.collisionRectangle))
+            {
+                player.Health -= 1;
+                healthText = HEALTH_STRING + player.Health;
+            }
+           
+            if (enemy5.collisionRectangle.Contains(player.collisionRectangle))
+            {
+                player.Health -= 1;
+                healthText = HEALTH_STRING + player.Health;
             }
 
-            if (player.Health == 0)
+            if (player.Health <= 0)
             {
+                gameDied = true;
                 Components.Remove(player);
+                Components.Remove(enemy);
+                Components.Remove(enemy2);
+                Components.Remove(enemy3);
+                Components.Remove(enemy4);
+                Components.Remove(enemy5);
             }
 
             base.Update(gameTime);
@@ -294,7 +365,21 @@ namespace SurvivingOppositeDay
 
             // TODO: Add your drawing code here
             spriteBatch.Begin();
-            spriteBatch.DrawString(scoreFont, scoreText, scoreTextLocation, Color.Black);
+            if (gameWin == false && gameDied == false)
+            {
+                spriteBatch.DrawString(scoreFont, scoreText, scoreTextLocation, Color.Black);
+                spriteBatch.DrawString(healthFont, healthText, healthTextLocation, Color.Black);
+            }
+
+            else if (gameWin == true)
+            {
+                spriteBatch.Draw(youWin, drawRectangleWin, Color.White);
+            }
+
+            else if (gameDied == true)
+            {
+                spriteBatch.Draw(youDied, drawRectangleDied, Color.White);
+            }
             base.Draw(gameTime);
             spriteBatch.End();
         }
