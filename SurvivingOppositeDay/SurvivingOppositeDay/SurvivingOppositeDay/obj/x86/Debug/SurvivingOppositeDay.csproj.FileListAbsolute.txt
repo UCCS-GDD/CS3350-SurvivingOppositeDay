@@ -1,0 +1,24 @@
+C:\Users\Thai Tao\Documents\Visual Studio 2013\Projects\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\SurvivingOppositeDay.csprojResolveAssemblyReference.cache
+C:\Users\Thai Tao\Documents\Visual Studio 2013\Projects\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Thai Tao\Documents\Visual Studio 2013\Projects\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\SurvivingOppositeDay.exe
+C:\Users\Thai Tao\Documents\Visual Studio 2013\Projects\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\SurvivingOppositeDay.pdb
+C:\Users\Thai Tao\Documents\Visual Studio 2013\Projects\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\SurvivingOppositeDay.exe
+C:\Users\Thai Tao\Documents\Visual Studio 2013\Projects\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\SurvivingOppositeDay.pdb
+C:\Users\Thai Tao\Documents\Visual Studio 2013\Projects\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\player.xnb
+C:\Users\Cary\Desktop\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\player.xnb
+C:\Users\Cary\Desktop\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\explosion.xnb
+C:\Users\Cary\Desktop\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\waterBullet.xnb
+C:\Users\Cary\Desktop\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\SurvivingOppositeDay.exe
+C:\Users\Cary\Desktop\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\SurvivingOppositeDay.pdb
+C:\Users\Cary\Desktop\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Cary\Desktop\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\SurvivingOppositeDay.exe
+C:\Users\Cary\Desktop\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\SurvivingOppositeDay.pdb
+C:\Users\Collin\Desktop\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\player.xnb
+C:\Users\Collin\Desktop\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\explosion.xnb
+C:\Users\Collin\Desktop\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\waterBullet.xnb
+C:\Users\Collin\Desktop\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\SurvivingOppositeDay.exe
+C:\Users\Collin\Desktop\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\SurvivingOppositeDay.pdb
+C:\Users\Collin\Desktop\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\SurvivingOppositeDay.csprojResolveAssemblyReference.cache
+C:\Users\Collin\Desktop\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Collin\Desktop\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\SurvivingOppositeDay.exe
+C:\Users\Collin\Desktop\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\SurvivingOppositeDay.pdb
