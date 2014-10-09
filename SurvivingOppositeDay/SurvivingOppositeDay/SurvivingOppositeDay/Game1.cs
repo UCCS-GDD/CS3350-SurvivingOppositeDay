@@ -35,6 +35,17 @@ namespace SurvivingOppositeDay
 
         //Enemy
         BasicEnemy enemy;
+        BasicEnemy enemy2;
+        BasicEnemy enemy3;
+        BasicEnemy enemy4;
+        BasicEnemy enemy5;
+        //Score 
+        SpriteFont scoreFont;
+        int score;
+        const string SCORE_STRING = "Score: ";
+        const int TEXT_OFFSET = 550;
+        string scoreText;
+        Vector2 scoreTextLocation;
 
         // for testing
         //BasicSprite example;
@@ -86,10 +97,23 @@ namespace SurvivingOppositeDay
             Components.Add(player);
             player.InputTriggeredEvent += SpawnBullet;
 
-            //enemy
+            //enemies
             enemy = new BasicEnemy(this, spriteBatch, spriteDictionary["player"], new Vector2(Screen.Width / 2, 0));
+            enemy2 = new BasicEnemy(this, spriteBatch, spriteDictionary["player"], new Vector2(Screen.Width, 0));
+            enemy3 = new BasicEnemy(this, spriteBatch, spriteDictionary["player"], new Vector2(Screen.Width * 0.25f, 0));
+            enemy4 = new BasicEnemy(this, spriteBatch, spriteDictionary["player"], new Vector2(Screen.Width / 3, 0));
+            enemy5 = new BasicEnemy(this, spriteBatch, spriteDictionary["player"], new Vector2(Screen.Width / 4, 0));
             Components.Add(enemy);
-            
+            Components.Add(enemy2);
+            Components.Add(enemy3);
+            Components.Add(enemy4);
+            Components.Add(enemy5);
+
+            //score stuff
+            scoreFont = Content.Load<SpriteFont>("Arial");
+            score = 0;
+            scoreText = SCORE_STRING + score;
+            scoreTextLocation = new Vector2(TEXT_OFFSET, 20);
 
             // Example 
             //example = new BasicSprite(this, spriteBatch, spriteDictionary["exampleSprite"], Tools.Math.Vectors.FromPoint(Screen.Center));
@@ -159,6 +183,10 @@ namespace SurvivingOppositeDay
 
             //Give enemy player position
             enemy.GetPlayerPosition(player.Position);
+            enemy2.GetPlayerPosition(player.Position);
+            enemy3.GetPlayerPosition(player.Position);
+            enemy4.GetPlayerPosition(player.Position);
+            enemy5.GetPlayerPosition(player.Position);
 
             //check for Collisions
             foreach (BasicBullet bullet in Components.OfType<BasicBullet>().ToList())
@@ -167,6 +195,40 @@ namespace SurvivingOppositeDay
                 {
                     Components.Remove(enemy);
                     Components.Remove(bullet);
+                    score += 10;
+                    scoreText = SCORE_STRING + score;
+                }
+                
+                if (enemy2.collisionRectangle.Contains(bullet.collisionRectangle))
+                {
+                    Components.Remove(enemy2);
+                    Components.Remove(bullet);
+                    score += 10;
+                    scoreText = SCORE_STRING + score;
+                }
+                
+                if (enemy3.collisionRectangle.Contains(bullet.collisionRectangle))
+                {
+                    Components.Remove(enemy3);
+                    Components.Remove(bullet);
+                    score += 10;
+                    scoreText = SCORE_STRING + score;
+                }
+                
+                if (enemy4.collisionRectangle.Contains(bullet.collisionRectangle))
+                {
+                    Components.Remove(enemy4);
+                    Components.Remove(bullet);
+                    score += 10;
+                    scoreText = SCORE_STRING + score;
+                }
+                
+                if (enemy5.collisionRectangle.Contains(bullet.collisionRectangle))
+                {
+                    Components.Remove(enemy5);
+                    Components.Remove(bullet);
+                    score += 10;
+                    scoreText = SCORE_STRING + score;
                 }
 	        }
 
@@ -179,6 +241,7 @@ namespace SurvivingOppositeDay
             {
                 Components.Remove(player);
             }
+
             base.Update(gameTime);
         }
 
@@ -192,6 +255,7 @@ namespace SurvivingOppositeDay
 
             // TODO: Add your drawing code here
             spriteBatch.Begin();
+            spriteBatch.DrawString(scoreFont, scoreText, scoreTextLocation, Color.Black);
             base.Draw(gameTime);
             spriteBatch.End();
         }
