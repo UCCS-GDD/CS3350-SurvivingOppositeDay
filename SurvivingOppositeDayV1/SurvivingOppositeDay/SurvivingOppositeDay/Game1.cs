@@ -375,7 +375,7 @@ namespace SurvivingOppositeDay
             {
                 spriteBatch.Draw(youWin, drawRectangleWin, Color.White);
             }
-
+//haha
             else if (gameDied == true)
             {
                 spriteBatch.Draw(youDied, drawRectangleDied, Color.White);

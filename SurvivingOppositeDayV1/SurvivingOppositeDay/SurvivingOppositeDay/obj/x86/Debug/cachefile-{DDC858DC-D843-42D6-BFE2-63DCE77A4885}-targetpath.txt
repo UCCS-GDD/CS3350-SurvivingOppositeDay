@@ -1,6 +1,6 @@
 Content\Sprite\player.xnb
 Content\Sprite\explosion.xnb
 Content\Sprite\waterBullet.xnb
-Content\Arial.xnb
 Content\youDied.xnb
 Content\youWin.xnb
+Content\Arial.xnb
