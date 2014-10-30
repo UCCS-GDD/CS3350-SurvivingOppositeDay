@@ -1,8 +1,0 @@
-Content\Sprite\player.xnb
-Content\Sprite\explosion.xnb
-Content\Sprite\waterBullet.xnb
-Content\Sprite\CollisionDebugTexture.xnb
-Content\Sprite\player2.xnb
-Content\Sprite\needleBullet.xnb
-Content\Sprite\donutBullet.xnb
-Content\Arial.xnb
