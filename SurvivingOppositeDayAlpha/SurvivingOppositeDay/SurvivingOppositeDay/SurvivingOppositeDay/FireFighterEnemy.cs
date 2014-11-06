@@ -13,7 +13,6 @@ namespace SurvivingOppositeDay
         Timer fireTimer;
         TimeSpan fireTimeSpan;
         private bool canFire = false;
-        private Vector2 PositionDifference { get; set; }
 
         public FireFighterEnemy(Game game, SpriteBatch spriteBatch, Texture2D texture, Vector2 position, bool add = false)
             : base(game, spriteBatch, texture, position, add)
@@ -32,12 +31,8 @@ namespace SurvivingOppositeDay
 
         public override void Update(GameTime gameTime)
         {
-            // Difference in position relative to player
-            PositionDifference = new Vector2(Math.Abs(playerPosition.X - Position.X), Math.Abs(playerPosition.Y - Position.Y));
-
             // Checks if Fire Fighters in Fire Range
-            if (PositionDifference.X <= 150
-                && PositionDifference.Y <= 150)
+            if (PositionDifference.Length() <= 150)
             {
                 LinearVelocity = 0;
 
@@ -49,8 +44,7 @@ namespace SurvivingOppositeDay
             }
 
             //Moves if out of range of player
-            if (PositionDifference.X > 150
-                || PositionDifference.Y > 150)
+            if (PositionDifference.Length() > 150)
             {
                 LinearVelocity = 1;
             }

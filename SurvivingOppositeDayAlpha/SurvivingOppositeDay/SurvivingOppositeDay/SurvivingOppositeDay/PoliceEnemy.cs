@@ -4,11 +4,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DynamicFSM;
 
 namespace SurvivingOppositeDay
 {
     class PoliceEnemy : BasicEnemy
     {
+        StateMachine<PoliceStates> stateMachine;
         public event Action<EnemyAction, BasicEnemy> EnemyActionTriggeredEvent;
         Timer fireTimer;
         TimeSpan fireTimeSpan;
@@ -26,10 +28,30 @@ namespace SurvivingOppositeDay
             enemyType = EnemyType.Police;
 
             Health = 200;
+
+            //State Machine
+            stateMachine = new StateMachine<PoliceStates>();
+
+            //Actions for States
+            Action policeWalkingAction = () => LinearVelocity = 0;
+            Action policeChasingAction = () => LinearVelocity = 1;
+
+            //Transitions between States
+            Func<bool> policeFindPlayerTransition = () =>
+            {
+                return PositionDifference.Length() <= 1;
+            };
+
+            stateMachine.AddState(PoliceStates.Walking, policeWalkingAction);
+            stateMachine.AddState(PoliceStates.Chasing, policeChasingAction);
+
+            stateMachine.AddTransition(PoliceStates.Walking, PoliceStates.Chasing, policeFindPlayerTransition);
         }
 
         public override void Update(GameTime gameTime)
         {
+            stateMachine.Run();
+
             // fires weapon if Fire Rate is ready
             if (canFire)
             {
@@ -54,4 +76,5 @@ namespace SurvivingOppositeDay
             }
         }
     }
+    enum PoliceStates { Walking, Chasing, Donuting}
 }

@@ -13,18 +13,20 @@ namespace SurvivingOppositeDay
         public Vector2 playerPosition;
         public int Health { get; set; }
         public EnemyType enemyType;
+        public Vector2 PositionDifference { get; set; }
 
         public BasicEnemy(Game game, SpriteBatch spriteBatch, Texture2D texture, Vector2 position, bool add = false)
             : base(game, spriteBatch, texture, position, add)
         {
-            LinearVelocity = 1;
+            //LinearVelocity = 1;
             Health = 100;
         }
 
         public override void Update(GameTime gameTime)
         {
-            playerPosition -= Position;
+            //playerPosition -= Position;
             Rotation = (float)Math.Atan2(playerPosition.Y, playerPosition.X);
+            PositionDifference = Position - playerPosition;
 
             //KeyboardState keyboard = Keyboard.GetState();
             
