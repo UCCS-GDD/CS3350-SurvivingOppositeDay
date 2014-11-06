@@ -12,6 +12,8 @@ namespace SurvivingOppositeDay
         public Dictionary<string, Animation> Animations { get; private set; }
         Animation currentAnimation;
         Texture2D initialTexture;
+
+        public int CharacterHealth { get; set; }
         public Character(Game game, SpriteBatch spriteBatch, Texture2D texture, Vector2 position, bool add = false)
             : base(game, spriteBatch, texture, position, add)
         {

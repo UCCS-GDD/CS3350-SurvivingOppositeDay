@@ -173,6 +173,7 @@ namespace SurvivingOppositeDay
             spriteDictionary.Add("redCross", "Sprite/redCross");
             spriteDictionary.Add("fireball", "Sprite/fireball");
             spriteDictionary.Add("jellyExplosion", "Sprite/JellyExplosion");
+            spriteDictionary.Add("pedestrian", "Sprite/pedestrian");
             TestTexture = Content.Load<Texture2D>("Sprite/CollisionDebugTexture");
 
             //Sound
@@ -402,6 +403,7 @@ namespace SurvivingOppositeDay
                 gameState = GameState.Play;
             }
 
+            IEnumerable<Pedestrian> pedestrians = Components.OfType<Pedestrian>();
             IEnumerable<BasicEnemy> enemies = Components.OfType<BasicEnemy>();
             IEnumerable<BasicBullet> bullets = Components.OfType<BasicBullet>();
             //Game State Play
@@ -713,6 +715,25 @@ namespace SurvivingOppositeDay
                             }
                         }
                         #endregion
+                        #region Pedestrian - Bullet Collision
+                        if (collider is Pedestrian && other is PlayerBullet)
+                        {
+                            Pedestrian pedestrian = collider as Pedestrian;
+                            PlayerBullet bullet = other as PlayerBullet;
+
+                            if (pedestrian.Enabled && bullet.Enabled && pedestrian.collisionRectangle.Intersects(bullet.collisionRectangle))
+                            {
+                                // score penalty
+                                score -= 100;
+                                pedestrian.Enabled = false;
+                                pedestrian.Remove = true;
+
+                                bullet.Enabled = false;
+                                bullet.Remove = true;
+                            }
+                        }
+                        #endregion
+
                     }
                 }
 
@@ -760,6 +781,13 @@ namespace SurvivingOppositeDay
                         enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
                         Components.Add(enemy);
                     }
+
+                    // spawn pedestrians
+                    for (int i = 1; i <= 3; i++)
+                    {
+                        Pedestrian pedestrian = new Pedestrian(this, spriteBatch, spriteDictionary["pedestrian"], new Vector2(Screen.Width - (150 * i), Screen.Height - 50), i, true);
+                    }
+
                     //restart timer
                     canSpawn = false;
                     spawnTimer.Start(spawnTimeSpan);
@@ -802,6 +830,10 @@ namespace SurvivingOppositeDay
                 foreach (BasicBullet bullet in bullets)
                 {
                     bullet.LayerDepth = -1;
+                }
+                foreach (Pedestrian pedestrian in pedestrians)
+                {
+                    pedestrian.LayerDepth = -1;
                 }
             }
 

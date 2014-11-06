@@ -18,13 +18,6 @@ Content\Sprite\hose.xnb
 Content\Sprite\syringecontainer.xnb
 Content\Sprite\fireball.xnb
 Content\Sprite\JellyExplosion.xnb
-Content\Arial.xnb
-Content\Sounds\DonutGun.xnb
-Content\Sounds\SlingShot.xnb
-Content\Sounds\SlingShotBullet.xnb
-Content\Sounds\Waterbullet.xnb
-Content\Sounds\WaterGun.xnb
-Content\Sounds\Sound.xnb
 Content\Sprite\bullet.xnb
 Content\Sprite\gernade.xnb
 Content\Sprite\sniperBullet.xnb
@@ -32,4 +25,12 @@ Content\Sprite\waterGunIcon.xnb
 Content\Sprite\slingShotIcon.xnb
 Content\Sprite\donutGunIcon.xnb
 Content\Sprite\redCross.xnb
+Content\Sprite\pedestrian.xnb
+Content\Arial.xnb
+Content\Sounds\DonutGun.xnb
+Content\Sounds\SlingShot.xnb
+Content\Sounds\SlingShotBullet.xnb
+Content\Sounds\Waterbullet.xnb
+Content\Sounds\WaterGun.xnb
+Content\Sounds\Sound.xnb
 Content\Sounds\Sound.wma
