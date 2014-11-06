@@ -24,9 +24,9 @@ namespace SurvivingOppositeDay
 
         public override void Update(GameTime gameTime)
         {
-            //playerPosition -= Position;
-            Rotation = (float)Math.Atan2(playerPosition.Y, playerPosition.X);
             PositionDifference = Position - playerPosition;
+            playerPosition -= Position;
+            Rotation = (float)Math.Atan2(playerPosition.Y, playerPosition.X);
 
             //KeyboardState keyboard = Keyboard.GetState();
             

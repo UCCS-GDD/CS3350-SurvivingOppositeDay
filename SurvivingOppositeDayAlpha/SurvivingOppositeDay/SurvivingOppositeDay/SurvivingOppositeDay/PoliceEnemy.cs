@@ -39,13 +39,18 @@ namespace SurvivingOppositeDay
             //Transitions between States
             Func<bool> policeFindPlayerTransition = () =>
             {
-                return PositionDifference.Length() <= 1;
+                return PositionDifference.Length() <= 200;
+            };
+            Func<bool> policeLosePlayerTransition = () =>
+            {
+                return PositionDifference.Length() > 200;
             };
 
             stateMachine.AddState(PoliceStates.Walking, policeWalkingAction);
             stateMachine.AddState(PoliceStates.Chasing, policeChasingAction);
 
             stateMachine.AddTransition(PoliceStates.Walking, PoliceStates.Chasing, policeFindPlayerTransition);
+            stateMachine.AddTransition(PoliceStates.Chasing, PoliceStates.Walking, policeLosePlayerTransition);
         }
 
         public override void Update(GameTime gameTime)
