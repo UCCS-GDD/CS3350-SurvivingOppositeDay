@@ -723,8 +723,8 @@ namespace SurvivingOppositeDay
 
                             if (pedestrian.Enabled && bullet.Enabled && pedestrian.collisionRectangle.Intersects(bullet.collisionRectangle))
                             {
-                                // score penalty
-                                score -= 100;
+                                //// score penalty
+                                //score -= 100;
                                 pedestrian.Enabled = false;
                                 pedestrian.Remove = true;
 
