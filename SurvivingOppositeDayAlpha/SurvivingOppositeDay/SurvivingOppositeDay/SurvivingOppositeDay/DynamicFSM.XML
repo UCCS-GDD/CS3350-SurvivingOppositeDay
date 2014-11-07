@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DynamicFSM</name>
+    </assembly>
+    <members>
+        <member name="T:DynamicFSM.State`1">
+            <summary>
+            An internal state belonging to a state machine.
+            Stores and processes transitions internally.
+            Fires events when transitioning.
+            </summary>
+        </member>
+        <member name="E:DynamicFSM.State`1.OnExit">
+            <summary>
+            An event that fires when this state has positively evaluated a transition.
+            The first State type argument is this state.
+            The second State type argument is the state that is being transitioned to.
+            </summary>
+        </member>
+        <member name="E:DynamicFSM.State`1.OnEnter">
+            <summary>
+            An event that fires when this state is being entered from a previous state,
+            or when this state is the starting state and the machine begins execution.
+            The State type argument is this state.
+            </summary>
+        </member>
+        <member name="P:DynamicFSM.State`1.Name">
+            <summary>
+            The name of this state
+            </summary>
+        </member>
+        <member name="P:DynamicFSM.State`1.Action">
+            <summary>
+            The action corresponding to the state.
+            The action is run every time this state is the current state in the machine and Run is called on the machine.
+            </summary>
+        </member>
+        <member name="T:DynamicFSM.StateMachine`1">
+            <summary>
+            A dynamic FSM
+            States can be added at runtime.
+            State behavior can be altered at runtime.
+            Generic parameter allows states to be labeled with any type.
+            </summary>
+            <typeparam name="T">The type used to label internal states.</typeparam>
+        </member>
+        <member name="M:DynamicFSM.StateMachine`1.Run">
+            <summary>
+            Runs the state machine and the current state.
+            If the state machine is not running, starts the state machine.
+            The state selected as Start is the first state selected.
+            </summary>
+        </member>
+        <member name="M:DynamicFSM.StateMachine`1.AddState(`0,System.Action)">
+            <summary>
+            Adds a new state to the state machine.
+            If this is the first state added, it is set as the Start state of the machine.
+            This overload builds a state with an inherent action.
+            This action is performed every time Run is called on the state machine when this state is the current state.
+            </summary>
+            <param name="name">The name of this state.</param>
+            <param name="action">The action this state performs when it is the current state.</param>
+            <returns>The new state.</returns>
+        </member>
+        <member name="M:DynamicFSM.StateMachine`1.AddState(`0)">
+            <summary>
+            Adds a new state to the state machine.
+            If this is the first state added, it is set as the Start state of the machine.
+            This overload builds a state without an inherent action.
+            </summary>
+            <param name="name">The name of this state.</param>
+            <returns>The new state.</returns>
+        </member>
+        <member name="M:DynamicFSM.StateMachine`1.AddTransition(`0,`0,System.Func{System.Boolean})">
+            <summary>
+            Adds a transition between two states in the machine.
+            Transitions are evaluated after the current state's action occurs.
+            Transitions are evaluated once per call to Run.
+            The StateMachine class exposes a number of static delegates that can be used as arguments for the third parameter.
+            </summary>
+            <param name="start">The name of the state to transition from.</param>
+            <param name="end">The name of the state to transition to.</param>
+            <param name="transition">The function that will be evaluated to determine whether the transition should occur.</param>
+        </member>
+        <member name="M:DynamicFSM.StateMachine`1.End">
+            <summary>
+            Ends the state machine.
+            </summary>
+            <returns>The name of the state on which the machine ended.</returns>
+        </member>
+        <member name="M:DynamicFSM.StateMachine`1.#ctor">
+            <summary>
+            Constructs a new state machine using the name parameter as the name type to organize and access states.
+            A new state machine has no states.
+            Add new states with the AddState methods.
+            Add transitions between states with the AddTransition method.
+            </summary>
+        </member>
+        <member name="M:DynamicFSM.StateMachine`1.RemoveState(`0)">
+            <summary>
+            Removes a state from the machine.
+            Also removes all transitions to and from the state.
+            </summary>
+            <param name="name">The name of the state to remove.</param>
+        </member>
+        <member name="M:DynamicFSM.StateMachine`1.RemoveTransition(`0,`0)">
+            <summary>
+            Removes a transition beterrn two states.
+            </summary>
+            <param name="start">The name of the state at the start of the transition.</param>
+            <param name="end">The name of the state as the end of the transition.</param>
+        </member>
+        <member name="E:DynamicFSM.StateMachine`1.OnStart">
+            <summary>
+            An event that triggers when the StateMachine starts running.
+            The name type argument is the name of the starting state.
+            </summary>
+        </member>
+        <member name="E:DynamicFSM.StateMachine`1.OnTransition">
+            <summary>
+            An event that triggers when the StateMachine finishes an internally triggered transition.
+            The first name type argument is the name of the state being <i>exited</i>.
+            The second name type argument is the name of the state being <i>entered</i>.
+            </summary>
+        </member>
+        <member name="E:DynamicFSM.StateMachine`1.OnEnd">
+            <summary>
+            An event that triggers when End is called.
+            The type name argument is the name of the currently running state when End was called.
+            </summary>
+        </member>
+        <member name="P:DynamicFSM.StateMachine`1.Current">
+            <summary>
+            The name of the current state being run by the state machine.
+            Returns default(name) if the state machine is not running.
+            </summary>
+        </member>
+        <member name="P:DynamicFSM.StateMachine`1.Previous">
+            <summary>
+            The name of the previous state run by the state machine.
+            Returns default(name) if no previous state.
+            </summary>
+        </member>
+        <member name="P:DynamicFSM.StateMachine`1.IsActive">
+            <summary>
+            Whether the state machine is running.
+            This is true once Run has been called at least once.
+            This is false when End has been called or before Run has been called at least once.
+            </summary>
+        </member>
+        <member name="P:DynamicFSM.StateMachine`1.Start">
+            <summary>
+            The name of the state the machine begins at when Run is called.
+            When set, this state will be the new start state after End is called and Run is called again.
+            </summary>
+        </member>
+        <member name="P:DynamicFSM.StateMachine`1.Item(`0)">
+            <summary>
+            ADVANCED: Indexer providing access to the internal states of the machine.
+            Beginning users should use the provided methods to add states and transitions.
+            This indexer allows users to register with the OnEnter and OnExit events in each state.
+            </summary>
+            <param name="name">The name of the state to retrieve.</param>
+            <returns>A state belonging to the state machine.</returns>
+        </member>
+        <member name="T:DynamicFSM.StateMachine">
+            <summary>
+            A static class containing a number of utilities useful when using the StateMachine(name) class.
+            </summary>
+        </member>
+        <member name="F:DynamicFSM.StateMachine.RunOnce">
+            <summary>
+            A free delegate that allows a state to run once and then immediately transition to the next state.
+            </summary>
+        </member>
+    </members>
+</doc>
