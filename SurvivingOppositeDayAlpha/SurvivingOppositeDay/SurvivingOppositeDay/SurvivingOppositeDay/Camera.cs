@@ -12,7 +12,7 @@ namespace SurvivingOppositeDay
         public Matrix transform;
         Viewport view;
         Vector2 center;
-        
+
         public Camera(Viewport newView)
         {
             view = newView;
@@ -22,7 +22,12 @@ namespace SurvivingOppositeDay
         {
             center = new Vector2(player.Position.X + (player.collisionRectangle.Width / 2) - 400, player.Position.Y + (player.collisionRectangle.Height) - 300);
             transform = Matrix.CreateScale(new Vector3(1, 1, 0)) * Matrix.CreateTranslation(-center.X, -center.Y, 0);
-
+            
         }
+
+        //public void Update(Vector2 cameraPos)
+        //{
+        //    cameraPos = MathHelper.Clamp(cameraPos.X, P)
+        //}
     }
 }
