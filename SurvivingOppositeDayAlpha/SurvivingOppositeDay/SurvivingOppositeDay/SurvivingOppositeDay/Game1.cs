@@ -38,6 +38,7 @@ namespace SurvivingOppositeDay
 
         // camera
         Camera camera;
+        Vector2 cameraPos;
 
         // ammo
         Texture2D ammo;
@@ -141,7 +142,8 @@ namespace SurvivingOppositeDay
             
             // camera
             camera = new Camera(GraphicsDevice.Viewport);
-
+            cameraPos = player.Position;
+            
             //textOffset = (int)player.Position.X - 100; 
             base.Initialize();
 
@@ -723,8 +725,8 @@ namespace SurvivingOppositeDay
 
                             if (pedestrian.Enabled && bullet.Enabled && pedestrian.collisionRectangle.Intersects(bullet.collisionRectangle))
                             {
-                                // score penalty
-                                score -= 100;
+                                //// score penalty
+                                //score -= 100;
                                 pedestrian.Enabled = false;
                                 pedestrian.Remove = true;
 
