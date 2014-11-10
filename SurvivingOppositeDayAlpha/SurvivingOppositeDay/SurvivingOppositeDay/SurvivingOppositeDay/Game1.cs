@@ -468,6 +468,9 @@ namespace SurvivingOppositeDay
                 List<DrawableGameComponent> removals = new List<DrawableGameComponent>();
                 List<DrawableGameComponent> additions = new List<DrawableGameComponent>();
 
+                List<BasicSprite> components = Components.OfType<BasicSprite>().ToList();
+                components.AddRange(RoomManager.Current.Components.AsEnumerable().OfType<BasicSprite>());
+
                 foreach (DrawableGameComponent collider in Components)
                 {
                     foreach (DrawableGameComponent other in Components)
