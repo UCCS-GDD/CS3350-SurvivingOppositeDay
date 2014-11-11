@@ -317,6 +317,15 @@
       <Extra>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Sound.wma</Extra>
       <Time>2014-11-05T19:15:44.9815885-07:00</Time>
     </Item>
+    <Item>
+      <Source>Sprite\Player_waterbase.png</Source>
+      <Name>Sprite\Player_waterbase</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\Player_waterbase.xnb</Output>
+      <Time>2014-11-11T07:35:58.0284788-07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{DDC858DC-D843-42D6-BFE2-63DCE77A4885}</ContentProjectGUID>

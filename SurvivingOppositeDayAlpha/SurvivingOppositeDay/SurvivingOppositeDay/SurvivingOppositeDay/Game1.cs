@@ -142,7 +142,7 @@ namespace SurvivingOppositeDay
             
             // camera
             camera = new Camera(GraphicsDevice.Viewport);
-            cameraPos = player.Position;
+            //cameraPos = player.Position;
             
             //textOffset = (int)player.Position.X - 100; 
             base.Initialize();
@@ -162,6 +162,7 @@ namespace SurvivingOppositeDay
             spriteDictionary = new SpriteDictionary(Content);
             spriteDictionary.Add("exampleSprite", "Sprite/explosion");
             spriteDictionary.Add("player", "Sprite/player2");
+            spriteDictionary.Add("playerMain", "Sprite/player_waterbase");
             spriteDictionary.Add("police", "Sprite/police");
             spriteDictionary.Add("firefighter", "Sprite/firefighter");
             spriteDictionary.Add("paramedic", "Sprite/paramedic");
@@ -188,7 +189,7 @@ namespace SurvivingOppositeDay
             soundDictionary.Add("WaterBullet", "Sounds/Waterbullet");
 
             //player
-            player = new Player(this, spriteBatch, spriteDictionary["player"], Tools.Math.Vectors.FromPoint(Screen.Center));
+            player = new Player(this, spriteBatch, spriteDictionary["playerMain"], Tools.Math.Vectors.FromPoint(Screen.Center));
             Components.Add(player);
             player.InputTriggeredEvent += SpawnBullet;
 
@@ -468,8 +469,8 @@ namespace SurvivingOppositeDay
                 List<DrawableGameComponent> removals = new List<DrawableGameComponent>();
                 List<DrawableGameComponent> additions = new List<DrawableGameComponent>();
 
-                List<BasicSprite> components = Components.OfType<BasicSprite>().ToList();
-                components.AddRange(RoomManager.Current.Components.AsEnumerable().OfType<BasicSprite>());
+                //List<BasicSprite> components = Components.OfType<BasicSprite>().ToList();
+                //components.AddRange(RoomManager.Current.Components.AsEnumerable().OfType<BasicSprite>());
 
                 foreach (DrawableGameComponent collider in Components)
                 {

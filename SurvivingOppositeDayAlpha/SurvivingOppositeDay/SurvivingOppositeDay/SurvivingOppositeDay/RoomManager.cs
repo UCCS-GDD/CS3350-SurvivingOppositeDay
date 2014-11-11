@@ -11,10 +11,10 @@ namespace SurvivingOppositeDay
         private static Dictionary<string, Room> rooms;
         public static Room Current { get; private set; }
 
-        public RoomManager()
-        {
+        //public RoomManager()
+        //{
 
-        }
+        //}
 
         public static void AddRoom (string name)
         {
