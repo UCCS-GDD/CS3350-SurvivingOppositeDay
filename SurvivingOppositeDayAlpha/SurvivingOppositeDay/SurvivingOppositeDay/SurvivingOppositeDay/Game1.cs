@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using DynamicFSM;
 
 // Surviving Opposite Day
 // Collin Wilson
@@ -108,6 +109,10 @@ namespace SurvivingOppositeDay
         Vector2 waterGunIconPos;
         Vector2 slingShotIconPos;
         Vector2 donutGunIconPos;
+
+        // Room State Machine
+        StateMachine<RoomState> roomStateMachine;
+        public RoomState gameRoom;
 
         // for testing
         //BasicSprite example;
@@ -254,6 +259,33 @@ namespace SurvivingOppositeDay
             slingShotIcon = Content.Load<Texture2D>("Sprite/slingShotIcon");
             donutGunIcon = Content.Load<Texture2D>("Sprite/donutGunIcon");
 
+            // Room State Machine
+            roomStateMachine = new StateMachine<RoomState>();
+
+            // Transitions between Rooms
+            Rectangle policeTransitionRectangle = new Rectangle(800, 0, 400, 20);
+            Func<bool> playerExitsToPoliceRoom = () =>
+            {
+                if (player.weaponType == WeaponType.WaterGun
+                    && policeTransitionRectangle.Intersects(player.collisionRectangle))
+                {
+                    return true;
+                }
+                else 
+                {
+                    return false;
+                }
+            };
+
+            // Add Room States
+            //roomStateMachine.AddState(RoomState.MainRoom).OnEnter += () => player.Position = new Vector2(1000, 1980);
+            roomStateMachine.AddState(RoomState.PoliceRoom);
+
+            
+
+            // Add Room Transitions
+            roomStateMachine.AddTransition(RoomState.MainRoom, RoomState.PoliceRoom, playerExitsToPoliceRoom);
+
             // Example 
             //example = new BasicSprite(this, spriteBatch, spriteDictionary["exampleSprite"], Tools.Math.Vectors.FromPoint(Screen.Center));
             //Components.Add(example);
@@ -399,7 +431,9 @@ namespace SurvivingOppositeDay
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-            
+
+            roomStateMachine.Run();
+
             //Game State Menu
             if (gameState == GameState.Menu)
             {
@@ -968,4 +1002,5 @@ namespace SurvivingOppositeDay
         }
     }
     public enum GameState { Menu, Play, Dead }
+    public enum RoomState { MainRoom, PoliceRoom, FireFighterRoom, ParamedicRoom }
 }
