@@ -259,3 +259,4 @@ C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayA
 C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\DynamicFSM.xml
 C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\SurvivingOppositeDay.exe
 C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\SurvivingOppositeDay.pdb
+C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\SurvivingOppositeDay.csprojResolveAssemblyReference.cache
