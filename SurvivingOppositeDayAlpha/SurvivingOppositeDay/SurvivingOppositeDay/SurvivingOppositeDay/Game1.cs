@@ -122,12 +122,7 @@ namespace SurvivingOppositeDay
 
         // Room State Machine
         StateMachine<RoomState> roomStateMachine;
-        public RoomState currentRoom;
-        public RoomState previousRoom;
-
-        // transition Rectangles
-        Rectangle policeTransitionRectangle;
-        Rectangle mainTransitionRectangle;
+        public RoomState gameRoom;
 
         // for testing
         //BasicSprite example;
@@ -286,10 +281,8 @@ namespace SurvivingOppositeDay
             // Room State Machine
             roomStateMachine = new StateMachine<RoomState>();
 
-            policeTransitionRectangle = new Rectangle(800, 0, 400, 20);
-            mainTransitionRectangle = new Rectangle();
-
             // Transitions between Rooms
+            Rectangle policeTransitionRectangle = new Rectangle(800, 0, 400, 20);
             Func<bool> playerExitsToPoliceRoom = () =>
             {
                 if (player.weaponType == WeaponType.WaterGun
@@ -302,27 +295,15 @@ namespace SurvivingOppositeDay
                     return false;
                 }
             };
-            Func<bool> playerExitsToMainRoom = () =>
-            {
-                if (mainTransitionRectangle.Intersects(player.collisionRectangle))
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            };
 
             // Add Room States
-            roomStateMachine.AddState(RoomState.MainRoom).OnEnter += EnterMain;
-            roomStateMachine.AddState(RoomState.PoliceRoom).OnEnter += EnterPoliceRoom;
+            //roomStateMachine.AddState(RoomState.MainRoom).OnEnter += () => player.Position = new Vector2(1000, 1980);
+            roomStateMachine.AddState(RoomState.PoliceRoom);
 
             
 
             // Add Room Transitions
             roomStateMachine.AddTransition(RoomState.MainRoom, RoomState.PoliceRoom, playerExitsToPoliceRoom);
-            roomStateMachine.AddTransition(RoomState.PoliceRoom, RoomState.MainRoom, playerExitsToMainRoom);
 
             // Example 
             //example = new BasicSprite(this, spriteBatch, spriteDictionary["exampleSprite"], Tools.Math.Vectors.FromPoint(Screen.Center));
@@ -341,17 +322,6 @@ namespace SurvivingOppositeDay
             MediaPlayer.Volume = 0.5f;
             MediaPlayer.IsRepeating = true;
             MediaPlayer.Play(legitMusic);
-        }
-
-        void EnterPoliceRoom(State<RoomState> obj)
-        {
-            player.Position = new Vector2(1000, 1960);
-            mainTransitionRectangle = new Rectangle(800, 1980, 400, 20);
-        }
-
-        void EnterMain(State<RoomState> obj)
-        {
-            player.Position = new Vector2(100, 100);
         }
 
         private void SpawnBullet(InputTypes inputEvent)
