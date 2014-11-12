@@ -187,6 +187,10 @@ namespace SurvivingOppositeDay
             spriteDictionary.Add("fireball", "Sprite/fireball");
             spriteDictionary.Add("jellyExplosion", "Sprite/JellyExplosion");
             spriteDictionary.Add("pedestrian", "Sprite/pedestrian");
+            spriteDictionary.Add("mainRoom", "Sprite/MainRoom");
+            spriteDictionary.Add("fireRoom", "Sprite/FireRoom");
+            spriteDictionary.Add("policeRoom", "Sprite/PoliceRoom");
+            spriteDictionary.Add("medicRoom", "Sprite/MedicRoom");
             TestTexture = Content.Load<Texture2D>("Sprite/CollisionDebugTexture");
 
             //Sound
@@ -255,7 +259,7 @@ namespace SurvivingOppositeDay
             healthTexture = Content.Load<Texture2D>("Sprite/health");
 
             // background
-            backgroundTexture = Content.Load<Texture2D>("Sprite/background");
+            backgroundTexture = spriteDictionary["mainRoom"];
             backgroundPosition = new Vector2(0, 0);
             backgroundRectangle = new Rectangle((int)backgroundPosition.X, (int)backgroundPosition.Y, backgroundTexture.Width, backgroundTexture.Height);
 
@@ -328,11 +332,13 @@ namespace SurvivingOppositeDay
         {
             player.Position = new Vector2(1000, 1960);
             mainTransitionRectangle = new Rectangle(800, 1980, 400, 20);
+            backgroundTexture = spriteDictionary["policeRoom"];
         }
 
         void EnterMain(State<RoomState> obj)
         {
             player.Position = new Vector2(100, 100);
+            backgroundTexture = spriteDictionary["mainRoom"];
         }
 
         private void SpawnBullet(InputTypes inputEvent)
@@ -957,7 +963,7 @@ namespace SurvivingOppositeDay
             if (gameState == GameState.Play)
             {
                 // draw background
-                spriteBatch.Draw(backgroundTexture, backgroundPosition, Color.White);
+                spriteBatch.Draw(backgroundTexture , backgroundPosition, Color.White);
 
                 //Draw score
                 spriteBatch.DrawString(scoreFont, scoreText, scoreTextLocation, Color.Black);

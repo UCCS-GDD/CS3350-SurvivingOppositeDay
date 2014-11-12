@@ -34,4 +34,8 @@ Content\Sounds\SlingShotBullet.xnb
 Content\Sounds\Waterbullet.xnb
 Content\Sounds\WaterGun.xnb
 Content\Sounds\Sound.xnb
+Content\Sprite\FireRoom.xnb
+Content\Sprite\MainRoom.xnb
+Content\Sprite\MedicRoom.xnb
+Content\Sprite\PoliceRoom.xnb
 Content\Sounds\Sound.wma
