@@ -106,23 +106,18 @@ namespace SurvivingOppositeDay
         Texture2D waterGunIcon;
         Texture2D slingShotIcon;
         Texture2D donutGunIcon;
-        Texture2D machineGunIcon;
-        Texture2D sniperRifleIcon;
-        Texture2D gernadeLauncherIcon;
         Vector2 waterGunIconPos;
         Vector2 slingShotIconPos;
         Vector2 donutGunIconPos;
-        Vector2 machineGunIconPos;
-        Vector2 sniperRifleIconPos;
-        Vector2 gernadeLauncherIconPos;
-
-        //pickup items
-        Pickup pickup1, pickup2, pickup3;
-
 
         // Room State Machine
         StateMachine<RoomState> roomStateMachine;
-        public RoomState gameRoom;
+        public RoomState currentRoom;
+        public RoomState previousRoom;
+
+        // transition Rectangles
+        Rectangle policeTransitionRectangle;
+        Rectangle mainTransitionRectangle;
 
         // for testing
         //BasicSprite example;
@@ -268,21 +263,14 @@ namespace SurvivingOppositeDay
             waterGunIcon = Content.Load<Texture2D>("Sprite/waterGunIcon");
             slingShotIcon = Content.Load<Texture2D>("Sprite/slingShotIcon");
             donutGunIcon = Content.Load<Texture2D>("Sprite/donutGunIcon");
-            machineGunIcon = Content.Load<Texture2D>("Sprite/machineGunIcon");
-            sniperRifleIcon = Content.Load<Texture2D>("Sprite/sniperRifleIcon");
-            gernadeLauncherIcon = Content.Load<Texture2D>("Sprite/gernadeLauncherIcon");
-
-            //pickup items
-            pickup1 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup1"), new Vector2(1500, 50), true, 1, player);
-            pickup2 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup2"), new Vector2(1500, 250), true, 2, player);
-            pickup3 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup3"), new Vector2(1500, 500), true, 3, player);
-
 
             // Room State Machine
             roomStateMachine = new StateMachine<RoomState>();
 
+            policeTransitionRectangle = new Rectangle(800, 0, 400, 20);
+            mainTransitionRectangle = new Rectangle();
+
             // Transitions between Rooms
-            Rectangle policeTransitionRectangle = new Rectangle(800, 0, 400, 20);
             Func<bool> playerExitsToPoliceRoom = () =>
             {
                 if (player.weaponType == WeaponType.WaterGun
@@ -295,15 +283,27 @@ namespace SurvivingOppositeDay
                     return false;
                 }
             };
+            Func<bool> playerExitsToMainRoom = () =>
+            {
+                if (mainTransitionRectangle.Intersects(player.collisionRectangle))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            };
 
             // Add Room States
-            //roomStateMachine.AddState(RoomState.MainRoom).OnEnter += () => player.Position = new Vector2(1000, 1980);
-            roomStateMachine.AddState(RoomState.PoliceRoom);
+            roomStateMachine.AddState(RoomState.MainRoom).OnEnter += EnterMain;
+            roomStateMachine.AddState(RoomState.PoliceRoom).OnEnter += EnterPoliceRoom;
 
             
 
             // Add Room Transitions
             roomStateMachine.AddTransition(RoomState.MainRoom, RoomState.PoliceRoom, playerExitsToPoliceRoom);
+            roomStateMachine.AddTransition(RoomState.PoliceRoom, RoomState.MainRoom, playerExitsToMainRoom);
 
             // Example 
             //example = new BasicSprite(this, spriteBatch, spriteDictionary["exampleSprite"], Tools.Math.Vectors.FromPoint(Screen.Center));
@@ -322,6 +322,17 @@ namespace SurvivingOppositeDay
             MediaPlayer.Volume = 0.5f;
             MediaPlayer.IsRepeating = true;
             MediaPlayer.Play(legitMusic);
+        }
+
+        void EnterPoliceRoom(State<RoomState> obj)
+        {
+            player.Position = new Vector2(1000, 1960);
+            mainTransitionRectangle = new Rectangle(800, 1980, 400, 20);
+        }
+
+        void EnterMain(State<RoomState> obj)
+        {
+            player.Position = new Vector2(100, 100);
         }
 
         private void SpawnBullet(InputTypes inputEvent)
@@ -480,9 +491,6 @@ namespace SurvivingOppositeDay
                 waterGunIconPos = new Vector2(this.player.Position.X + 250, this.player.Position.Y + 100);
                 slingShotIconPos = new Vector2(this.player.Position.X + 250, this.player.Position.Y + 100);
                 donutGunIconPos = new Vector2(this.player.Position.X + 250, this.player.Position.Y + 100);
-                machineGunIconPos = new Vector2(this.player.Position.X + 250, this.player.Position.Y + 100);
-                sniperRifleIconPos = new Vector2(this.player.Position.X + 250, this.player.Position.Y + 100);
-                gernadeLauncherIconPos = new Vector2(this.player.Position.X + 250, this.player.Position.Y + 100);
 
                 //give player ammo
                 
@@ -520,8 +528,6 @@ namespace SurvivingOppositeDay
                 }
 
                 healthTimer.Update(gameTime.ElapsedGameTime);
-                        
-
 
                 //check for Collisions
                 List<DrawableGameComponent> removals = new List<DrawableGameComponent>();
@@ -965,20 +971,13 @@ namespace SurvivingOppositeDay
                 // draw health boxes
                 spriteBatch.Draw(health, healthDrawRactangle, Color.White);
 
-
                 // weapon icons
-                if (Player.weaponIconFlag == 1)
+                if (Player.wgiFlag == true)
                     spriteBatch.Draw(waterGunIcon, waterGunIconPos, Color.White);
-                if (Player.weaponIconFlag == 2)
+                if (Player.ssiFlag == true)
                     spriteBatch.Draw(slingShotIcon, slingShotIconPos, Color.White);
-                if (Player.weaponIconFlag == 3)
+                if (Player.dgiFlag == true)
                     spriteBatch.Draw(donutGunIcon, donutGunIconPos, Color.White);
-                if (Player.weaponIconFlag == 4)
-                    spriteBatch.Draw(machineGunIcon, machineGunIconPos, Color.White);
-                if (Player.weaponIconFlag == 5)
-                    spriteBatch.Draw(sniperRifleIcon, sniperRifleIconPos, Color.White);
-                if (Player.weaponIconFlag == 6)
-                    spriteBatch.Draw(gernadeLauncherIcon, gernadeLauncherIconPos, Color.White);
                 
                 //Draw health
                 if (this.player.Health <= 25)

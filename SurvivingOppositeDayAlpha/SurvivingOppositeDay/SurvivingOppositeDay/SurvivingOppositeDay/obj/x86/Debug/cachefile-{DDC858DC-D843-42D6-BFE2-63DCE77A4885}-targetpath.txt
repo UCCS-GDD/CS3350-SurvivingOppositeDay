@@ -27,12 +27,6 @@ Content\Sprite\donutGunIcon.xnb
 Content\Sprite\redCross.xnb
 Content\Sprite\pedestrian.xnb
 Content\Sprite\Player_waterbase.xnb
-Content\Sprite\machineGunIcon.xnb
-Content\Sprite\sniperRifleIcon.xnb
-Content\Sprite\gernadeLauncherIcon.xnb
-Content\Sprite\pickup1.xnb
-Content\Sprite\pickup2.xnb
-Content\Sprite\pickup3.xnb
 Content\Arial.xnb
 Content\Sounds\DonutGun.xnb
 Content\Sounds\SlingShot.xnb

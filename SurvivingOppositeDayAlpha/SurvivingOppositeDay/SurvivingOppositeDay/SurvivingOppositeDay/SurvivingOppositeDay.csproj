@@ -87,7 +87,6 @@
     <Compile Include="FireFighterEnemy.cs" />
     <Compile Include="ParamedicEnemy.cs" />
     <Compile Include="Pedestrian.cs" />
-    <Compile Include="Pickup.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PlayerBullet.cs" />
     <Compile Include="PoliceEnemy.cs" />
