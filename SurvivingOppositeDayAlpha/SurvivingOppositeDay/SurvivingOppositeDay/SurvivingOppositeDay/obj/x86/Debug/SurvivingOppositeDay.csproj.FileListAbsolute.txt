@@ -261,6 +261,7 @@ C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayA
 C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\SurvivingOppositeDay.pdb
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\player.xnb
 C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\explosion.xnb
 C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\waterBullet.xnb
@@ -321,5 +322,7 @@ C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDa
 C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup1.xnb
 C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup2.xnb
 C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup3.xnb
+=======
+>>>>>>> parent of e760378... Traverse between main room and Police Room
 =======
 >>>>>>> parent of e760378... Traverse between main room and Police Room
