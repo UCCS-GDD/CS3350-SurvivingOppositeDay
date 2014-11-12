@@ -7,13 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\player.xnb</Output>
-      <Time>2014-11-11T12:31:09.7964001-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\player.xnb</Output>
-      <Time>2014-11-06T11:21:33.1811442-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\player.xnb</Output>
+      <Time>2014-11-05T19:15:45.0115897-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\explosion.png</Source>
@@ -21,13 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\explosion.xnb</Output>
-      <Time>2014-11-11T12:31:09.7823629-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\explosion.xnb</Output>
-      <Time>2014-11-06T11:21:33.1541534-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\explosion.xnb</Output>
+      <Time>2014-11-05T19:15:45.0055915-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\waterBullet.png</Source>
@@ -35,13 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\waterBullet.xnb</Output>
-      <Time>2014-11-11T12:31:09.8063998-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\waterBullet.xnb</Output>
-      <Time>2014-11-06T11:21:33.2383043-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\waterBullet.xnb</Output>
+      <Time>2014-11-05T19:15:45.0355932-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\CollisionDebugTexture.png</Source>
@@ -49,13 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\CollisionDebugTexture.xnb</Output>
-      <Time>2014-11-11T12:31:09.686899-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\CollisionDebugTexture.xnb</Output>
-      <Time>2014-11-06T11:21:33.0569945-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\CollisionDebugTexture.xnb</Output>
+      <Time>2014-11-05T19:15:44.9975914-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\player2.png</Source>
@@ -63,13 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\player2.xnb</Output>
-      <Time>2014-11-11T12:31:09.7973891-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\player2.xnb</Output>
-      <Time>2014-11-06T11:21:33.1841523-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\player2.xnb</Output>
+      <Time>2014-11-05T19:15:45.0115897-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\needleBullet.png</Source>
@@ -77,13 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\needleBullet.xnb</Output>
-      <Time>2014-11-11T12:31:09.7918212-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\needleBullet.xnb</Output>
-      <Time>2014-11-06T11:21:33.1721383-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\needleBullet.xnb</Output>
+      <Time>2014-11-05T19:15:45.0095926-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\donutBullet.png</Source>
@@ -91,13 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\donutBullet.xnb</Output>
-      <Time>2014-11-11T12:31:09.7780909-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\donutBullet.xnb</Output>
-      <Time>2014-11-06T11:21:33.1421171-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\donutBullet.xnb</Output>
+      <Time>2014-11-05T19:15:45.0035915-07:00</Time>
     </Item>
     <Item>
       <Source>youDied.png</Source>
@@ -105,13 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\youDied.xnb</Output>
-      <Time>2014-11-11T12:31:09.8291767-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\youDied.xnb</Output>
-      <Time>2014-11-06T11:21:33.3187693-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\youDied.xnb</Output>
+      <Time>2014-11-05T19:15:45.0405935-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\ammo.png</Source>
@@ -119,13 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\ammo.xnb</Output>
-      <Time>2014-11-11T12:31:09.7730879-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\ammo.xnb</Output>
-      <Time>2014-11-06T11:21:33.1331111-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\ammo.xnb</Output>
+      <Time>2014-11-05T19:15:45.0015919-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\police.png</Source>
@@ -133,13 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\police.xnb</Output>
-      <Time>2014-11-11T12:31:09.7993902-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\police.xnb</Output>
-      <Time>2014-11-06T11:21:33.2232941-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\police.xnb</Output>
+      <Time>2014-11-05T19:15:45.0125919-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\firefighter.png</Source>
@@ -147,13 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\firefighter.xnb</Output>
-      <Time>2014-11-11T12:31:09.7863779-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\firefighter.xnb</Output>
-      <Time>2014-11-06T11:21:33.1591291-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\firefighter.xnb</Output>
+      <Time>2014-11-05T19:15:45.0065918-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\paramedic.png</Source>
@@ -161,13 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\paramedic.xnb</Output>
-      <Time>2014-11-11T12:31:09.7928209-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\paramedic.xnb</Output>
-      <Time>2014-11-06T11:21:33.1751413-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\paramedic.xnb</Output>
+      <Time>2014-11-05T19:15:45.0105919-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\health.png</Source>
@@ -175,13 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\health.xnb</Output>
-      <Time>2014-11-11T12:31:09.789816-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\health.xnb</Output>
-      <Time>2014-11-06T11:21:33.1671352-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\health.xnb</Output>
+      <Time>2014-11-05T19:15:45.0085918-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\background.png</Source>
@@ -189,13 +124,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\background.xnb</Output>
-      <Time>2014-11-11T12:31:09.775088-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\background.xnb</Output>
-      <Time>2014-11-06T11:21:33.137114-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\background.xnb</Output>
+      <Time>2014-11-05T19:15:45.0015919-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\donutstand.png</Source>
@@ -203,13 +133,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\donutstand.xnb</Output>
-      <Time>2014-11-11T12:31:09.7810973-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\donutstand.xnb</Output>
-      <Time>2014-11-06T11:21:33.1481209-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\donutstand.xnb</Output>
+      <Time>2014-11-05T19:15:45.0045918-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\garabecan.png</Source>
@@ -217,13 +142,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\garabecan.xnb</Output>
-      <Time>2014-11-11T12:31:09.7877333-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\garabecan.xnb</Output>
-      <Time>2014-11-06T11:21:33.1611305-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\garabecan.xnb</Output>
+      <Time>2014-11-05T19:15:45.0075916-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\hose.png</Source>
@@ -231,13 +151,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\hose.xnb</Output>
-      <Time>2014-11-11T12:31:09.7908291-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\hose.xnb</Output>
-      <Time>2014-11-06T11:21:33.1701369-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\hose.xnb</Output>
+      <Time>2014-11-05T19:15:45.0095926-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\syringecontainer.png</Source>
@@ -245,13 +160,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\syringecontainer.xnb</Output>
-      <Time>2014-11-11T12:31:09.8053913-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\syringecontainer.xnb</Output>
-      <Time>2014-11-06T11:21:33.2353022-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\syringecontainer.xnb</Output>
+      <Time>2014-11-05T19:15:45.0345934-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\fireball.png</Source>
@@ -259,13 +169,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\fireball.xnb</Output>
-      <Time>2014-11-11T12:31:09.7843691-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\fireball.xnb</Output>
-      <Time>2014-11-06T11:21:33.1571273-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\fireball.xnb</Output>
+      <Time>2014-11-05T19:15:45.0055915-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\JellyExplosion.png</Source>
@@ -273,13 +178,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\JellyExplosion.xnb</Output>
-      <Time>2014-11-11T12:31:09.6889088-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\JellyExplosion.xnb</Output>
-      <Time>2014-11-06T11:21:33.0609978-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\JellyExplosion.xnb</Output>
+      <Time>2014-11-05T19:15:44.9975914-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\bullet.png</Source>
@@ -287,13 +187,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\bullet.xnb</Output>
-      <Time>2014-11-11T12:31:09.7770885-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\bullet.xnb</Output>
-      <Time>2014-11-06T11:21:33.139115-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\bullet.xnb</Output>
+      <Time>2014-11-05T19:15:45.0025912-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\gernade.png</Source>
@@ -301,13 +196,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\gernade.xnb</Output>
-      <Time>2014-11-11T12:31:09.7887377-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\gernade.xnb</Output>
-      <Time>2014-11-06T11:21:33.1641326-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\gernade.xnb</Output>
+      <Time>2014-11-05T19:15:45.0075916-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\sniperBullet.png</Source>
@@ -315,13 +205,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\sniperBullet.xnb</Output>
-      <Time>2014-11-11T12:31:09.8043993-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\sniperBullet.xnb</Output>
-      <Time>2014-11-06T11:21:33.2312993-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\sniperBullet.xnb</Output>
+      <Time>2014-11-05T19:15:45.0335912-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\waterGunIcon.png</Source>
@@ -329,13 +214,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\waterGunIcon.xnb</Output>
-      <Time>2014-11-11T12:31:09.8074001-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\waterGunIcon.xnb</Output>
-      <Time>2014-11-06T11:21:33.2413064-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\waterGunIcon.xnb</Output>
+      <Time>2014-11-05T19:15:45.0355932-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\slingShotIcon.png</Source>
@@ -343,13 +223,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\slingShotIcon.xnb</Output>
-      <Time>2014-11-11T12:31:09.8033918-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\slingShotIcon.xnb</Output>
-      <Time>2014-11-06T11:21:33.2292971-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\slingShotIcon.xnb</Output>
+      <Time>2014-11-05T19:15:45.0335912-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\donutGunIcon.png</Source>
@@ -357,13 +232,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\donutGunIcon.xnb</Output>
-      <Time>2014-11-11T12:31:09.7790973-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\donutGunIcon.xnb</Output>
-      <Time>2014-11-06T11:21:33.1451196-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\donutGunIcon.xnb</Output>
+      <Time>2014-11-05T19:15:45.0035915-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\redCross.png</Source>
@@ -371,13 +241,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\redCross.xnb</Output>
-      <Time>2014-11-11T12:31:09.8003905-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\redCross.xnb</Output>
-      <Time>2014-11-06T11:21:33.2262954-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\redCross.xnb</Output>
+      <Time>2014-11-05T19:15:45.0135898-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\pedestrian.png</Source>
@@ -385,13 +250,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pedestrian.xnb</Output>
-      <Time>2014-11-11T12:31:09.7943847-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pedestrian.xnb</Output>
-      <Time>2014-11-06T11:21:33.1781425-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pedestrian.xnb</Output>
+      <Time>2014-11-05T22:42:13.4764288-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\Player_waterbase.png</Source>
@@ -399,108 +259,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\Player_waterbase.xnb</Output>
-      <Time>2014-11-11T12:31:09.702674-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\Player_waterbase.xnb</Output>
-      <Time>2014-11-11T10:56:28.0526016-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
-    </Item>
-    <Item>
-      <Source>Arial.spritefont</Source>
-      <Name>Arial</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Arial.xnb</Output>
-      <Time>2014-11-11T12:31:09.1273203-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Arial.xnb</Output>
-      <Time>2014-11-06T11:21:32.9158935-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
-    </Item>
-    <Item>
-      <Source>Sounds\DonutGun.mp3</Source>
-      <Name>Sounds\DonutGun</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\DonutGun.xnb</Output>
-      <Time>2014-11-11T12:31:09.1353471-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\DonutGun.xnb</Output>
-      <Time>2014-11-06T11:21:32.9259006-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
-    </Item>
-    <Item>
-      <Source>Sounds\SlingShot.mp3</Source>
-      <Name>Sounds\SlingShot</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\SlingShot.xnb</Output>
-      <Time>2014-11-11T12:31:09.1393472-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\SlingShot.xnb</Output>
-      <Time>2014-11-06T11:21:32.930905-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
-    </Item>
-    <Item>
-      <Source>Sounds\SlingShotBullet.mp3</Source>
-      <Name>Sounds\SlingShotBullet</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\SlingShotBullet.xnb</Output>
-      <Time>2014-11-11T12:31:09.1433493-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\SlingShotBullet.xnb</Output>
-      <Time>2014-11-06T11:21:32.9349065-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
-    </Item>
-    <Item>
-      <Source>Sounds\Waterbullet.mp3</Source>
-      <Name>Sounds\Waterbullet</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Waterbullet.xnb</Output>
-      <Time>2014-11-11T12:31:09.6849005-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Waterbullet.xnb</Output>
-      <Time>2014-11-06T11:21:33.0509911-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
-    </Item>
-    <Item>
-      <Source>Sounds\WaterGun.mp3</Source>
-      <Name>Sounds\WaterGun</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\WaterGun.xnb</Output>
-      <Time>2014-11-11T12:31:09.6686913-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\WaterGun.xnb</Output>
-      <Time>2014-11-06T11:21:33.0479869-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
-    </Item>
-    <Item>
-      <Source>Sounds\Sound.mp3</Source>
-      <Name>Sounds\Sound</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Sound.xnb</Output>
-      <Extra>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Sound.wma</Extra>
-      <Time>2014-11-11T12:31:09.6616894-07:00</Time>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\Player_waterbase.xnb</Output>
+      <Time>2014-11-11T07:35:58.0284788-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\machineGunIcon.png</Source>
@@ -508,44 +268,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\machineGunIcon.xnb</Output>
-      <Time>2014-11-11T16:06:24.3026859-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprite\gernadeLauncherIcon.png</Source>
-      <Name>Sprite\gernadeLauncherIcon</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\gernadeLauncherIcon.xnb</Output>
-      <Time>2014-11-11T16:05:53.9119828-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprite\pickup1.png</Source>
-      <Name>Sprite\pickup1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup1.xnb</Output>
-      <Time>2014-11-11T16:17:56.1740671-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprite\pickup2.png</Source>
-      <Name>Sprite\pickup2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup2.xnb</Output>
-      <Time>2014-11-11T16:22:06.3774176-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprite\pickup3.png</Source>
-      <Name>Sprite\pickup3</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup3.xnb</Output>
-      <Time>2014-11-11T16:23:19.3146389-07:00</Time>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\machineGunIcon.xnb</Output>
+      <Time>2014-11-11T20:40:07.4020517-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\sniperRifleIcon.png</Source>
@@ -553,13 +277,108 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\sniperRifleIcon.xnb</Output>
-      <Time>2014-11-11T16:05:13.7224273-07:00</Time>
-=======
-      <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Sound.xnb</Output>
-      <Extra>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Sound.wma</Extra>
-      <Time>2014-11-06T11:21:33.0419869-07:00</Time>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\sniperRifleIcon.xnb</Output>
+      <Time>2014-11-11T20:40:07.4050549-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\gernadeLauncherIcon.png</Source>
+      <Name>Sprite\gernadeLauncherIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\gernadeLauncherIcon.xnb</Output>
+      <Time>2014-11-11T20:40:07.4010514-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\pickup1.png</Source>
+      <Name>Sprite\pickup1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup1.xnb</Output>
+      <Time>2014-11-11T20:40:07.4030544-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\pickup2.png</Source>
+      <Name>Sprite\pickup2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup2.xnb</Output>
+      <Time>2014-11-11T20:40:07.4030544-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\pickup3.png</Source>
+      <Name>Sprite\pickup3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup3.xnb</Output>
+      <Time>2014-11-11T20:40:07.4040517-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Arial.spritefont</Source>
+      <Name>Arial</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Arial.xnb</Output>
+      <Time>2014-11-05T19:15:44.9625893-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\DonutGun.mp3</Source>
+      <Name>Sounds\DonutGun</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\DonutGun.xnb</Output>
+      <Time>2014-11-05T19:15:44.9655897-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\SlingShot.mp3</Source>
+      <Name>Sounds\SlingShot</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\SlingShot.xnb</Output>
+      <Time>2014-11-05T19:15:44.9665894-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\SlingShotBullet.mp3</Source>
+      <Name>Sounds\SlingShotBullet</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\SlingShotBullet.xnb</Output>
+      <Time>2014-11-05T19:15:44.9665894-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Waterbullet.mp3</Source>
+      <Name>Sounds\Waterbullet</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Waterbullet.xnb</Output>
+      <Time>2014-11-05T19:15:44.9955913-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\WaterGun.mp3</Source>
+      <Name>Sounds\WaterGun</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\WaterGun.xnb</Output>
+      <Time>2014-11-05T19:15:44.994591-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Sound.mp3</Source>
+      <Name>Sounds\Sound</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Sound.xnb</Output>
+      <Extra>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Sound.wma</Extra>
+      <Time>2014-11-05T19:15:44.9815885-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -568,17 +387,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-<<<<<<< HEAD
-      <RootDirectory>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDayContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\</OutputDirectory>
-=======
-      <RootDirectory>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDayContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\</OutputDirectory>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+      <RootDirectory>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDayContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -606,12 +418,8 @@
         <Value>2011-09-01T16:22:30-06:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-<<<<<<< HEAD
-        <Value>2014-10-18T14:54:22.0184272-06:00</Value>
-=======
-        <Value>2014-09-15T15:17:04.5842498-06:00</Value>
->>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-09-14T19:15:11.3185821-06:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
