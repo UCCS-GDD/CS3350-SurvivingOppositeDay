@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Sprite\player.png</Source>
+      <Name>Sprite\player</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayV2\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\player.xnb</Output>
+      <Time>2014-10-30T12:16:33.6141001-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\explosion.png</Source>
+      <Name>Sprite\explosion</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayV2\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\explosion.xnb</Output>
+      <Time>2014-10-30T12:16:33.6081-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\waterBullet.png</Source>
+      <Name>Sprite\waterBullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayV2\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\waterBullet.xnb</Output>
+      <Time>2014-10-30T12:16:33.6191015-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\CollisionDebugTexture.png</Source>
+      <Name>Sprite\CollisionDebugTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayV2\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\CollisionDebugTexture.xnb</Output>
+      <Time>2014-10-30T12:16:33.5730945-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\player2.png</Source>
+      <Name>Sprite\player2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayV2\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\player2.xnb</Output>
+      <Time>2014-10-30T12:16:33.6181012-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\needleBullet.png</Source>
+      <Name>Sprite\needleBullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayV2\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\needleBullet.xnb</Output>
+      <Time>2014-10-30T12:16:33.6121006-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\donutBullet.png</Source>
+      <Name>Sprite\donutBullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayV2\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\donutBullet.xnb</Output>
+      <Time>2014-10-30T12:16:33.6050987-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Arial.spritefont</Source>
+      <Name>Arial</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayV2\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Arial.xnb</Output>
+      <Time>2014-10-30T12:16:33.5680947-06:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{DDC858DC-D843-42D6-BFE2-63DCE77A4885}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayV2\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDayContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayV2\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayV2\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayV2\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-10-18T14:54:22.0184272-06:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
