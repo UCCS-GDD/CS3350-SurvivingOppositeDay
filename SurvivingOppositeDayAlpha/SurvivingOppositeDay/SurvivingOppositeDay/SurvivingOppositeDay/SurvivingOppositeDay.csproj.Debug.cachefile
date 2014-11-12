@@ -34,10 +34,13 @@ Content\Sounds\SlingShotBullet.xnb
 Content\Sounds\Waterbullet.xnb
 Content\Sounds\WaterGun.xnb
 Content\Sounds\Sound.xnb
+<<<<<<< HEAD
 Content\Sprite\machineGunIcon.xnb
 Content\Sprite\gernadeLauncherIcon.xnb
 Content\Sprite\pickup1.xnb
 Content\Sprite\pickup2.xnb
 Content\Sprite\pickup3.xnb
 Content\Sprite\sniperRifleIcon.xnb
+=======
+>>>>>>> e76037873e8fda34383c4aa26d46b58113971a3a
 Content\Sounds\Sound.wma

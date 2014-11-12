@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using DynamicFSM;
 
 // Surviving Opposite Day
 // Collin Wilson
@@ -118,6 +119,15 @@ namespace SurvivingOppositeDay
         //pickup items
         Pickup pickup1, pickup2, pickup3;
 
+
+        // Room State Machine
+        StateMachine<RoomState> roomStateMachine;
+        public RoomState currentRoom;
+        public RoomState previousRoom;
+
+        // transition Rectangles
+        Rectangle policeTransitionRectangle;
+        Rectangle mainTransitionRectangle;
 
         // for testing
         //BasicSprite example;
@@ -273,6 +283,47 @@ namespace SurvivingOppositeDay
             pickup3 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup3"), new Vector2(1500, 500), true, 3, player);
 
 
+            // Room State Machine
+            roomStateMachine = new StateMachine<RoomState>();
+
+            policeTransitionRectangle = new Rectangle(800, 0, 400, 20);
+            mainTransitionRectangle = new Rectangle();
+
+            // Transitions between Rooms
+            Func<bool> playerExitsToPoliceRoom = () =>
+            {
+                if (player.weaponType == WeaponType.WaterGun
+                    && policeTransitionRectangle.Intersects(player.collisionRectangle))
+                {
+                    return true;
+                }
+                else 
+                {
+                    return false;
+                }
+            };
+            Func<bool> playerExitsToMainRoom = () =>
+            {
+                if (mainTransitionRectangle.Intersects(player.collisionRectangle))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            };
+
+            // Add Room States
+            roomStateMachine.AddState(RoomState.MainRoom).OnEnter += EnterMain;
+            roomStateMachine.AddState(RoomState.PoliceRoom).OnEnter += EnterPoliceRoom;
+
+            
+
+            // Add Room Transitions
+            roomStateMachine.AddTransition(RoomState.MainRoom, RoomState.PoliceRoom, playerExitsToPoliceRoom);
+            roomStateMachine.AddTransition(RoomState.PoliceRoom, RoomState.MainRoom, playerExitsToMainRoom);
+
             // Example 
             //example = new BasicSprite(this, spriteBatch, spriteDictionary["exampleSprite"], Tools.Math.Vectors.FromPoint(Screen.Center));
             //Components.Add(example);
@@ -290,6 +341,17 @@ namespace SurvivingOppositeDay
             MediaPlayer.Volume = 0.5f;
             MediaPlayer.IsRepeating = true;
             MediaPlayer.Play(legitMusic);
+        }
+
+        void EnterPoliceRoom(State<RoomState> obj)
+        {
+            player.Position = new Vector2(1000, 1960);
+            mainTransitionRectangle = new Rectangle(800, 1980, 400, 20);
+        }
+
+        void EnterMain(State<RoomState> obj)
+        {
+            player.Position = new Vector2(100, 100);
         }
 
         private void SpawnBullet(InputTypes inputEvent)
@@ -418,7 +480,9 @@ namespace SurvivingOppositeDay
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-            
+
+            roomStateMachine.Run();
+
             //Game State Menu
             if (gameState == GameState.Menu)
             {
@@ -999,4 +1063,5 @@ namespace SurvivingOppositeDay
         }
     }
     public enum GameState { Menu, Play, Dead }
+    public enum RoomState { MainRoom, PoliceRoom, FireFighterRoom, ParamedicRoom }
 }
