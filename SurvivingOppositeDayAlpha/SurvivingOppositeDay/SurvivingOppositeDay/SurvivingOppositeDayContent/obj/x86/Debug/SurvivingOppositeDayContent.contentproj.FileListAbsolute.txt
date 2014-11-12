@@ -9,16 +9,7 @@ C:\Users\Cary\Desktop\Prototype\SurvivingOppositeDay\SurvivingOppositeDay\Surviv
 C:\Users\Cary\Desktop\SOD P3\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDayContent\obj\x86\Debug\SurvivingOppositeDayContent.contentprojResolveAssemblyReference.cache
 C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDayContent\obj\x86\Debug\SurvivingOppositeDayContent.contentprojResolveAssemblyReference.cache
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDayContent\obj\x86\Debug\SurvivingOppositeDayContent.contentprojResolveAssemblyReference.cache
 C:\Users\gen\Documents\Visual Studio 2013\Projects\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDayContent\obj\x86\Debug\SurvivingOppositeDayContent.contentprojResolveAssemblyReference.cache
-=======
->>>>>>> parent of e760378... Traverse between main room and Police Room
-=======
->>>>>>> parent of e760378... Traverse between main room and Police Room
-=======
->>>>>>> parent of e760378... Traverse between main room and Police Room
 =======
 >>>>>>> parent of e760378... Traverse between main room and Police Room
