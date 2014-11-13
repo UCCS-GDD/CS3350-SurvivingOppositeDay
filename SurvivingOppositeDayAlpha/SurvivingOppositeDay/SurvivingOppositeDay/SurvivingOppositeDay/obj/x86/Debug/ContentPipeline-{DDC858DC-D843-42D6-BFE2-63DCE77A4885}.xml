@@ -362,6 +362,60 @@
       <Extra>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Sound.wma</Extra>
       <Time>2014-11-12T17:37:04.1395854-07:00</Time>
     </Item>
+    <Item>
+      <Source>Sprite\gernadeLauncherIcon.png</Source>
+      <Name>Sprite\gernadeLauncherIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\gernadeLauncherIcon.xnb</Output>
+      <Time>2014-11-12T17:52:59.5662716-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\machineGunIcon.png</Source>
+      <Name>Sprite\machineGunIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\machineGunIcon.xnb</Output>
+      <Time>2014-11-12T17:52:59.3769484-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\pickup1.png</Source>
+      <Name>Sprite\pickup1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup1.xnb</Output>
+      <Time>2014-11-12T17:52:59.41595-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\pickup2.png</Source>
+      <Name>Sprite\pickup2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup2.xnb</Output>
+      <Time>2014-11-12T17:52:59.430951-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\pickup3.png</Source>
+      <Name>Sprite\pickup3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup3.xnb</Output>
+      <Time>2014-11-12T17:52:59.4539528-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\sniperRifleIcon.png</Source>
+      <Name>Sprite\sniperRifleIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\sniperRifleIcon.xnb</Output>
+      <Time>2014-11-12T17:52:59.485954-07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{DDC858DC-D843-42D6-BFE2-63DCE77A4885}</ContentProjectGUID>
