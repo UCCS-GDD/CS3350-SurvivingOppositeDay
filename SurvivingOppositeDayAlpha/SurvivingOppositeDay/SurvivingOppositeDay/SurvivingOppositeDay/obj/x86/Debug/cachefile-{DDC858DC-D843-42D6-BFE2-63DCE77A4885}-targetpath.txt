@@ -27,6 +27,10 @@ Content\Sprite\donutGunIcon.xnb
 Content\Sprite\redCross.xnb
 Content\Sprite\pedestrian.xnb
 Content\Sprite\Player_waterbase.xnb
+Content\Sprite\FireRoom.xnb
+Content\Sprite\MainRoom.xnb
+Content\Sprite\MedicRoom.xnb
+Content\Sprite\PoliceRoom.xnb
 Content\Arial.xnb
 Content\Sounds\DonutGun.xnb
 Content\Sounds\SlingShot.xnb
@@ -35,7 +39,9 @@ Content\Sounds\Waterbullet.xnb
 Content\Sounds\WaterGun.xnb
 Content\Sounds\Sound.xnb
 Content\Sounds\Sound.wma
-Content\Sprite\FireRoom.xnb
-Content\Sprite\MainRoom.xnb
-Content\Sprite\MedicRoom.xnb
-Content\Sprite\PoliceRoom.xnb
+Content\Sprite\gernadeLauncherIcon.xnb
+Content\Sprite\machineGunIcon.xnb
+Content\Sprite\pickup1.xnb
+Content\Sprite\pickup2.xnb
+Content\Sprite\pickup3.xnb
+Content\Sprite\sniperRifleIcon.xnb

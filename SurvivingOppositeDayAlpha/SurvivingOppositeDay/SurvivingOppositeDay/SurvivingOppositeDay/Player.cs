@@ -26,14 +26,21 @@ namespace SurvivingOppositeDay
         float moveSpeed;
         public int Health { get; set; }
         public int Ammo { get; set; }
-        SoundEffectInstance soundEffectInstanceDonutGun;
-        SoundEffectInstance soundEffectInstanceSlingShot;
-        SoundEffectInstance soundEffectInstanceWaterGun;
+        public static SoundEffectInstance soundEffectInstanceDonutGun;
+        public static SoundEffectInstance soundEffectInstanceSlingShot;
+        public static SoundEffectInstance soundEffectInstanceWaterGun;
+
+        
+        //public static bool wgiFlag = true;
+        //public static bool ssiFlag = false;
+        //public static bool dgiFlag = false;
 
         // icon flags
-        public static bool wgiFlag = true;
-        public static bool ssiFlag = false;
-        public static bool dgiFlag = false;
+        //1 = watergun 2 = slingshot 3 = donutgun 4 = machinegun 5 = sniperrifle 6 = gernadelauncher
+        public static int weaponIconFlag = 4;
+
+        // pickups 
+        public int[] pickups;
 
         public Player(Game game, SpriteBatch spriteBatch, Texture2D texture, Vector2 position, bool add = false)
             : base(game, spriteBatch, texture, position, add)
@@ -56,6 +63,9 @@ namespace SurvivingOppositeDay
             soundEffectInstanceDonutGun = Game1.soundDictionary["DonutGun"].CreateInstance();
             soundEffectInstanceSlingShot = Game1.soundDictionary["SlingShot"].CreateInstance();
             soundEffectInstanceWaterGun = Game1.soundDictionary["WaterGun"].CreateInstance();
+
+            //pickups
+            pickups = new int[4];
         }
 
         public override void Update(GameTime gameTime)
@@ -115,42 +125,91 @@ namespace SurvivingOppositeDay
             }
             #endregion
             #region Change Weapon
+            ////Change weapon
+            //if (keyboardState.IsKeyDown(Keys.D1))
+            //{
+            //    weaponType = WeaponType.WaterGun;
+            //    soundEffectInstanceWaterGun.Play();
+            //    wgiFlag = true;
+            //    ssiFlag = false;
+            //    dgiFlag = false;
+            //}
+            //if (keyboardState.IsKeyDown(Keys.D2))
+            //{
+            //    weaponType = WeaponType.SlingShot;
+            //    soundEffectInstanceSlingShot.Play();
+            //    wgiFlag = false;
+            //    ssiFlag = true;
+            //    dgiFlag = false;
+            //}
+            //if (keyboardState.IsKeyDown(Keys.D3))
+            //{
+            //    weaponType = WeaponType.DonutGun;
+            //    soundEffectInstanceDonutGun.Play();
+            //    wgiFlag = false;
+            //    ssiFlag = false;
+            //    dgiFlag = true;
+            //}
+            //if (keyboardState.IsKeyDown(Keys.D4))
+            //{
+            //    weaponType = WeaponType.MachineGun;
+            //}
+            //if (keyboardState.IsKeyDown(Keys.D5))
+            //{
+            //    weaponType = WeaponType.SniperRifle;
+            //}
+            //if (keyboardState.IsKeyDown(Keys.D6))
+            //{
+            //    weaponType = WeaponType.GernadeLauncher;
+            //}
+
             //Change weapon
             if (keyboardState.IsKeyDown(Keys.D1))
             {
-                weaponType = WeaponType.WaterGun;
-                soundEffectInstanceWaterGun.Play();
-                wgiFlag = true;
-                ssiFlag = false;
-                dgiFlag = false;
+                if (this.pickups[1] == 1)
+                {
+                    weaponType = WeaponType.WaterGun;
+                    soundEffectInstanceWaterGun.Play();
+                    weaponIconFlag = 1;
+                }
+                else
+                {
+                    weaponType = WeaponType.MachineGun;
+                    //soundEffectInstanceMachineGun.Play();
+                    weaponIconFlag = 4;
+                }
+
             }
             if (keyboardState.IsKeyDown(Keys.D2))
             {
-                weaponType = WeaponType.SlingShot;
-                soundEffectInstanceSlingShot.Play();
-                wgiFlag = false;
-                ssiFlag = true;
-                dgiFlag = false;
+                if (this.pickups[2] == 1)
+                {
+                    weaponType = WeaponType.SlingShot;
+                    soundEffectInstanceSlingShot.Play();
+                    weaponIconFlag = 2;
+                }
+                else
+                {
+                    weaponType = WeaponType.SniperRifle;
+                    //soundEffectInstanceSniperRifle.Play();
+                    weaponIconFlag = 5;
+                }
             }
             if (keyboardState.IsKeyDown(Keys.D3))
             {
-                weaponType = WeaponType.DonutGun;
-                soundEffectInstanceDonutGun.Play();
-                wgiFlag = false;
-                ssiFlag = false;
-                dgiFlag = true;
-            }
-            if (keyboardState.IsKeyDown(Keys.D4))
-            {
-                weaponType = WeaponType.MachineGun;
-            }
-            if (keyboardState.IsKeyDown(Keys.D5))
-            {
-                weaponType = WeaponType.SniperRifle;
-            }
-            if (keyboardState.IsKeyDown(Keys.D6))
-            {
-                weaponType = WeaponType.GernadeLauncher;
+                if (this.pickups[3] == 1)
+                {
+                    weaponType = WeaponType.DonutGun;
+                    soundEffectInstanceDonutGun.Play();
+                    weaponIconFlag = 3;
+                }
+                else
+                {
+                    weaponType = WeaponType.GernadeLauncher;
+                    //soundEffectInstanceGernadeLauncher.Play();
+                    weaponIconFlag = 6;
+                }
+
             }
             #endregion
 
