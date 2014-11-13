@@ -34,6 +34,8 @@ namespace SurvivingOppositeDay
         public static Rectangle Screen { get; private set; }
         public static Texture2D TestTexture { get; private set; }
 
+        public GameComponentCollection GUIComponents { get; private set; }
+
         // player
         Player player;
 
@@ -97,6 +99,9 @@ namespace SurvivingOppositeDay
         Rectangle healthRectangle;
         Vector2 healthPosition;
 
+        //GUI Bar
+        Rectangle hudRectangle;
+
         // background
         Texture2D backgroundTexture;
         Vector2 backgroundPosition;
@@ -109,23 +114,19 @@ namespace SurvivingOppositeDay
         Texture2D machineGunIcon;
         Texture2D sniperRifleIcon;
         Texture2D gernadeLauncherIcon;
-        Vector2 waterGunIconPos;
-        Vector2 slingShotIconPos;
-        Vector2 donutGunIconPos;
-        Vector2 machineGunIconPos;
-        Vector2 sniperRifleIconPos;
-        Vector2 gernadeLauncherIconPos;
+        Vector2 gunIconPos;
 
         //pickup items
         Pickup pickup1, pickup2, pickup3;
 
         // Room State Machine
         StateMachine<RoomState> roomStateMachine;
-        public RoomState currentRoom;
         public RoomState previousRoom;
 
         // transition Rectangles
         Rectangle policeTransitionRectangle;
+        Rectangle medicTransitionRectangle;
+        Rectangle fireTransitionRectangle;
         Rectangle mainTransitionRectangle;
 
         // for testing
@@ -140,6 +141,7 @@ namespace SurvivingOppositeDay
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            GUIComponents = new GameComponentCollection();
         }
 
         /// <summary>
@@ -200,6 +202,7 @@ namespace SurvivingOppositeDay
             spriteDictionary.Add("fireRoom", "Sprite/FireRoom");
             spriteDictionary.Add("policeRoom", "Sprite/PoliceRoom");
             spriteDictionary.Add("medicRoom", "Sprite/MedicRoom");
+            spriteDictionary.Add("bar", "Sprite/bar");
             TestTexture = Content.Load<Texture2D>("Sprite/CollisionDebugTexture");
 
             //Sound
@@ -267,6 +270,12 @@ namespace SurvivingOppositeDay
             // health bar
             healthTexture = Content.Load<Texture2D>("Sprite/health");
 
+            //GUI Hud
+            hudRectangle = new Rectangle(0, 0, Screen.Width, 60);
+            scoreTextLocation = new Vector2(Screen.Width*((float)5/12), 15);
+            ammoTextLocation = new Vector2(Screen.Width*((float)9/12), 15);
+            scoreTextLocation2 = new Vector2(Screen.Width*((float)5/12), Screen.Height*((float)3/4));
+                        
             // background
             backgroundTexture = spriteDictionary["mainRoom"];
             backgroundPosition = new Vector2(0, 0);
@@ -280,6 +289,9 @@ namespace SurvivingOppositeDay
             sniperRifleIcon = Content.Load<Texture2D>("Sprite/sniperRifleIcon");
             gernadeLauncherIcon = Content.Load<Texture2D>("Sprite/gernadeLauncherIcon");
 
+            // weapon icons
+            gunIconPos = new Vector2(Screen.Width - waterGunIcon.Width, Screen.Height - waterGunIcon.Height);
+
             //pickup items
             pickup1 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup1"), new Vector2(1500, 50), true, 1, player);
             pickup2 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup2"), new Vector2(1500, 250), true, 2, player);
@@ -288,18 +300,42 @@ namespace SurvivingOppositeDay
             // Room State Machine
             roomStateMachine = new StateMachine<RoomState>();
 
+            previousRoom = RoomState.MainRoom;
             policeTransitionRectangle = new Rectangle(800, 0, 400, 20);
+            medicTransitionRectangle = new Rectangle(1980, 800, 20, 400);
+            fireTransitionRectangle = new Rectangle(0, 800, 20, 400);
             mainTransitionRectangle = new Rectangle();
 
             // Transitions between Rooms
             Func<bool> playerExitsToPoliceRoom = () =>
             {
-                if (player.weaponType == WeaponType.WaterGun
-                    && policeTransitionRectangle.Intersects(player.collisionRectangle))
+                if (policeTransitionRectangle.Intersects(player.collisionRectangle))
                 {
                     return true;
                 }
                 else 
+                {
+                    return false;
+                }
+            };
+            Func<bool> playerExitsToMedicRoom = () =>
+            {
+                if (medicTransitionRectangle.Intersects(player.collisionRectangle))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            };
+            Func<bool> playerExitsToFireRoom = () =>
+            {
+                if (fireTransitionRectangle.Intersects(player.collisionRectangle))
+                {
+                    return true;
+                }
+                else
                 {
                     return false;
                 }
@@ -319,13 +355,19 @@ namespace SurvivingOppositeDay
             // Add Room States
             roomStateMachine.AddState(RoomState.MainRoom).OnEnter += EnterMain;
             roomStateMachine.AddState(RoomState.PoliceRoom).OnEnter += EnterPoliceRoom;
+            roomStateMachine.AddState(RoomState.ParamedicRoom).OnEnter += EnterMedicRoom;
+            roomStateMachine.AddState(RoomState.FireFighterRoom).OnEnter += EnterFireRoom;
 
             
 
             // Add Room Transitions
             roomStateMachine.AddTransition(RoomState.MainRoom, RoomState.PoliceRoom, playerExitsToPoliceRoom);
             roomStateMachine.AddTransition(RoomState.PoliceRoom, RoomState.MainRoom, playerExitsToMainRoom);
-
+            roomStateMachine.AddTransition(RoomState.MainRoom, RoomState.ParamedicRoom, playerExitsToMedicRoom);
+            roomStateMachine.AddTransition(RoomState.ParamedicRoom, RoomState.MainRoom, playerExitsToMainRoom);
+            roomStateMachine.AddTransition(RoomState.MainRoom, RoomState.FireFighterRoom, playerExitsToFireRoom);
+            roomStateMachine.AddTransition(RoomState.FireFighterRoom, RoomState.MainRoom, playerExitsToMainRoom);
+            
             // Example 
             //example = new BasicSprite(this, spriteBatch, spriteDictionary["exampleSprite"], Tools.Math.Vectors.FromPoint(Screen.Center));
             //Components.Add(example);
@@ -345,16 +387,50 @@ namespace SurvivingOppositeDay
             MediaPlayer.Play(legitMusic);
         }
 
+        void EnterFireRoom(State<RoomState> obj)
+        {
+            player.Position = new Vector2(1960, 1000);
+            mainTransitionRectangle = new Rectangle(1980, 800, 20, 400);
+            backgroundTexture = spriteDictionary["fireRoom"];
+            previousRoom = RoomState.FireFighterRoom;
+        }
+
+        void EnterMedicRoom(State<RoomState> obj)
+        {
+            player.Position = new Vector2(40, 1000);
+            mainTransitionRectangle = new Rectangle(0, 800, 20, 400);
+            backgroundTexture = spriteDictionary["medicRoom"];
+            previousRoom = RoomState.ParamedicRoom;
+        }
+
         void EnterPoliceRoom(State<RoomState> obj)
         {
             player.Position = new Vector2(1000, 1960);
             mainTransitionRectangle = new Rectangle(800, 1980, 400, 20);
             backgroundTexture = spriteDictionary["policeRoom"];
+            previousRoom = RoomState.PoliceRoom;
         }
 
         void EnterMain(State<RoomState> obj)
         {
-            player.Position = new Vector2(100, 100);
+            if (previousRoom == RoomState.PoliceRoom)
+            {
+                player.Position = new Vector2(1000, 40);
+            }
+            else if (previousRoom == RoomState.ParamedicRoom)
+            {
+                player.Position = new Vector2(1960, 1000);
+            }
+            else if(previousRoom == RoomState.FireFighterRoom)
+            {
+                player.Position = new Vector2(40, 1000);
+            }
+            if(previousRoom == RoomState.MainRoom)
+            {
+                player.Position = new Vector2(1700, 1650);
+            }
+            
+
             backgroundTexture = spriteDictionary["mainRoom"];
         }
 
@@ -498,28 +574,10 @@ namespace SurvivingOppositeDay
             IEnumerable<BasicBullet> bullets = Components.OfType<BasicBullet>();
             //Game State Play
             if (gameState == GameState.Play)
-            {               
-                // health bar
-                healthRectangle = new Rectangle((int)this.player.Position.X - 250, (int)this.player.Position.Y - 240, this.player.Health, 20);
+            {
+                //Health Bar
+                healthRectangle = new Rectangle(Screen.Width/12, 20, this.player.Health, 20);
 
-                scoreTextLocation = new Vector2(this.player.Position.X + 150, this.player.Position.Y - 250);
-
-                ammoTextLocation = new Vector2(this.player.Position.X + 250, this.player.Position.Y - 250);
-
-                scoreTextLocation2 = new Vector2(this.player.Position.X - 50, this.player.Position.Y + 50);
-
-                drawRectangle = new Rectangle((int)this.player.Position.X - 381, (int)this.player.Position.Y - 300, gameOver.Width, gameOver.Height);
-
-                // weapon icons
-                waterGunIconPos = new Vector2(this.player.Position.X + 250, this.player.Position.Y + 100);
-                slingShotIconPos = new Vector2(this.player.Position.X + 250, this.player.Position.Y + 100);
-                donutGunIconPos = new Vector2(this.player.Position.X + 250, this.player.Position.Y + 100);
-                machineGunIconPos = new Vector2(this.player.Position.X + 250, this.player.Position.Y + 100);
-                sniperRifleIconPos = new Vector2(this.player.Position.X + 250, this.player.Position.Y + 100);
-                gernadeLauncherIconPos = new Vector2(this.player.Position.X + 250, this.player.Position.Y + 100);
-
-                //give player ammo
-                
                 //Give enemy player position
                 foreach (BasicEnemy enemy in enemies)
                 {
@@ -653,7 +711,7 @@ namespace SurvivingOppositeDay
                                 else if (bullet.weaponType == WeaponType.SniperRifle && enemy.enemyType == EnemyType.Police)
                                 {
                                     // damage, 2 shots kills and slows enemy
-                                    enemy.Health -= 100;
+                                    enemy.Health -= 50;
                                     enemy.LinearVelocity *= 0.5f;
                                 }
                                 else if (bullet.weaponType == WeaponType.GernadeLauncher && enemy.enemyType == EnemyType.Police)
@@ -661,7 +719,7 @@ namespace SurvivingOppositeDay
                                     //Explosion explosion = new Explosion(this, spriteBatch, spriteDictionary["jellyExplosion"], bullet.Position, 7);
                                     //additions.Add(explosion);
                                     // damage, 1 shot kills
-                                    enemy.Health -= 200;
+                                    enemy.Health -=100;
                                 }
                                 else
                                 {
@@ -691,7 +749,7 @@ namespace SurvivingOppositeDay
                                 else if (bullet.weaponType == WeaponType.MachineGun && enemy.enemyType == EnemyType.FireFighter)
                                 {
                                     //damage, 5 shots kills or one burst
-                                    enemy.Health -= 20;
+                                    enemy.Health -= 10;
                                 }
                                 else if (bullet.weaponType == WeaponType.SniperRifle && enemy.enemyType == EnemyType.FireFighter)
                                 {
@@ -739,7 +797,7 @@ namespace SurvivingOppositeDay
                                 else if (bullet.weaponType == WeaponType.SniperRifle && enemy.enemyType == EnemyType.Paramedic)
                                 {
                                     // damage, 1 shots kills and slows enemy
-                                    enemy.Health -= 200;
+                                    enemy.Health -= 50;
                                     enemy.LinearVelocity *= 0.5f;
                                 }
                                 else if (bullet.weaponType == WeaponType.GernadeLauncher && enemy.enemyType == EnemyType.Paramedic)
@@ -747,7 +805,7 @@ namespace SurvivingOppositeDay
                                     //Explosion explosion = new Explosion(this, spriteBatch, spriteDictionary["jellyExplosion"], bullet.Position, 7);
                                     //additions.Add(explosion);
                                     // damage, 1 shot kills
-                                    enemy.Health -= 50;
+                                    enemy.Health -= 100;
                                 }
                                 else
                                 {
@@ -935,6 +993,13 @@ namespace SurvivingOppositeDay
 
             
             base.Update(gameTime);
+
+            // update gui
+            foreach (GameComponent guiComponent in GUIComponents)
+            {
+                if (guiComponent.Enabled)
+                    guiComponent.Update(gameTime);
+            }
         }
 
         private void SpawnEnemyBullet(EnemyAction enemyAction, BasicEnemy sender)
@@ -984,9 +1049,6 @@ namespace SurvivingOppositeDay
             {
                 // draw background
                 spriteBatch.Draw(backgroundTexture , backgroundPosition, Color.White);
-
-                //Draw score
-                spriteBatch.DrawString(scoreFont, scoreText, scoreTextLocation, Color.Black);
                 
                 //draw ammo
                 spriteBatch.Draw(garabeAmmo, garabeAmmoRec, Color.White);
@@ -996,21 +1058,37 @@ namespace SurvivingOppositeDay
 
                 // draw health boxes
                 spriteBatch.Draw(health, healthDrawRactangle, Color.White);
+            }
+
+            base.Draw(gameTime);
+            spriteBatch.End();
+
+            //GUI Draw
+            spriteBatch.Begin();
+
+            //Game State Play
+            if (gameState == GameState.Play)
+            {
+                //GUI hud
+                spriteBatch.Draw(spriteDictionary["bar"], hudRectangle, Color.Goldenrod);
+
+                //Draw score
+                spriteBatch.DrawString(scoreFont, scoreText, scoreTextLocation, Color.Black);
 
                 // weapon icons
                 if (Player.weaponIconFlag == 1)
-                    spriteBatch.Draw(waterGunIcon, waterGunIconPos, Color.White);
+                    spriteBatch.Draw(waterGunIcon, gunIconPos, Color.White);
                 if (Player.weaponIconFlag == 2)
-                    spriteBatch.Draw(slingShotIcon, slingShotIconPos, Color.White);
+                    spriteBatch.Draw(slingShotIcon, gunIconPos, Color.White);
                 if (Player.weaponIconFlag == 3)
-                    spriteBatch.Draw(donutGunIcon, donutGunIconPos, Color.White);
+                    spriteBatch.Draw(donutGunIcon, gunIconPos, Color.White);
                 if (Player.weaponIconFlag == 4)
-                    spriteBatch.Draw(machineGunIcon, machineGunIconPos, Color.White);
+                    spriteBatch.Draw(machineGunIcon, gunIconPos, Color.White);
                 if (Player.weaponIconFlag == 5)
-                    spriteBatch.Draw(sniperRifleIcon, sniperRifleIconPos, Color.White);
+                    spriteBatch.Draw(sniperRifleIcon, gunIconPos, Color.White);
                 if (Player.weaponIconFlag == 6)
-                    spriteBatch.Draw(gernadeLauncherIcon, gernadeLauncherIconPos, Color.White);
-                
+                    spriteBatch.Draw(gernadeLauncherIcon, gunIconPos, Color.White);
+
                 //Draw health
                 if (this.player.Health <= 25)
                 {
@@ -1031,16 +1109,21 @@ namespace SurvivingOppositeDay
                 // Draw ammo
                 if (this.player.Ammo <= 10)
                 {
-                    spriteBatch.DrawString(scoreFont, ammoText, ammoTextLocation - new Vector2(300, 0), Color.Red);
+                    spriteBatch.DrawString(scoreFont, ammoText, ammoTextLocation, Color.Red);
                 }
                 else if (this.player.Ammo <= 25)
                 {
-                    spriteBatch.DrawString(scoreFont, ammoText, ammoTextLocation - new Vector2(300, 0), Color.Yellow);
+                    spriteBatch.DrawString(scoreFont, ammoText, ammoTextLocation, Color.Yellow);
                 }
                 else
                 {
-                    spriteBatch.DrawString(scoreFont, ammoText, ammoTextLocation - new Vector2(300, 0), Color.Green);
+                    spriteBatch.DrawString(scoreFont, ammoText, ammoTextLocation, Color.Green);
                 }
+            }
+            //draw gui
+            foreach (DrawableGameComponent guiComponent in GUIComponents.OfType<DrawableGameComponent>())
+            {
+                guiComponent.Draw(gameTime); 
             }
 
             //Game State Dead
@@ -1048,19 +1131,9 @@ namespace SurvivingOppositeDay
             {
                 spriteBatch.Draw(gameOver, drawRectangle, Color.White);
                 spriteBatch.DrawString(scoreFont, scoreText, scoreTextLocation2, Color.Black);
-                //spriteBatch.Draw(gameOver, drawRectangle, null, Color.White, 0.0f, new Vector2(0, 0), SpriteEffects.None, 10f);
             }
-            base.Draw(gameTime);
-            spriteBatch.End();
-        }
 
-        private Matrix GetScreenMatrix()
-        {
-            Screen = new Rectangle((int)(player.Position.X - Screen.Width / 2),
-                (int)(player.Position.Y - Screen.Height / 2),
-                Screen.Width, Screen.Height);
-            //return Matrix.CreateOrthographicOffCenter(Screen.Left, Screen.Right, Screen.Bottom, Screen.Top, 0, 1);
-            return Matrix.CreateTranslation(new Vector3(Screen.X, Screen.Y, 0));
+            spriteBatch.End();
         }
     }
     public enum GameState { Menu, Play, Dead }

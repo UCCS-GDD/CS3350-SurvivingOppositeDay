@@ -26,6 +26,8 @@ namespace SurvivingOppositeDay
         public float RotationalAcceleration { get; set; }
         public bool Remove { get; set; }
 
+        public new Game1 Game { get; private set; }
+
         public Rectangle collisionRectangle;
         
 
@@ -45,6 +47,8 @@ namespace SurvivingOppositeDay
             Scale = Vector2.One;
 
             collisionRectangle = new Rectangle((int)Position.X - (Texture.Width/2), (int)Position.Y - (Texture.Height/2), Texture.Width, Texture.Height);
+
+            Game = base.Game as Game1;
         }
 
         public override void Draw(GameTime gameTime)
