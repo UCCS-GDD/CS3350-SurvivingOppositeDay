@@ -48,7 +48,7 @@ namespace SurvivingOppositeDay
             Ammo = 100;
             Health = 100;
             moveSpeed = 3;
-            weaponType = WeaponType.WaterGun;
+            weaponType = WeaponType.MachineGun;
 
             // Fire Rate timer
             fireTimeSpan = TimeSpan.FromSeconds(0.25);

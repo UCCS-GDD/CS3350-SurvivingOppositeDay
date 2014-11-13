@@ -292,11 +292,6 @@ namespace SurvivingOppositeDay
             // weapon icons
             gunIconPos = new Vector2(Screen.Width - waterGunIcon.Width, Screen.Height - waterGunIcon.Height);
 
-            //pickup items
-            pickup1 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup1"), new Vector2(1500, 50), true, 1, player);
-            pickup2 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup2"), new Vector2(1500, 250), true, 2, player);
-            pickup3 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup3"), new Vector2(1500, 500), true, 3, player);
-
             // Room State Machine
             roomStateMachine = new StateMachine<RoomState>();
 
@@ -367,7 +362,7 @@ namespace SurvivingOppositeDay
             roomStateMachine.AddTransition(RoomState.ParamedicRoom, RoomState.MainRoom, playerExitsToMainRoom);
             roomStateMachine.AddTransition(RoomState.MainRoom, RoomState.FireFighterRoom, playerExitsToFireRoom);
             roomStateMachine.AddTransition(RoomState.FireFighterRoom, RoomState.MainRoom, playerExitsToMainRoom);
-            
+
             // Example 
             //example = new BasicSprite(this, spriteBatch, spriteDictionary["exampleSprite"], Tools.Math.Vectors.FromPoint(Screen.Center));
             //Components.Add(example);
@@ -393,6 +388,7 @@ namespace SurvivingOppositeDay
             mainTransitionRectangle = new Rectangle(1980, 800, 20, 400);
             backgroundTexture = spriteDictionary["fireRoom"];
             previousRoom = RoomState.FireFighterRoom;
+            pickup1 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup1"), new Vector2(500, 250), true, 1, player);
         }
 
         void EnterMedicRoom(State<RoomState> obj)
@@ -401,6 +397,7 @@ namespace SurvivingOppositeDay
             mainTransitionRectangle = new Rectangle(0, 800, 20, 400);
             backgroundTexture = spriteDictionary["medicRoom"];
             previousRoom = RoomState.ParamedicRoom;
+            pickup2 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup2"), new Vector2(1500, 250), true, 2, player);
         }
 
         void EnterPoliceRoom(State<RoomState> obj)
@@ -409,6 +406,7 @@ namespace SurvivingOppositeDay
             mainTransitionRectangle = new Rectangle(800, 1980, 400, 20);
             backgroundTexture = spriteDictionary["policeRoom"];
             previousRoom = RoomState.PoliceRoom;
+            pickup3 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup3"), new Vector2(1500, 500), true, 3, player);
         }
 
         void EnterMain(State<RoomState> obj)
@@ -429,7 +427,10 @@ namespace SurvivingOppositeDay
             {
                 player.Position = new Vector2(1700, 1650);
             }
-            
+
+            pickup1 = null;
+            pickup2 = null;
+            pickup3 = null;
 
             backgroundTexture = spriteDictionary["mainRoom"];
         }
