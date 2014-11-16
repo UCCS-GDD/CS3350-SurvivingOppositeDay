@@ -461,6 +461,24 @@
       <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\sodTitle.xnb</Output>
       <Time>2014-11-15T14:38:59.3135925-07:00</Time>
     </Item>
+    <Item>
+      <Source>Menu Items\sodHelp.png</Source>
+      <Name>Menu Items\sodHelp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\sodHelp.xnb</Output>
+      <Time>2014-11-15T17:14:03.3646695-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu Items\spr_back_button.png</Source>
+      <Name>Menu Items\spr_back_button</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\spr_back_button.xnb</Output>
+      <Time>2014-09-18T21:20:19.5006307-06:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{DDC858DC-D843-42D6-BFE2-63DCE77A4885}</ContentProjectGUID>

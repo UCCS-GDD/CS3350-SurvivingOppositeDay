@@ -108,16 +108,20 @@ namespace SurvivingOppositeDay
 
         // menu backgrounds
         Texture2D titleScreen;
+        Texture2D helpScreen;
         Vector2 titleScreenPos;
+        Vector2 helpScreenPos;
 
         // menu buttons
         Texture2D playButton;
         Texture2D helpButton;
         Texture2D quitButton;
+        Texture2D backButton;
 
         Rectangle playButtonRec;
         Rectangle helpButtonRec;
         Rectangle quitButtonRec;
+        Rectangle backButtonRec;
 
         // gun selection icons
         Texture2D waterGunIcon;
@@ -219,9 +223,11 @@ namespace SurvivingOppositeDay
 
             // Menu Items
             spriteDictionary.Add("titleScreen", "Menu Items/sodTitle");
+            spriteDictionary.Add("helpScreen", "Menu Items/sodHelp");
             spriteDictionary.Add("playButton", "Menu Items/play_button");
             spriteDictionary.Add("helpButton", "Menu Items/help_button");
             spriteDictionary.Add("quitButton", "Menu Items/quit_button");
+            spriteDictionary.Add("backButton", "Menu Items/spr_back_button");
 
             //Sound
             legitMusic = Content.Load<Song>(@"Sounds/Sound");
@@ -301,14 +307,18 @@ namespace SurvivingOppositeDay
 
             // menu items
             titleScreen = spriteDictionary["titleScreen"];
+            helpScreen = spriteDictionary["helpScreen"];
             playButton = spriteDictionary["playButton"];
             helpButton = spriteDictionary["helpButton"];
             quitButton = spriteDictionary["quitButton"];
+            backButton = spriteDictionary["backButton"];
 
             titleScreenPos = new Vector2(0, 0);
+            helpScreenPos = new Vector2(0, 0);
             playButtonRec = new Rectangle(150, 350, playButton.Width, playButton.Height);
             helpButtonRec = new Rectangle(300, 350, helpButton.Width, helpButton.Height);
             quitButtonRec = new Rectangle(450, 350, quitButton.Width, quitButton.Height);
+            backButtonRec = new Rectangle(400, 350, quitButton.Width, quitButton.Height);
 
             // weapon icons
             waterGunIcon = Content.Load<Texture2D>("Sprite/waterGunIcon");
@@ -604,6 +614,33 @@ namespace SurvivingOppositeDay
                     if (mouseState.LeftButton == ButtonState.Pressed)
                     {
                         gameState = GameState.Play;
+                    }
+                }
+
+                if (quitButtonRec.Contains(mousePos))
+                {
+                    if (mouseState.LeftButton == ButtonState.Pressed)
+                    {
+                        Exit();
+                    }
+                }
+
+                if (helpButtonRec.Contains(mousePos))
+                {
+                    if (mouseState.LeftButton == ButtonState.Pressed)
+                    {
+                        gameState = GameState.Help;
+                    }
+                }
+            }
+
+            if (gameState == GameState.Help)
+            {
+                if (backButtonRec.Contains(mousePos))
+                {
+                    if (mouseState.LeftButton == ButtonState.Pressed)
+                    {
+                        gameState = GameState.Menu;
                     }
                 }
             }
@@ -1070,7 +1107,7 @@ namespace SurvivingOppositeDay
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
 
             // TODO: Add your drawing code here
             //spriteBatch.Begin(SpriteSortMode.BackToFront, null, null, null, null, null, GetScreenMatrix());
@@ -1115,6 +1152,12 @@ namespace SurvivingOppositeDay
                 spriteBatch.Draw(playButton, playButtonRec, Color.White);
                 spriteBatch.Draw(helpButton, helpButtonRec, Color.White);
                 spriteBatch.Draw(quitButton, quitButtonRec, Color.White);
+            }
+
+            if (gameState == GameState.Help)
+            {
+                spriteBatch.Draw(helpScreen, helpScreenPos, Color.White);
+                spriteBatch.Draw(backButton, backButtonRec, Color.White);
             }
 
             //Game State Play
