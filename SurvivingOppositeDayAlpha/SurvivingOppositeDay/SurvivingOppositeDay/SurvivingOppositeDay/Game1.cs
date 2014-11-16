@@ -114,9 +114,10 @@ namespace SurvivingOppositeDay
         Texture2D playButton;
         Texture2D helpButton;
         Texture2D quitButton;
-        Vector2 playButtonPos;
-        Vector2 helpButtonPos;
-        Vector2 quitButtonPos;
+
+        Rectangle playButtonRec;
+        Rectangle helpButtonRec;
+        Rectangle quitButtonRec;
 
         // gun selection icons
         Texture2D waterGunIcon;
@@ -305,9 +306,9 @@ namespace SurvivingOppositeDay
             quitButton = spriteDictionary["quitButton"];
 
             titleScreenPos = new Vector2(0, 0);
-            playButtonPos = new Vector2(150, 350);
-            helpButtonPos = new Vector2(300, 350);
-            quitButtonPos = new Vector2(450, 350);
+            playButtonRec = new Rectangle(150, 350, playButton.Width, playButton.Height);
+            helpButtonRec = new Rectangle(300, 350, helpButton.Width, helpButton.Height);
+            quitButtonRec = new Rectangle(450, 350, quitButton.Width, quitButton.Height);
 
             // weapon icons
             waterGunIcon = Content.Load<Texture2D>("Sprite/waterGunIcon");
@@ -598,15 +599,13 @@ namespace SurvivingOppositeDay
             //Game State Menu
             if (gameState == GameState.Menu)
             {
-                //if (playButton.Bounds.Contains(mousePos))
-                //{
-                //    if (mouseState.LeftButton == ButtonState.Pressed)
-                //    {
-                //        gameState = GameState.Play;
-                //    }
-                //}
-
-                gameState = GameState.Play;
+                if (playButtonRec.Contains(mousePos))
+                {
+                    if (mouseState.LeftButton == ButtonState.Pressed)
+                    {
+                        gameState = GameState.Play;
+                    }
+                }
             }
 
             IEnumerable<Pedestrian> pedestrians = Components.OfType<Pedestrian>();
@@ -1113,9 +1112,9 @@ namespace SurvivingOppositeDay
             if (gameState == GameState.Menu)
             {
                 spriteBatch.Draw(titleScreen, titleScreenPos, Color.White);
-                spriteBatch.Draw(playButton, playButtonPos, Color.White);
-                spriteBatch.Draw(helpButton, helpButtonPos, Color.White);
-                spriteBatch.Draw(quitButton, quitButtonPos, Color.White);
+                spriteBatch.Draw(playButton, playButtonRec, Color.White);
+                spriteBatch.Draw(helpButton, helpButtonRec, Color.White);
+                spriteBatch.Draw(quitButton, quitButtonRec, Color.White);
             }
 
             //Game State Play
