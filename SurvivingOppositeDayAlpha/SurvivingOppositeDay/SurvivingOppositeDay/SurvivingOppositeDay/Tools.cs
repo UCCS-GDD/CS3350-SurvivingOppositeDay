@@ -10,6 +10,20 @@ namespace SurvivingOppositeDay
     {
         public static class Math
         {
+            public static class Collisions
+            {
+                public static Rectangle ResolveStationaryCollision(Rectangle stationaryRectangle, Rectangle movingRectangle, Vector2 velocity)
+                {
+                    if (stationaryRectangle.Intersects(movingRectangle))
+                    {
+                        Rectangle intersection = Rectangle.Intersect(stationaryRectangle, movingRectangle);
+                        Rectangle result = movingRectangle;
+
+                    }
+
+                    return Rectangle.Empty;
+                }
+            }
             public static class Points
             {
                 public static Point FromVector(Vector2 vector)

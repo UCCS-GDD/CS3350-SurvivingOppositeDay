@@ -14,6 +14,8 @@ namespace SurvivingOppositeDay
         public Texture2D Texture { get; set; }
         //public Vector2 Position { get; set; }
         public Vector2 Position;
+
+        public Vector2 PreviousPosition { get; private set; }
         public Rectangle AnimationRectangle { get; set; }
         public float Rotation { get; set; }
         public Vector2 Origin { get; set; }
@@ -42,6 +44,7 @@ namespace SurvivingOppositeDay
             Color = Color.White;
             Texture = texture;
             Position = position;
+            PreviousPosition = position;
             AnimationRectangle = Texture.Bounds;
             Origin = Tools.Math.Vectors.FromPoint(Texture.Bounds.Center);
             Scale = Vector2.One;
@@ -60,6 +63,8 @@ namespace SurvivingOppositeDay
 
         public override void Update(GameTime gameTime)
         {
+            PreviousPosition = Position;
+
             float deltaT = gameTime.ElapsedGameTime.Milliseconds;
 
             RotationalVelocity += RotationalAcceleration * deltaT;
@@ -71,6 +76,7 @@ namespace SurvivingOppositeDay
 
             collisionRectangle.X = (int)Position.X - (Texture.Width / 2);
             collisionRectangle.Y = (int)Position.Y - (Texture.Height/2);
+
             base.Update(gameTime);
         }
     }

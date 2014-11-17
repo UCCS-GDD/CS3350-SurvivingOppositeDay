@@ -5,6 +5,7 @@ Content\Sprite\CollisionDebugTexture.xnb
 Content\Sprite\player2.xnb
 Content\Sprite\needleBullet.xnb
 Content\Sprite\donutBullet.xnb
+Content\Menu Items\youDied.xnb
 Content\Sprite\ammo.xnb
 Content\Sprite\police.xnb
 Content\Sprite\firefighter.xnb
@@ -37,15 +38,6 @@ Content\Sprite\pickup2.xnb
 Content\Sprite\pickup3.xnb
 Content\Sprite\sniperRifleIcon.xnb
 Content\Sprite\bar.xnb
-Content\Sounds\DonutGun.xnb
-Content\Sounds\SlingShot.xnb
-Content\Sounds\SlingShotBullet.xnb
-Content\Sounds\Waterbullet.xnb
-Content\Sounds\WaterGun.xnb
-Content\Sounds\Sound.xnb
-Content\Sounds\Sound.wma
-Content\Menu Items\youDied.xnb
-Content\Menu Items\Arial.xnb
 Content\Menu Items\play_button.xnb
 Content\Menu Items\help_button.xnb
 Content\Menu Items\quit_button.xnb
@@ -55,3 +47,11 @@ Content\Menu Items\spr_back_button.xnb
 Content\Sprite\Cop_base.xnb
 Content\Sprite\Medic_base.xnb
 Content\Sprite\Fireman.xnb
+Content\Menu Items\Arial.xnb
+Content\Sounds\DonutGun.xnb
+Content\Sounds\SlingShot.xnb
+Content\Sounds\SlingShotBullet.xnb
+Content\Sounds\Waterbullet.xnb
+Content\Sounds\WaterGun.xnb
+Content\Sounds\Sound.xnb
+Content\Sounds\Sound.wma

@@ -36,6 +36,8 @@ namespace SurvivingOppositeDay
 
         public GameComponentCollection GUIComponents { get; private set; }
 
+        public Dictionary<RoomState, CollisionCollection> Colliders { get; private set; }
+
         // player
         Player player;
 
@@ -141,8 +143,8 @@ namespace SurvivingOppositeDay
         Pickup pickup1, pickup2, pickup3;
 
         // Room State Machine
-        StateMachine<RoomState> roomStateMachine;
-        public static RoomState previousRoom;
+        public static StateMachine<RoomState> roomStateMachine;
+        RoomState previousRoom;
 
         // transition Rectangles
         Rectangle policeTransitionRectangle;
@@ -191,7 +193,7 @@ namespace SurvivingOppositeDay
             //cameraPos = player.Position;
             
             // collision detection
-            house1 = new Rectangle(100, 100, 100, 100);
+            house1 = new Rectangle(0, 0, 300, 350);
 
             //textOffset = (int)player.Position.X - 100; 
             base.Initialize();
@@ -328,6 +330,7 @@ namespace SurvivingOppositeDay
             titleScreenPos = new Vector2(0, 0);
             helpScreenPos = new Vector2(0, 0);
             playButtonRec = new Rectangle(150, 350, playButton.Width, playButton.Height);
+            backButtonRec = new Rectangle(400, 350, quitButton.Width, quitButton.Height);
             helpButtonRec = new Rectangle(300, 350, helpButton.Width, helpButton.Height);
             quitButtonRec = new Rectangle(450, 350, quitButton.Width, quitButton.Height);
 
@@ -431,6 +434,11 @@ namespace SurvivingOppositeDay
             //Screen = new Rectangle(100, 100, 600, 400);
 
             //Components.OfType<BasicBullet>().ToList().ForEach(bullet => bullet.Position = Vector2.Zer0);
+
+            // create environmental colliders
+            Colliders = new Dictionary<RoomState, CollisionCollection>();
+            Colliders.Add(RoomState.MainRoom, new CollisionCollection(RoomState.MainRoom));
+            Colliders[RoomState.MainRoom].Colliders.Add(house1);
 
             //Play Legit Music
             MediaPlayer.Volume = 0.5f;

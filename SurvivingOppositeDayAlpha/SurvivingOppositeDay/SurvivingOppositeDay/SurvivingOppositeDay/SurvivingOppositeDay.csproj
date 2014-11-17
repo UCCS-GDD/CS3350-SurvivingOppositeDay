@@ -82,6 +82,7 @@
     <Compile Include="BasicSprite.cs" />
     <Compile Include="Camera.cs" />
     <Compile Include="Character.cs" />
+    <Compile Include="CollisionCollection.cs" />
     <Compile Include="EnemyBullet.cs" />
     <Compile Include="Explosion.cs" />
     <Compile Include="FireFighterEnemy.cs" />

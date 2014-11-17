@@ -30,6 +30,8 @@ namespace SurvivingOppositeDay
         public static SoundEffectInstance soundEffectInstanceSlingShot;
         public static SoundEffectInstance soundEffectInstanceWaterGun;
 
+        public new Game1 Game { get; private set; }
+
         
         //public static bool wgiFlag = true;
         //public static bool ssiFlag = false;
@@ -44,7 +46,7 @@ namespace SurvivingOppositeDay
 
         bool canMove = true;
 
-        public Player(Game game, SpriteBatch spriteBatch, Texture2D texture, Vector2 position, bool add = false)
+        public Player(Game1 game, SpriteBatch spriteBatch, Texture2D texture, Vector2 position, bool add = false)
             : base(game, spriteBatch, texture, position, add)
         {
             Ammo = 100;
@@ -68,6 +70,8 @@ namespace SurvivingOppositeDay
 
             //pickups
             pickups = new int[4];
+
+            Game = game;
         }
 
         public override void Update(GameTime gameTime)
@@ -103,22 +107,16 @@ namespace SurvivingOppositeDay
                     Position.Y -= moveSpeed;
                 }
 
-                //if (Game1.previousRoom == RoomState.MainRoom && canMove == true)
-                //{
-                //    if (Position.Y > 20)
-                //    {
-                //        Position.Y -= moveSpeed;
-                //    }
+                // get list of collision objects
+                CollisionCollection colliders = Game.Colliders[Game1.roomStateMachine.Current];
 
-                //    // check top left house
-                //    if (Position.X <= 300 && Position.Y <= 350)
-                //    {
-                //        canMove = false;
-                //    }
-
-                //    if (Position.X > 300 && Position.Y > 350)
-                //        canMove = true;
-                //}
+                // if player collides with an object in collision list
+                foreach (Rectangle collider in colliders.Colliders)
+                {
+                    if(collider)
+                    // set player to previous position
+                    Position = PreviousPosition;
+                }
             }
 
             if (keyboardState.IsKeyDown(Keys.S))
