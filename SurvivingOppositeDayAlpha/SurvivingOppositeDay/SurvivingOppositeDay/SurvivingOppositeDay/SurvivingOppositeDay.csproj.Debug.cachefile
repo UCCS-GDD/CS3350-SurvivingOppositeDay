@@ -51,4 +51,7 @@ Content\Menu Items\quit_button.xnb
 Content\Menu Items\sodTitle.xnb
 Content\Menu Items\sodHelp.xnb
 Content\Menu Items\spr_back_button.xnb
+Content\Sprite\Cop_base.xnb
+Content\Sprite\Medic_base.xnb
+Content\Sprite\Fireman.xnb
 Content\Sounds\Sound.wma

@@ -123,6 +123,11 @@ namespace SurvivingOppositeDay
         Rectangle quitButtonRec;
         Rectangle backButtonRec;
 
+        // menu timers
+        Timer clickTimer;
+        TimeSpan clickTimeSpan;
+        public static bool clickable = true;
+
         // gun selection icons
         Texture2D waterGunIcon;
         Texture2D slingShotIcon;
@@ -200,9 +205,9 @@ namespace SurvivingOppositeDay
             spriteDictionary.Add("exampleSprite", "Sprite/explosion");
             spriteDictionary.Add("player", "Sprite/player2");
             spriteDictionary.Add("playerMain", "Sprite/player_waterbase");
-            spriteDictionary.Add("police", "Sprite/police");
-            spriteDictionary.Add("firefighter", "Sprite/firefighter");
-            spriteDictionary.Add("paramedic", "Sprite/paramedic");
+            spriteDictionary.Add("police", "Sprite/cop_base");
+            spriteDictionary.Add("firefighter", "Sprite/Fireman");
+            spriteDictionary.Add("paramedic", "Sprite/medic_base");
             spriteDictionary.Add("waterBullet", "Sprite/waterBullet");
             spriteDictionary.Add("needleBullet", "Sprite/needleBullet");
             spriteDictionary.Add("donutBullet", "Sprite/donutBullet");
@@ -318,7 +323,12 @@ namespace SurvivingOppositeDay
             playButtonRec = new Rectangle(150, 350, playButton.Width, playButton.Height);
             helpButtonRec = new Rectangle(300, 350, helpButton.Width, helpButton.Height);
             quitButtonRec = new Rectangle(450, 350, quitButton.Width, quitButton.Height);
-            backButtonRec = new Rectangle(400, 350, quitButton.Width, quitButton.Height);
+
+            // menu timers
+            clickTimeSpan = TimeSpan.FromSeconds(.5);
+            clickTimer = new Timer();
+            clickTimer.OnExpire += () => clickable = true;
+            clickTimer.Start(clickTimeSpan);
 
             // weapon icons
             waterGunIcon = Content.Load<Texture2D>("Sprite/waterGunIcon");
@@ -611,15 +621,17 @@ namespace SurvivingOppositeDay
             {
                 if (playButtonRec.Contains(mousePos))
                 {
-                    if (mouseState.LeftButton == ButtonState.Pressed)
+                    if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
                     {
                         gameState = GameState.Play;
+                        clickable = false;
+                        clickTimer.Start(clickTimeSpan);
                     }
                 }
 
                 if (quitButtonRec.Contains(mousePos))
                 {
-                    if (mouseState.LeftButton == ButtonState.Pressed)
+                    if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
                     {
                         Exit();
                     }
@@ -627,9 +639,11 @@ namespace SurvivingOppositeDay
 
                 if (helpButtonRec.Contains(mousePos))
                 {
-                    if (mouseState.LeftButton == ButtonState.Pressed)
+                    if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
                     {
                         gameState = GameState.Help;
+                        clickable = false;
+                        clickTimer.Start(clickTimeSpan);
                     }
                 }
             }
@@ -638,12 +652,22 @@ namespace SurvivingOppositeDay
             {
                 if (backButtonRec.Contains(mousePos))
                 {
-                    if (mouseState.LeftButton == ButtonState.Pressed)
+                    if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
                     {
                         gameState = GameState.Menu;
+                        clickable = false;
+                        clickTimer.Start(clickTimeSpan);
                     }
                 }
             }
+
+            clickTimer.Update(gameTime.ElapsedGameTime);
+
+            // test what menu player is in, then draw back button accordingly
+            if (gameState == GameState.Help)
+                backButtonRec = new Rectangle(400, 350, quitButton.Width, quitButton.Height);
+            if (gameState == GameState.Dead)
+                backButtonRec = new Rectangle(550, 350, quitButton.Width, quitButton.Height);
 
             IEnumerable<Pedestrian> pedestrians = Components.OfType<Pedestrian>();
             IEnumerable<BasicEnemy> enemies = Components.OfType<BasicEnemy>();
@@ -1065,6 +1089,17 @@ namespace SurvivingOppositeDay
                 {
                     pedestrian.LayerDepth = -1;
                 }
+
+                // temp back to main menu button
+                if (backButtonRec.Contains(mousePos))
+                {
+                    if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
+                    {
+                        gameState = GameState.Menu;
+                        clickable = false;
+                        clickTimer.Start(clickTimeSpan);
+                    }
+                }
             }
 
             
@@ -1225,6 +1260,7 @@ namespace SurvivingOppositeDay
             {
                 spriteBatch.Draw(gameOver, drawRectangle, Color.White);
                 spriteBatch.DrawString(scoreFont, scoreText, scoreTextLocation2, Color.Black);
+                spriteBatch.Draw(backButton, backButtonRec, Color.White);
             }
 
             spriteBatch.End();

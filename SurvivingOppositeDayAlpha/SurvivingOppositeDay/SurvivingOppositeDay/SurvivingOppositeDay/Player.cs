@@ -78,7 +78,7 @@ namespace SurvivingOppositeDay
             Rotation = (float)Math.Atan2(mouseLocation.Y, mouseLocation.X);
 
             // fires weapon if Fire Rate is ready
-            if (canFire)
+            if (canFire && Game1.clickable == true)
             {
                 // check for left mouse pressed and fire event
                 if (mouseState.LeftButton == ButtonState.Pressed)
