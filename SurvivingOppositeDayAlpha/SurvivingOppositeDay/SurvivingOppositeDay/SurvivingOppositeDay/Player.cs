@@ -42,6 +42,8 @@ namespace SurvivingOppositeDay
         // pickups 
         public int[] pickups;
 
+        bool canMove = true;
+
         public Player(Game game, SpriteBatch spriteBatch, Texture2D texture, Vector2 position, bool add = false)
             : base(game, spriteBatch, texture, position, add)
         {
@@ -100,6 +102,23 @@ namespace SurvivingOppositeDay
                 {
                     Position.Y -= moveSpeed;
                 }
+
+                //if (Game1.previousRoom == RoomState.MainRoom && canMove == true)
+                //{
+                //    if (Position.Y > 20)
+                //    {
+                //        Position.Y -= moveSpeed;
+                //    }
+
+                //    // check top left house
+                //    if (Position.X <= 300 && Position.Y <= 350)
+                //    {
+                //        canMove = false;
+                //    }
+
+                //    if (Position.X > 300 && Position.Y > 350)
+                //        canMove = true;
+                //}
             }
 
             if (keyboardState.IsKeyDown(Keys.S))

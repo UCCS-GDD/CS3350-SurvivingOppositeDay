@@ -142,13 +142,17 @@ namespace SurvivingOppositeDay
 
         // Room State Machine
         StateMachine<RoomState> roomStateMachine;
-        public RoomState previousRoom;
+        public static RoomState previousRoom;
 
         // transition Rectangles
         Rectangle policeTransitionRectangle;
         Rectangle medicTransitionRectangle;
         Rectangle fireTransitionRectangle;
         Rectangle mainTransitionRectangle;
+
+        // invisible collision detection
+        public static Rectangle house1;
+        Rectangle house2;
 
         // for testing
         //BasicSprite example;
@@ -186,6 +190,9 @@ namespace SurvivingOppositeDay
             camera = new Camera(GraphicsDevice.Viewport);
             //cameraPos = player.Position;
             
+            // collision detection
+            house1 = new Rectangle(100, 100, 100, 100);
+
             //textOffset = (int)player.Position.X - 100; 
             base.Initialize();
 
@@ -663,11 +670,11 @@ namespace SurvivingOppositeDay
 
             clickTimer.Update(gameTime.ElapsedGameTime);
 
-            // test what menu player is in, then draw back button accordingly
-            if (gameState == GameState.Help)
-                backButtonRec = new Rectangle(400, 350, quitButton.Width, quitButton.Height);
+            // test what menu player is in, then draw quit button accordingly
+            //if (gameState == GameState.Help)
+            //    backButtonRec = new Rectangle(400, 350, quitButton.Width, quitButton.Height);
             if (gameState == GameState.Dead)
-                backButtonRec = new Rectangle(550, 350, quitButton.Width, quitButton.Height);
+                quitButtonRec = new Rectangle(550, 350, quitButton.Width, quitButton.Height);
 
             IEnumerable<Pedestrian> pedestrians = Components.OfType<Pedestrian>();
             IEnumerable<BasicEnemy> enemies = Components.OfType<BasicEnemy>();
@@ -1091,13 +1098,15 @@ namespace SurvivingOppositeDay
                 }
 
                 // temp back to main menu button
-                if (backButtonRec.Contains(mousePos))
+                if (quitButtonRec.Contains(mousePos))
                 {
                     if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
                     {
-                        gameState = GameState.Menu;
-                        clickable = false;
-                        clickTimer.Start(clickTimeSpan);
+                        //gameState = GameState.Menu;
+                        //clickable = false;
+                        //clickTimer.Start(clickTimeSpan);
+
+                        Exit();
                     }
                 }
             }
@@ -1260,7 +1269,7 @@ namespace SurvivingOppositeDay
             {
                 spriteBatch.Draw(gameOver, drawRectangle, Color.White);
                 spriteBatch.DrawString(scoreFont, scoreText, scoreTextLocation2, Color.Black);
-                spriteBatch.Draw(backButton, backButtonRec, Color.White);
+                spriteBatch.Draw(quitButton, quitButtonRec, Color.White);
             }
 
             spriteBatch.End();
