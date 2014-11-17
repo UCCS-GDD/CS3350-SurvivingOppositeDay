@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\player.xnb</Output>
-      <Time>2014-11-06T11:21:33.1811442-07:00</Time>
+      <Time>2014-11-13T14:48:29.5817624-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\explosion.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\explosion.xnb</Output>
-      <Time>2014-11-06T11:21:33.1541534-07:00</Time>
+      <Time>2014-11-13T14:48:29.5157169-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\waterBullet.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\waterBullet.xnb</Output>
-      <Time>2014-11-06T11:21:33.2383043-07:00</Time>
+      <Time>2014-11-13T14:48:29.6157873-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\CollisionDebugTexture.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\CollisionDebugTexture.xnb</Output>
-      <Time>2014-11-06T11:21:33.0569945-07:00</Time>
+      <Time>2014-11-13T14:48:29.389628-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\player2.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\player2.xnb</Output>
-      <Time>2014-11-06T11:21:33.1841523-07:00</Time>
+      <Time>2014-11-13T14:48:29.5847649-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\needleBullet.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\needleBullet.xnb</Output>
-      <Time>2014-11-13T13:33:26.030993-07:00</Time>
+      <Time>2014-11-13T14:48:29.5567451-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\donutBullet.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\donutBullet.xnb</Output>
-      <Time>2014-11-06T11:21:33.1421171-07:00</Time>
+      <Time>2014-11-13T14:48:29.501713-07:00</Time>
     </Item>
     <Item>
       <Source>youDied.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\youDied.xnb</Output>
-      <Time>2014-11-06T11:21:33.3187693-07:00</Time>
+      <Time>2014-11-13T14:48:29.6538142-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\ammo.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\ammo.xnb</Output>
-      <Time>2014-11-06T11:21:33.1331111-07:00</Time>
+      <Time>2014-11-13T14:48:29.4857025-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\police.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\police.xnb</Output>
-      <Time>2014-11-06T11:21:33.2232941-07:00</Time>
+      <Time>2014-11-13T14:48:29.5897693-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\firefighter.png</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\firefighter.xnb</Output>
-      <Time>2014-11-06T11:21:33.1591291-07:00</Time>
+      <Time>2014-11-13T14:48:29.5237217-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\paramedic.png</Source>
@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\paramedic.xnb</Output>
-      <Time>2014-11-06T11:21:33.1751413-07:00</Time>
+      <Time>2014-11-13T14:48:29.5607479-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\health.png</Source>
@@ -116,7 +116,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\health.xnb</Output>
-      <Time>2014-11-06T11:21:33.1671352-07:00</Time>
+      <Time>2014-11-13T14:48:29.5437363-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\background.png</Source>
@@ -125,7 +125,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\background.xnb</Output>
-      <Time>2014-11-06T11:21:33.137114-07:00</Time>
+      <Time>2014-11-13T14:48:29.4897053-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\donutstand.png</Source>
@@ -134,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\donutstand.xnb</Output>
-      <Time>2014-11-06T11:21:33.1481209-07:00</Time>
+      <Time>2014-11-13T14:48:29.5087119-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\garabecan.png</Source>
@@ -143,7 +143,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\garabecan.xnb</Output>
-      <Time>2014-11-06T11:21:33.1611305-07:00</Time>
+      <Time>2014-11-13T14:48:29.5277245-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\hose.png</Source>
@@ -152,7 +152,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\hose.xnb</Output>
-      <Time>2014-11-06T11:21:33.1701369-07:00</Time>
+      <Time>2014-11-13T14:48:29.5487403-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\syringecontainer.png</Source>
@@ -161,7 +161,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\syringecontainer.xnb</Output>
-      <Time>2014-11-06T11:21:33.2353022-07:00</Time>
+      <Time>2014-11-13T14:48:29.6108116-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\fireball.png</Source>
@@ -170,7 +170,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\fireball.xnb</Output>
-      <Time>2014-11-06T11:21:33.1571273-07:00</Time>
+      <Time>2014-11-13T14:48:29.5197253-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\JellyExplosion.png</Source>
@@ -179,7 +179,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\JellyExplosion.xnb</Output>
-      <Time>2014-11-06T11:21:33.0609978-07:00</Time>
+      <Time>2014-11-13T14:48:29.3996347-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\bullet.png</Source>
@@ -188,7 +188,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\bullet.xnb</Output>
-      <Time>2014-11-06T11:21:33.139115-07:00</Time>
+      <Time>2014-11-13T14:48:29.498704-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\gernade.png</Source>
@@ -197,7 +197,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\gernade.xnb</Output>
-      <Time>2014-11-06T11:21:33.1641326-07:00</Time>
+      <Time>2014-11-13T14:48:29.5327294-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\sniperBullet.png</Source>
@@ -206,7 +206,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\sniperBullet.xnb</Output>
-      <Time>2014-11-13T13:33:25.9823513-07:00</Time>
+      <Time>2014-11-13T14:48:29.6027837-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\waterGunIcon.png</Source>
@@ -215,7 +215,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\waterGunIcon.xnb</Output>
-      <Time>2014-11-06T11:21:33.2413064-07:00</Time>
+      <Time>2014-11-13T14:48:29.6208187-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\slingShotIcon.png</Source>
@@ -224,7 +224,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\slingShotIcon.xnb</Output>
-      <Time>2014-11-06T11:21:33.2292971-07:00</Time>
+      <Time>2014-11-13T14:48:29.5987766-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\donutGunIcon.png</Source>
@@ -233,7 +233,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\donutGunIcon.xnb</Output>
-      <Time>2014-11-06T11:21:33.1451196-07:00</Time>
+      <Time>2014-11-13T14:48:29.5057166-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\redCross.png</Source>
@@ -242,7 +242,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\redCross.xnb</Output>
-      <Time>2014-11-06T11:21:33.2262954-07:00</Time>
+      <Time>2014-11-13T14:48:29.5937991-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\pedestrian.png</Source>
@@ -251,7 +251,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pedestrian.xnb</Output>
-      <Time>2014-11-06T11:21:33.1781425-07:00</Time>
+      <Time>2014-11-13T14:48:29.5647516-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\Player_waterbase.png</Source>
@@ -260,7 +260,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\Player_waterbase.xnb</Output>
-      <Time>2014-11-12T14:58:42-07:00</Time>
+      <Time>2014-11-13T14:48:29.4536729-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\FireRoom.png</Source>
@@ -269,7 +269,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\FireRoom.xnb</Output>
-      <Time>2014-11-12T14:22:14-07:00</Time>
+      <Time>2014-11-13T14:48:29.3956306-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\MainRoom.png</Source>
@@ -278,7 +278,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\MainRoom.xnb</Output>
-      <Time>2014-11-12T14:03:38-07:00</Time>
+      <Time>2014-11-13T14:48:29.4056377-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\MedicRoom.png</Source>
@@ -287,7 +287,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\MedicRoom.xnb</Output>
-      <Time>2014-11-12T14:23:58-07:00</Time>
+      <Time>2014-11-13T14:48:29.4096452-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\PoliceRoom.png</Source>
@@ -296,7 +296,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\PoliceRoom.xnb</Output>
-      <Time>2014-11-12T14:23:06-07:00</Time>
+      <Time>2014-11-13T14:48:29.4696834-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\gernadeLauncherIcon.png</Source>
@@ -305,7 +305,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\gernadeLauncherIcon.xnb</Output>
-      <Time>2014-11-13T14:00:22.0563947-07:00</Time>
+      <Time>2014-11-13T14:48:29.5367373-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\machineGunIcon.png</Source>
@@ -314,7 +314,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\machineGunIcon.xnb</Output>
-      <Time>2014-11-13T14:00:21.9553826-07:00</Time>
+      <Time>2014-11-13T14:48:29.5527418-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\pickup1.png</Source>
@@ -323,7 +323,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup1.xnb</Output>
-      <Time>2014-11-13T10:51:20.1513745-07:00</Time>
+      <Time>2014-11-13T14:48:29.569762-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\pickup2.png</Source>
@@ -332,7 +332,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup2.xnb</Output>
-      <Time>2014-11-13T10:51:20.1533759-07:00</Time>
+      <Time>2014-11-13T14:48:29.5737571-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\pickup3.png</Source>
@@ -341,7 +341,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup3.xnb</Output>
-      <Time>2014-11-13T10:51:20.1563836-07:00</Time>
+      <Time>2014-11-13T14:48:29.577766-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\sniperRifleIcon.png</Source>
@@ -350,7 +350,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\sniperRifleIcon.xnb</Output>
-      <Time>2014-11-13T14:00:21.9974123-07:00</Time>
+      <Time>2014-11-13T14:48:29.6068087-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\bar.png</Source>
@@ -359,7 +359,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\bar.xnb</Output>
-      <Time>2014-11-13T11:48:49.3788214-07:00</Time>
+      <Time>2014-11-13T14:48:29.4947024-07:00</Time>
     </Item>
     <Item>
       <Source>Arial.spritefont</Source>
@@ -368,7 +368,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Arial.xnb</Output>
-      <Time>2014-11-06T11:21:32.9158935-07:00</Time>
+      <Time>2014-11-13T14:48:29.2489387-07:00</Time>
     </Item>
     <Item>
       <Source>Sounds\DonutGun.mp3</Source>
@@ -377,7 +377,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\DonutGun.xnb</Output>
-      <Time>2014-11-06T11:21:32.9259006-07:00</Time>
+      <Time>2014-11-13T14:48:29.2595419-07:00</Time>
     </Item>
     <Item>
       <Source>Sounds\SlingShot.mp3</Source>
@@ -386,7 +386,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\SlingShot.xnb</Output>
-      <Time>2014-11-06T11:21:32.930905-07:00</Time>
+      <Time>2014-11-13T14:48:29.2655466-07:00</Time>
     </Item>
     <Item>
       <Source>Sounds\SlingShotBullet.mp3</Source>
@@ -395,7 +395,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\SlingShotBullet.xnb</Output>
-      <Time>2014-11-06T11:21:32.9349065-07:00</Time>
+      <Time>2014-11-13T14:48:29.2685688-07:00</Time>
     </Item>
     <Item>
       <Source>Sounds\Waterbullet.mp3</Source>
@@ -404,7 +404,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Waterbullet.xnb</Output>
-      <Time>2014-11-06T11:21:33.0509911-07:00</Time>
+      <Time>2014-11-13T14:48:29.3836229-07:00</Time>
     </Item>
     <Item>
       <Source>Sounds\WaterGun.mp3</Source>
@@ -413,7 +413,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\WaterGun.xnb</Output>
-      <Time>2014-11-06T11:21:33.0479869-07:00</Time>
+      <Time>2014-11-13T14:48:29.3796201-07:00</Time>
     </Item>
     <Item>
       <Source>Sounds\Sound.mp3</Source>
@@ -423,7 +423,7 @@
       <Options>None</Options>
       <Output>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Sound.xnb</Output>
       <Extra>C:\Users\Cary\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Sound.wma</Extra>
-      <Time>2014-11-06T11:21:33.0419869-07:00</Time>
+      <Time>2014-11-13T14:48:29.3726156-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
