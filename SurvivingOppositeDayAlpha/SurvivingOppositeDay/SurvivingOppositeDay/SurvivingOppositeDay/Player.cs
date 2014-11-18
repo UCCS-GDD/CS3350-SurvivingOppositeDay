@@ -105,18 +105,22 @@ namespace SurvivingOppositeDay
                 if (Position.Y > 20)
                 {
                     Position.Y -= moveSpeed;
+                    if (Position.Y <= 350 && Position.X <= 400)
+                    {
+                        Position.Y = 355;
+                    }
                 }
 
-                // get list of collision objects
-                CollisionCollection colliders = Game.Colliders[Game1.roomStateMachine.Current];
+                //// get list of collision objects
+                //CollisionCollection colliders = Game.Colliders[Game1.roomStateMachine.Current];
 
                 // if player collides with an object in collision list
-                foreach (Rectangle collider in colliders.Colliders)
-                {
-                    if(collider)
-                    // set player to previous position
-                    Position = PreviousPosition;
-                }
+                //foreach (Rectangle collider in colliders.Colliders)
+                //{
+                //    if(collider)
+                //     set player to previous position
+                //    Position = PreviousPosition;
+                //}
             }
 
             if (keyboardState.IsKeyDown(Keys.S))
