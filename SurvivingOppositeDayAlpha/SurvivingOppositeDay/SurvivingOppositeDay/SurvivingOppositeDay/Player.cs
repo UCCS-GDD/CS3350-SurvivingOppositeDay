@@ -105,9 +105,52 @@ namespace SurvivingOppositeDay
                 if (Position.Y > 20)
                 {
                     Position.Y -= moveSpeed;
-                    if (Position.Y <= 350 && Position.X <= 400)
+
+                    // collision with top left house
+                    if (Game1.roomStateMachine.Current == RoomState.MainRoom)
                     {
-                        Position.Y = 355;
+                        if (Position.Y <= 345 && Position.X <= 400)
+                        {
+                            Position.Y = 350;
+                        }
+                    }
+
+                    // checking walls of police station
+                    if (Game1.roomStateMachine.Current == RoomState.PoliceRoom)
+                    {
+                        // left entrance wall
+                        if (Position.Y <= 1145 && Position.Y >= 1100 && Position.X <= 715)
+                        {
+                            Position.Y = 1150;
+                        }
+
+                        // right  entrance wall
+                        if (Position.Y <= 1145 && Position.Y >= 1100 && Position.X >= 1315)
+                        {
+                            Position.Y = 1150;
+                        }
+
+                        // top wall
+                        if (Position.Y <= 40)
+                        {
+                            Position.Y = 45;
+                        }
+                    }
+
+                    // checking walls of paramedic room
+                    if (Game1.roomStateMachine.Current == RoomState.ParamedicRoom)
+                    {
+                        // top entrance wall
+                        if (Position.Y <= 725 && Position.X >= 860 && Position.X <= 940 && !keyboardState.IsKeyDown(Keys.A))
+                        {
+                            Position.Y = 730;
+                        }
+
+                        // top wall
+                        if (Position.Y <= 45)
+                        {
+                            Position.Y = 50;
+                        }
                     }
                 }
 
@@ -128,6 +171,41 @@ namespace SurvivingOppositeDay
                 if (Position.Y < 1980)
                 {
                     Position.Y += moveSpeed;
+
+                    // collision with top left house
+                    if (Game1.roomStateMachine.Current == RoomState.MainRoom)
+                    {
+                        if (Position.Y >= 1655 && Position.X >= 1600)
+                        {
+                            Position.Y = 1650;
+                        }
+                    }
+
+                    // checking walls of police station
+                    if (Game1.roomStateMachine.Current == RoomState.PoliceRoom)
+                    {
+                        // left entrance wall 
+                        if (Position.Y <= 1145 && Position.Y >= 1090 && Position.X <= 715)
+                        {
+                            Position.Y = 1085;
+                        }
+
+                        // right  entrance wall
+                        if (Position.Y <= 1145 && Position.Y >= 1090 && Position.X >= 1315)
+                        {
+                            Position.Y = 1085;
+                        }
+                    }
+
+                    // checking walls of paramedic room
+                    if (Game1.roomStateMachine.Current == RoomState.ParamedicRoom)
+                    {
+                        // top entrance wall
+                        if (Position.Y >= 1310 && Position.X >= 860 && Position.X <= 940)
+                        {
+                            Position.Y = 1305;
+                        }
+                    }
                 }
             }
             if (keyboardState.IsKeyDown(Keys.A))
@@ -135,6 +213,47 @@ namespace SurvivingOppositeDay
                 if (Position.X > 20)
                 {
                     Position.X -= moveSpeed;
+
+                    // collision with top left house
+                    if (Game1.roomStateMachine.Current == RoomState.MainRoom)
+                    {
+                        if (Position.Y <= 345 && Position.X <= 400)
+                        {
+                            Position.X = 405;
+                        }
+                    }
+
+                    // checking walls of police station
+                    if (Game1.roomStateMachine.Current == RoomState.PoliceRoom)
+                    {
+                        // left entrance wall
+                        if (Position.Y <= 1145 && Position.Y >= 1100 && Position.X <= 725)
+                        {
+                            Position.X = 730;
+                        }
+
+                        // top wall
+                        if (Position.X <= 45)
+                        {
+                            Position.X = 50;
+                        }
+                    }
+
+                    // checking walls of paramedic room
+                    if (Game1.roomStateMachine.Current == RoomState.ParamedicRoom)
+                    {
+                        // top entrance wall 
+                        if (Position.Y <= 730 && Position.X >= 860 && Position.X <= 930)
+                        {
+                            Position.X = 935;
+                        }
+
+                        // right  entrance wall
+                        if (Position.Y <= 1145 && Position.Y >= 1090 && Position.X >= 1315)
+                        {
+                            Position.X = 1;
+                        }
+                    }
                 }
             }
             if (keyboardState.IsKeyDown(Keys.D))
@@ -142,6 +261,25 @@ namespace SurvivingOppositeDay
                 if (Position.X < 1980)
                 {
                     Position.X += moveSpeed;
+
+                    // collision with top left house
+                    if (Game1.roomStateMachine.Current == RoomState.MainRoom)
+                    {
+                        if (Position.Y >= 1655 && Position.X >= 1600)
+                        {
+                            Position.X = 1595;
+                        }
+                    }
+
+                    // checking walls of police station
+                    if (Game1.roomStateMachine.Current == RoomState.PoliceRoom)
+                    {
+                        // left entrance wall
+                        if (Position.Y <= 1145 && Position.Y >= 1100 && Position.X >= 1310)
+                        {
+                            Position.X = 1305;
+                        }
+                    }
                 }
             }
             #endregion
