@@ -1046,7 +1046,7 @@ namespace SurvivingOppositeDay
                     {
                         //ParamedicEnemy enemy = new ParamedicEnemy(this, spriteBatch, spriteDictionary["paramedic"], new Vector2(Screen.Width - (150 * i), 0));
                         //FireFighterEnemy enemy = new FireFighterEnemy(this, spriteBatch, spriteDictionary["firefighter"], new Vector2(Screen.Width - (150 * i), 0));
-                        PoliceEnemy enemy = new PoliceEnemy(this, spriteBatch, spriteDictionary["police"], new Vector2(Screen.Width - (150 * i), Screen.Height + 150 * i));
+                        PoliceEnemy enemy = new PoliceEnemy(this, spriteBatch, spriteDictionary["police"], new Vector2(Screen.Width - (150 * i), Screen.Height + 150 * i), i);
                         enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
                         Components.Add(enemy);
                     }

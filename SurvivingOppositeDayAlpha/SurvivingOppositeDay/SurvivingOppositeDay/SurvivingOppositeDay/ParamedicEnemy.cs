@@ -22,6 +22,9 @@ namespace SurvivingOppositeDay
 
         public override void Update(GameTime gameTime)
         {
+            PositionDifference = Position - playerPosition;
+            playerPosition -= Position;
+            Rotation = (float)Math.Atan2(playerPosition.Y, playerPosition.X);
             LinearVelocity = 2;
             base.Update(gameTime);
         }
