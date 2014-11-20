@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\youDied.xnb</Output>
-      <Time>2014-11-17T13:36:08-07:00</Time>
+      <Time>2014-11-19T21:13:25.305211-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\ammo.png</Source>
@@ -242,7 +242,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\redCross.xnb</Output>
-      <Time>2014-11-13T14:48:30-07:00</Time>
+      <Time>2014-11-19T21:36:27.5675279-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\pedestrian.png</Source>

@@ -1144,7 +1144,7 @@ namespace SurvivingOppositeDay
                 }
 
                 //spawn enemies if spawn timer expires
-                while (Components.OfType<BasicEnemy>().ToList().Count <= 20)
+                while (Components.OfType<BasicEnemy>().ToList().Count <= 15)
                 {
                     int spawnNum = enemySpawnNum.Next(1, 100);
                     int spawnX = enemySpawnNum.Next(20, 1980);
