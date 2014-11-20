@@ -152,9 +152,13 @@ namespace SurvivingOppositeDay
         Rectangle fireTransitionRectangle;
         Rectangle mainTransitionRectangle;
 
-        // invisible collision detection
-        public static Rectangle house1;
-        Rectangle house2;
+        // enemy death sounds
+        public static SoundEffectInstance soundEffectInstanceDeathSound;
+        public static SoundEffectInstance soundEffectInstanceParamedicDeath;
+
+        //// invisible collision detection
+        //public static Rectangle house1;
+        //Rectangle house2;
 
         // for testing
         //BasicSprite example;
@@ -192,8 +196,8 @@ namespace SurvivingOppositeDay
             camera = new Camera(GraphicsDevice.Viewport);
             //cameraPos = player.Position;
             
-            // collision detection
-            house1 = new Rectangle(0, 0, 300, 350);
+            //// collision detection
+            //house1 = new Rectangle(0, 0, 300, 350);
 
             //textOffset = (int)player.Position.X - 100; 
             base.Initialize();
@@ -251,6 +255,16 @@ namespace SurvivingOppositeDay
             soundDictionary.Add("WaterGun", "Sounds/WaterGun");
             soundDictionary.Add("SlingShotBullet", "Sounds/SlingShotBullet");
             soundDictionary.Add("WaterBullet", "Sounds/Waterbullet");
+            soundDictionary.Add("MachineGun", "Sounds/machineGun");
+            soundDictionary.Add("SniperRifle", "Sounds/sniperRifle");
+            soundDictionary.Add("GrenadeLauncher", "Sounds/grenadeLauncher");
+
+            // enemy death sounds
+            soundDictionary.Add("DeathSound", "Sounds/deathSound");
+            soundDictionary.Add("ParamedicDeath", "Sounds/paramedicDeath");
+
+            soundEffectInstanceDeathSound = soundDictionary["DeathSound"].CreateInstance();
+            soundEffectInstanceParamedicDeath = soundDictionary["ParamedicDeath"].CreateInstance();
 
             //player
             player = new Player(this, spriteBatch, spriteDictionary["playerMain"], Tools.Math.Vectors.FromPoint(Screen.Center));
@@ -435,10 +449,10 @@ namespace SurvivingOppositeDay
 
             //Components.OfType<BasicBullet>().ToList().ForEach(bullet => bullet.Position = Vector2.Zer0);
 
-            // create environmental colliders
-            Colliders = new Dictionary<RoomState, CollisionCollection>();
-            Colliders.Add(RoomState.MainRoom, new CollisionCollection(RoomState.MainRoom));
-            Colliders[RoomState.MainRoom].Colliders.Add(house1);
+            //// create environmental colliders
+            //Colliders = new Dictionary<RoomState, CollisionCollection>();
+            //Colliders.Add(RoomState.MainRoom, new CollisionCollection(RoomState.MainRoom));
+            //Colliders[RoomState.MainRoom].Colliders.Add(house1);
 
             //Play Legit Music
             MediaPlayer.Volume = 0.5f;
@@ -929,10 +943,20 @@ namespace SurvivingOppositeDay
                                 }
 
                                 //turns them off components
-                                if (enemy.Health <= 0)
+                                if (enemy.Health <= 0 && enemy.enemyType != EnemyType.Paramedic)
                                 {
                                     //update score
                                     score += 100;
+                                    soundEffectInstanceDeathSound.Play();
+                                    enemy.Enabled = false;
+                                    enemy.Remove = true;
+                                    //removals.Add(enemy);
+                                }
+                                else if (enemy.Health <= 0 && enemy.enemyType == EnemyType.Paramedic)
+                                {
+                                    //update score
+                                    score += 100;
+                                    soundEffectInstanceParamedicDeath.Play();
                                     enemy.Enabled = false;
                                     enemy.Remove = true;
                                     //removals.Add(enemy);

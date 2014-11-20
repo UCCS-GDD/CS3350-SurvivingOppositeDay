@@ -29,6 +29,9 @@ namespace SurvivingOppositeDay
         public static SoundEffectInstance soundEffectInstanceDonutGun;
         public static SoundEffectInstance soundEffectInstanceSlingShot;
         public static SoundEffectInstance soundEffectInstanceWaterGun;
+        public static SoundEffectInstance soundEffectInstanceMachineGun;
+        public static SoundEffectInstance soundEffectInstanceSniperRifle;
+        public static SoundEffectInstance soundEffectInstanceGrenadeLauncher;
 
         public new Game1 Game { get; private set; }
 
@@ -67,6 +70,9 @@ namespace SurvivingOppositeDay
             soundEffectInstanceDonutGun = Game1.soundDictionary["DonutGun"].CreateInstance();
             soundEffectInstanceSlingShot = Game1.soundDictionary["SlingShot"].CreateInstance();
             soundEffectInstanceWaterGun = Game1.soundDictionary["WaterGun"].CreateInstance();
+            soundEffectInstanceMachineGun = Game1.soundDictionary["MachineGun"].CreateInstance();
+            soundEffectInstanceSniperRifle = Game1.soundDictionary["SniperRifle"].CreateInstance();
+            soundEffectInstanceGrenadeLauncher = Game1.soundDictionary["GrenadeLauncher"].CreateInstance();
 
             //pickups
             pickups = new int[4];
@@ -414,7 +420,7 @@ namespace SurvivingOppositeDay
                 else
                 {
                     weaponType = WeaponType.MachineGun;
-                    //soundEffectInstanceMachineGun.Play();
+                    soundEffectInstanceMachineGun.Play();
                     weaponIconFlag = 4;
                 }
 
@@ -430,7 +436,7 @@ namespace SurvivingOppositeDay
                 else
                 {
                     weaponType = WeaponType.SniperRifle;
-                    //soundEffectInstanceSniperRifle.Play();
+                    soundEffectInstanceSniperRifle.Play();
                     weaponIconFlag = 5;
                 }
             }
@@ -445,7 +451,7 @@ namespace SurvivingOppositeDay
                 else
                 {
                     weaponType = WeaponType.GernadeLauncher;
-                    //soundEffectInstanceGernadeLauncher.Play();
+                    soundEffectInstanceGrenadeLauncher.Play();
                     weaponIconFlag = 6;
                 }
 

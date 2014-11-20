@@ -506,6 +506,51 @@
       <Extra>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Sound.wma</Extra>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
+    <Item>
+      <Source>Sounds\deathSound.mp3</Source>
+      <Name>Sounds\deathSound</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\deathSound.xnb</Output>
+      <Time>2014-11-19T15:42:14-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\grenadeLauncher.mp3</Source>
+      <Name>Sounds\grenadeLauncher</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\grenadeLauncher.xnb</Output>
+      <Time>2014-11-19T15:39:58-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\machineGun.mp3</Source>
+      <Name>Sounds\machineGun</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\machineGun.xnb</Output>
+      <Time>2014-11-19T15:34:20-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\paramedicDeath.mp3</Source>
+      <Name>Sounds\paramedicDeath</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\paramedicDeath.xnb</Output>
+      <Time>2014-11-19T15:45:00-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\sniperRifle.mp3</Source>
+      <Name>Sounds\sniperRifle</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\sniperRifle.xnb</Output>
+      <Time>2014-11-19T15:38:38-07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{DDC858DC-D843-42D6-BFE2-63DCE77A4885}</ContentProjectGUID>
