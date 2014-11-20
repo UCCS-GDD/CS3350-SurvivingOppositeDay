@@ -108,19 +108,32 @@ namespace SurvivingOppositeDay
         // menu backgrounds
         Texture2D titleScreen;
         Texture2D helpScreen;
+        Texture2D aboutScreen;
+        Texture2D objectiveScreen;
+        Texture2D legendScreen;
+        Texture2D creditsScreen;
+
         Vector2 titleScreenPos;
         Vector2 helpScreenPos;
+        Vector2 aboutScreenPos;
+        Vector2 objectiveScreenPos;
+        Vector2 legendScreenPos;
+        Vector2 creditsScreenPos;
 
         // menu buttons
         Texture2D playButton;
         Texture2D helpButton;
         Texture2D quitButton;
         Texture2D backButton;
+        Texture2D continueButton;
+        Texture2D aboutButton;
 
         Rectangle playButtonRec;
         Rectangle helpButtonRec;
         Rectangle quitButtonRec;
         Rectangle backButtonRec;
+        Rectangle continueButtonRec;
+        Rectangle aboutButtonRec;
 
         // menu timers
         Timer clickTimer;
@@ -155,6 +168,12 @@ namespace SurvivingOppositeDay
 
         // random number generator
         Random enemySpawnNum;
+
+        // room signs
+        Rectangle mainRoomSign;
+        Rectangle policeRoomSign;
+        Rectangle paramedicRoomSign;
+        Rectangle fireFighterRoomSign;
 
         //// invisible collision detection
         //public static Rectangle house1;
@@ -241,11 +260,23 @@ namespace SurvivingOppositeDay
 
             // Menu Items
             spriteDictionary.Add("titleScreen", "Menu Items/sodTitle");
-            spriteDictionary.Add("helpScreen", "Menu Items/objectiveMenu");
+            spriteDictionary.Add("helpScreen", "Menu Items/controlsMenu");
+            spriteDictionary.Add("aboutScreen", "Menu Items/aboutMenu");
+            spriteDictionary.Add("objectiveScreen", "Menu Items/objectiveMenu");
+            spriteDictionary.Add("creditsScreen", "Menu Items/creditsMenu");
+            spriteDictionary.Add("legendScreen", "Menu Items/legendMenu");
             spriteDictionary.Add("playButton", "Menu Items/play_button");
             spriteDictionary.Add("helpButton", "Menu Items/help_button");
             spriteDictionary.Add("quitButton", "Menu Items/quit_button");
             spriteDictionary.Add("backButton", "Menu Items/spr_back_button");
+            spriteDictionary.Add("continueButton", "Menu Items/nextButton");
+            spriteDictionary.Add("aboutButton", "Menu Items/aboutButton");
+
+            // room signs
+            spriteDictionary.Add("mainRoomSign", "Sprite/mainRoomIcon");
+            spriteDictionary.Add("policeRoomSign", "Sprite/policeIcon");
+            spriteDictionary.Add("paramedicRoomSign", "Sprite/hospitalIcon");
+            spriteDictionary.Add("fireFighterRoomSign", "Sprite/fireStationIcon");
 
             //Sound
             legitMusic = Content.Load<Song>(@"Sounds/Sound");
@@ -332,17 +363,28 @@ namespace SurvivingOppositeDay
             // menu items
             titleScreen = spriteDictionary["titleScreen"];
             helpScreen = spriteDictionary["helpScreen"];
+            legendScreen = spriteDictionary["legendScreen"];
+            aboutScreen = spriteDictionary["aboutScreen"];
+            objectiveScreen = spriteDictionary["objectiveScreen"];
+            creditsScreen = spriteDictionary["creditsScreen"];
             playButton = spriteDictionary["playButton"];
             helpButton = spriteDictionary["helpButton"];
             quitButton = spriteDictionary["quitButton"];
             backButton = spriteDictionary["backButton"];
+            continueButton = spriteDictionary["continueButton"];
+            aboutButton = spriteDictionary["aboutButton"];
 
             titleScreenPos = new Vector2(0, 0);
             helpScreenPos = new Vector2(0, 0);
-            playButtonRec = new Rectangle(150, 350, playButton.Width, playButton.Height);
-            backButtonRec = new Rectangle(400, 350, quitButton.Width, quitButton.Height);
-            helpButtonRec = new Rectangle(300, 350, helpButton.Width, helpButton.Height);
-            quitButtonRec = new Rectangle(450, 350, quitButton.Width, quitButton.Height);
+            aboutScreenPos = new Vector2(0, 0);
+            objectiveScreenPos = new Vector2(0, 0);
+            legendScreenPos = new Vector2(0, 0);
+            creditsScreenPos = new Vector2(0, 0);
+            playButtonRec = new Rectangle(150, 370, playButton.Width, playButton.Height);
+            backButtonRec = new Rectangle(400, 370, quitButton.Width, quitButton.Height);
+            helpButtonRec = new Rectangle(300, 370, helpButton.Width, helpButton.Height);
+            quitButtonRec = new Rectangle(600, 370, quitButton.Width, quitButton.Height);
+            aboutButtonRec = new Rectangle(450, 370, aboutButton.Width, aboutButton.Height);
 
             // menu timers
             clickTimeSpan = TimeSpan.FromSeconds(.5);
@@ -473,7 +515,10 @@ namespace SurvivingOppositeDay
             mainTransitionRectangle = new Rectangle(1980, 800, 20, 400);
             backgroundTexture = spriteDictionary["fireRoom"];
             previousRoom = RoomState.FireFighterRoom;
-            pickup1 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup1"), new Vector2(500, 250), true, 1, player);
+
+            // add pickup
+            Components.Add(new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup1"), new Vector2(500, 250), 1, player));
+
         }
 
         void EnterMedicRoom(State<RoomState> obj)
@@ -492,7 +537,9 @@ namespace SurvivingOppositeDay
             mainTransitionRectangle = new Rectangle(0, 800, 20, 400);
             backgroundTexture = spriteDictionary["medicRoom"];
             previousRoom = RoomState.ParamedicRoom;
-            pickup2 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup2"), new Vector2(1500, 250), true, 2, player);
+
+            // add pickup
+            Components.Add(new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup2"), new Vector2(1500, 250), 2, player));
         }
 
         void EnterPoliceRoom(State<RoomState> obj)
@@ -511,7 +558,9 @@ namespace SurvivingOppositeDay
             mainTransitionRectangle = new Rectangle(800, 1980, 400, 20);
             backgroundTexture = spriteDictionary["policeRoom"];
             previousRoom = RoomState.PoliceRoom;
-            pickup3 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup3"), new Vector2(1500, 500), true, 3, player);
+            
+            // add pickup
+            Components.Add(new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup3"), new Vector2(1500, 500), 3, player));
         }
 
         void EnterMain(State<RoomState> obj)
@@ -543,9 +592,10 @@ namespace SurvivingOppositeDay
                 player.Position = new Vector2(1700, 1650);
             }
 
-            pickup1 = null;
-            pickup2 = null;
-            pickup3 = null;
+            foreach (Pickup pickup in Components.OfType<Pickup>().ToList())
+            {
+                pickup.Remove = true;
+            }
 
             backgroundTexture = spriteDictionary["mainRoom"];
         }
@@ -712,6 +762,16 @@ namespace SurvivingOppositeDay
                         clickTimer.Start(clickTimeSpan);
                     }
                 }
+
+                if (aboutButtonRec.Contains(mousePos))
+                {
+                    if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
+                    {
+                        gameState = GameState.About;
+                        clickable = false;
+                        clickTimer.Start(clickTimeSpan);
+                    }
+                }
             }
 
             if (gameState == GameState.Help)
@@ -727,13 +787,84 @@ namespace SurvivingOppositeDay
                 }
             }
 
+            if (gameState == GameState.About)
+            {
+                if (continueButtonRec.Contains(mousePos))
+                {
+                    if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
+                    {
+                        gameState = GameState.Objective;
+                        clickable = false;
+                        clickTimer.Start(clickTimeSpan);
+                    }
+                }
+            }
+
+            if (gameState == GameState.Objective)
+            {
+                if (continueButtonRec.Contains(mousePos))
+                {
+                    if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
+                    {
+                        gameState = GameState.Legend;
+                        clickable = false;
+                        clickTimer.Start(clickTimeSpan);
+                    }
+                }
+            }
+
+            if (gameState == GameState.Legend)
+            {
+                if (backButtonRec.Contains(mousePos))
+                {
+                    if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
+                    {
+                        gameState = GameState.Menu;
+                        clickable = false;
+                        clickTimer.Start(clickTimeSpan);
+                    }
+                }
+            }
+
+            if (gameState == GameState.Dead)
+            {
+                if (continueButtonRec.Contains(mousePos))
+                {
+                    if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
+                    {
+                        gameState = GameState.Credits;
+                        clickable = false;
+                        clickTimer.Start(clickTimeSpan);
+                    }
+                }
+            }
+
+            if (gameState == GameState.Credits)
+            {
+                if (quitButtonRec.Contains(mousePos))
+                {
+                    if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
+                    {
+                        Exit();
+                    }
+                }
+            }
+
             clickTimer.Update(gameTime.ElapsedGameTime);
 
             // test what menu player is in, then draw quit button accordingly
             //if (gameState == GameState.Help)
             //    backButtonRec = new Rectangle(400, 350, quitButton.Width, quitButton.Height);
             if (gameState == GameState.Dead)
-                quitButtonRec = new Rectangle(550, 350, quitButton.Width, quitButton.Height);
+                continueButtonRec = new Rectangle(550, 350, continueButton.Width, continueButton.Height);
+            if (gameState == GameState.Credits)
+                quitButtonRec = new Rectangle(550, 350, continueButton.Width, continueButton.Height);
+            if (gameState == GameState.About)
+                continueButtonRec = new Rectangle(510, 370, continueButton.Width, continueButton.Height);
+            if (gameState == GameState.Objective)
+                continueButtonRec = new Rectangle(310, 370, continueButton.Width, continueButton.Height);
+            if (gameState == GameState.Legend)
+                backButtonRec = new Rectangle(310, 370, backButton.Width, backButton.Height);
 
             IEnumerable<Pedestrian> pedestrians = Components.OfType<Pedestrian>();
             IEnumerable<BasicEnemy> enemies = Components.OfType<BasicEnemy>();
@@ -743,7 +874,33 @@ namespace SurvivingOppositeDay
             {
                 //Health Bar
                 healthRectangle = new Rectangle(Screen.Width / 12, 20, this.player.Health, 20);
+                if (roomStateMachine.Current == RoomState.MainRoom)
+                {
+                    policeRoomSign = new Rectangle(970, 80, spriteDictionary["policeRoomSign"].Width,
+                        spriteDictionary["policeRoomSign"].Height);
+                    paramedicRoomSign = new Rectangle(1880, 960, spriteDictionary["paramedicRoomSign"].Width,
+                        spriteDictionary["paramedicRoomSign"].Height);
+                    fireFighterRoomSign = new Rectangle(80, 930, spriteDictionary["fireFighterRoomSign"].Width,
+                       spriteDictionary["fireFighterRoomSign"].Height);
+                }
 
+                if (roomStateMachine.Current == RoomState.FireFighterRoom)
+                {
+                    mainRoomSign = new Rectangle(1780, 960, spriteDictionary["mainRoomSign"].Width,
+                        spriteDictionary["mainRoomSign"].Height);
+                }
+
+                if (roomStateMachine.Current == RoomState.ParamedicRoom)
+                {
+                    mainRoomSign = new Rectangle(80, 930, spriteDictionary["mainRoomSign"].Width,
+                       spriteDictionary["mainRoomSign"].Height);
+                }
+
+                if (roomStateMachine.Current == RoomState.PoliceRoom)
+                {
+                    mainRoomSign = new Rectangle(940, 1860, spriteDictionary["mainRoomSign"].Width,
+                       spriteDictionary["mainRoomSign"].Height);
+                }
                 //Give enemy player position
                 foreach (BasicEnemy enemy in enemies)
                 {
@@ -833,6 +990,20 @@ namespace SurvivingOppositeDay
                     // health boxes
                     healthDrawRactangle = new Rectangle(1000, 1920, health.Width, health.Height);
                     healthDrawRactangle2 = new Rectangle(1000, 80, health.Width, health.Height);
+                }
+
+                // main room
+                if (roomStateMachine.Current == RoomState.MainRoom)
+                {
+                    // ammo boxes
+                    garabeAmmoRec = new Rectangle(170, 660, garabeAmmo.Width, garabeAmmo.Height);
+                    hoseAmmoRec = new Rectangle(1560, 1680, hoseAmmo.Width, hoseAmmo.Height);
+                    syringeAmmoRec = new Rectangle(1620, 300, syringeAmmo.Width, syringeAmmo.Height);
+                    donutStandAmmoRec = new Rectangle(620, 1340, donutStandAmmo.Width, donutStandAmmo.Height);
+
+                    // health boxes
+                    healthDrawRactangle = new Rectangle(480, 420, health.Width, health.Height);
+                    healthDrawRactangle2 = new Rectangle(1400, 1560, health.Width, health.Height);
                 }
                 //check for Collisions
                 List<DrawableGameComponent> removals = new List<DrawableGameComponent>();
@@ -1167,11 +1338,17 @@ namespace SurvivingOppositeDay
                             Components.Add(enemy);
                         }
 
-                        else
+                        else if (spawnSeed >= 67 && spawnSeed <= 95)
                         {
                             PoliceEnemy enemy = new PoliceEnemy(this, spriteBatch, spriteDictionary["police"], new Vector2(spawnX, spawnY), spawnSeed);
                             enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
                             Components.Add(enemy);
+                        }
+
+                        else
+                        {
+                            Pedestrian pedrestrian = new Pedestrian(this, spriteBatch, spriteDictionary["pedestrian"], new Vector2(spawnX, spawnY), spawnSeed);
+                            Components.Add(pedrestrian);
                         }
                     }
 
@@ -1194,11 +1371,17 @@ namespace SurvivingOppositeDay
                         }
 
                         // spawn police
-                        else
+                        else if (spawnNum >= 46 && spawnNum <= 95)
                         {
                             PoliceEnemy enemy = new PoliceEnemy(this, spriteBatch, spriteDictionary["police"], new Vector2(spawnX, spawnY), spawnSeed);
                             enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
                             Components.Add(enemy);
+                        }
+
+                        else
+                        {
+                            Pedestrian pedrestrian = new Pedestrian(this, spriteBatch, spriteDictionary["pedestrian"], new Vector2(spawnX, spawnY), spawnSeed);
+                            Components.Add(pedrestrian);
                         }
                     }
 
@@ -1221,11 +1404,17 @@ namespace SurvivingOppositeDay
                         }
 
                         // spawn police
-                        else
+                        else if (spawnNum >= 81 && spawnNum <= 95)
                         {
                             PoliceEnemy enemy = new PoliceEnemy(this, spriteBatch, spriteDictionary["police"], new Vector2(spawnX, spawnY), spawnSeed);
                             enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
                             Components.Add(enemy);
+                        }
+
+                        else
+                        {
+                            Pedestrian pedrestrian = new Pedestrian(this, spriteBatch, spriteDictionary["pedestrian"], new Vector2(spawnX, spawnY), spawnSeed);
+                            Components.Add(pedrestrian);
                         }
                     }
 
@@ -1248,11 +1437,17 @@ namespace SurvivingOppositeDay
                         }
 
                         // spawn police
-                        else
+                        else if (spawnNum >= 81 && spawnNum <= 95)
                         {
                             PoliceEnemy enemy = new PoliceEnemy(this, spriteBatch, spriteDictionary["police"], new Vector2(spawnX, spawnY), spawnSeed);
                             enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
                             Components.Add(enemy);
+                        }
+
+                        else
+                        {
+                            Pedestrian pedrestrian = new Pedestrian(this, spriteBatch, spriteDictionary["pedestrian"], new Vector2(spawnX, spawnY), spawnSeed);
+                            Components.Add(pedrestrian);
                         }
                     }
                 }
@@ -1286,18 +1481,18 @@ namespace SurvivingOppositeDay
                     pedestrian.LayerDepth = -1;
                 }
 
-                // temp back to main menu button
-                if (quitButtonRec.Contains(mousePos))
-                {
-                    if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
-                    {
-                        //gameState = GameState.Menu;
-                        //clickable = false;
-                        //clickTimer.Start(clickTimeSpan);
+                //// temp back to main menu button
+                //if (quitButtonRec.Contains(mousePos))
+                //{
+                //    if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
+                //    {
+                //        //gameState = GameState.Menu;
+                //        //clickable = false;
+                //        //clickTimer.Start(clickTimeSpan);
 
-                        Exit();
-                    }
-                }
+                //        Exit();
+                //    }
+                //}
             }
 
 
@@ -1371,6 +1566,16 @@ namespace SurvivingOppositeDay
                 // draw health boxes
                 spriteBatch.Draw(health, healthDrawRactangle, Color.White);
                 spriteBatch.Draw(health2, healthDrawRactangle2, Color.White);
+
+                // draw signs
+                if (roomStateMachine.Current != RoomState.MainRoom)
+                    spriteBatch.Draw(spriteDictionary["mainRoomSign"], mainRoomSign, Color.White);
+                if (roomStateMachine.Current == RoomState.MainRoom)
+                    spriteBatch.Draw(spriteDictionary["policeRoomSign"], policeRoomSign, Color.White);
+                if (roomStateMachine.Current == RoomState.MainRoom)
+                    spriteBatch.Draw(spriteDictionary["paramedicRoomSign"], paramedicRoomSign, Color.White);
+                if (roomStateMachine.Current == RoomState.MainRoom)
+                    spriteBatch.Draw(spriteDictionary["fireFighterRoomSign"], fireFighterRoomSign, Color.White);
             }
 
             base.Draw(gameTime);
@@ -1386,11 +1591,30 @@ namespace SurvivingOppositeDay
                 spriteBatch.Draw(playButton, playButtonRec, Color.White);
                 spriteBatch.Draw(helpButton, helpButtonRec, Color.White);
                 spriteBatch.Draw(quitButton, quitButtonRec, Color.White);
+                spriteBatch.Draw(aboutButton, aboutButtonRec, Color.White);
             }
 
             if (gameState == GameState.Help)
             {
                 spriteBatch.Draw(helpScreen, helpScreenPos, Color.White);
+                spriteBatch.Draw(backButton, backButtonRec, Color.White);
+            }
+
+            if (gameState == GameState.About)
+            {
+                spriteBatch.Draw(aboutScreen, aboutScreenPos, Color.White);
+                spriteBatch.Draw(continueButton, continueButtonRec, Color.White);
+            }
+
+            if (gameState == GameState.Objective)
+            {
+                spriteBatch.Draw(objectiveScreen, objectiveScreenPos, Color.White);
+                spriteBatch.Draw(continueButton, continueButtonRec, Color.White);
+            }
+
+            if (gameState == GameState.Legend)
+            {
+                spriteBatch.Draw(legendScreen, legendScreenPos, Color.White);
                 spriteBatch.Draw(backButton, backButtonRec, Color.White);
             }
 
@@ -1458,13 +1682,18 @@ namespace SurvivingOppositeDay
             if (gameState == GameState.Dead)
             {
                 spriteBatch.Draw(gameOver, drawRectangle, Color.White);
-                spriteBatch.DrawString(scoreFont, scoreText, scoreTextLocation2, Color.Black);
-                spriteBatch.Draw(quitButton, quitButtonRec, Color.White);
+                spriteBatch.DrawString(scoreFont, scoreText, scoreTextLocation2, Color.Red);
+                spriteBatch.Draw(continueButton, continueButtonRec, Color.White);
             }
 
+            if (gameState == GameState.Credits)
+            {
+                spriteBatch.Draw(creditsScreen, creditsScreenPos, Color.White);
+                spriteBatch.Draw(quitButton, quitButtonRec, Color.White);
+            }
             spriteBatch.End();
         }
     }
-    public enum GameState { Menu, Help, Play, Dead, Credits }
+    public enum GameState { Menu, Help, Legend, About, Objective, Play, Dead, Credits }
     public enum RoomState { MainRoom, PoliceRoom, FireFighterRoom, ParamedicRoom }
 }

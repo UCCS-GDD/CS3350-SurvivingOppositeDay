@@ -11,7 +11,7 @@ namespace SurvivingOppositeDay
     {
         int type;
         Player player;
-        public Pickup(Game game, SpriteBatch spriteBatch, Texture2D texture, Vector2 position, bool add, int type, Player player)
+        public Pickup(Game game, SpriteBatch spriteBatch, Texture2D texture, Vector2 position, int type, Player player, bool add = false)
             : base(game, spriteBatch, texture, position, add)
         {
             this.type = type;

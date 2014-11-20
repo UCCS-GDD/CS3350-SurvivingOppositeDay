@@ -47,6 +47,18 @@ Content\Menu Items\spr_back_button.xnb
 Content\Sprite\Cop_base.xnb
 Content\Sprite\Medic_base.xnb
 Content\Sprite\Fireman.xnb
+Content\Sprite\PedestrianF_base.xnb
+Content\Menu Items\controlsMenu.xnb
+Content\Menu Items\creditsMenu.xnb
+Content\Menu Items\legendMenu.xnb
+Content\Menu Items\aboutMenu.xnb
+Content\Menu Items\objectiveMenu.xnb
+Content\Sprite\fireStationIcon.xnb
+Content\Sprite\hospitalIcon.xnb
+Content\Sprite\mainRoomIcon.xnb
+Content\Sprite\policeIcon.xnb
+Content\Menu Items\aboutButton.xnb
+Content\Menu Items\nextButton.xnb
 Content\Menu Items\Arial.xnb
 Content\Sounds\DonutGun.xnb
 Content\Sounds\SlingShot.xnb
@@ -60,15 +72,3 @@ Content\Sounds\grenadeLauncher.xnb
 Content\Sounds\machineGun.xnb
 Content\Sounds\paramedicDeath.xnb
 Content\Sounds\sniperRifle.xnb
-Content\Sprite\PedestrianF_base.xnb
-Content\Menu Items\controlsMenu.xnb
-Content\Menu Items\creditsMenu.xnb
-Content\Menu Items\legendMenu.xnb
-Content\Menu Items\aboutMenu.xnb
-Content\Menu Items\objectiveMenu.xnb
-Content\Sprite\fireStationIcon.xnb
-Content\Sprite\hospitalIcon.xnb
-Content\Sprite\mainRoomIcon.xnb
-Content\Sprite\policeIcon.xnb
-Content\Menu Items\aboutButton.xnb
-Content\Menu Items\nextButton.xnb
