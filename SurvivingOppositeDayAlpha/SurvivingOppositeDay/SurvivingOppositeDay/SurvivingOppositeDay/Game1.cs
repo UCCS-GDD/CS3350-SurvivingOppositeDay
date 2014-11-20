@@ -231,7 +231,7 @@ namespace SurvivingOppositeDay
             spriteDictionary.Add("redCross", "Sprite/redCross");
             spriteDictionary.Add("fireball", "Sprite/fireball");
             spriteDictionary.Add("jellyExplosion", "Sprite/JellyExplosion");
-            spriteDictionary.Add("pedestrian", "Sprite/pedestrian");
+            spriteDictionary.Add("pedestrian", "Sprite/PedestrianF_base");
             spriteDictionary.Add("mainRoom", "Sprite/MainRoom");
             spriteDictionary.Add("fireRoom", "Sprite/FireRoom");
             spriteDictionary.Add("policeRoom", "Sprite/PoliceRoom");
@@ -241,7 +241,7 @@ namespace SurvivingOppositeDay
 
             // Menu Items
             spriteDictionary.Add("titleScreen", "Menu Items/sodTitle");
-            spriteDictionary.Add("helpScreen", "Menu Items/sodHelp");
+            spriteDictionary.Add("helpScreen", "Menu Items/objectiveMenu");
             spriteDictionary.Add("playButton", "Menu Items/play_button");
             spriteDictionary.Add("helpButton", "Menu Items/help_button");
             spriteDictionary.Add("quitButton", "Menu Items/quit_button");
