@@ -59,6 +59,8 @@ namespace SurvivingOppositeDay
         // health boxes
         Texture2D health;
         Rectangle healthDrawRactangle;
+        Texture2D health2;
+        Rectangle healthDrawRactangle2;
         Timer healthTimer;
         TimeSpan healthTimeSpan;
         private bool canGetHealth = true;
@@ -77,11 +79,6 @@ namespace SurvivingOppositeDay
         Vector2 scoreTextLocation;
         Vector2 scoreTextLocation2;
         Vector2 ammoTextLocation;
-
-        //spawn timer
-        Timer spawnTimer;
-        TimeSpan spawnTimeSpan;
-        private bool canSpawn = true;
 
         Timer ammoTimer;
         TimeSpan ammoTimeSpan;
@@ -156,6 +153,9 @@ namespace SurvivingOppositeDay
         public static SoundEffectInstance soundEffectInstanceDeathSound;
         public static SoundEffectInstance soundEffectInstanceParamedicDeath;
 
+        // random number generator
+        Random enemySpawnNum;
+
         //// invisible collision detection
         //public static Rectangle house1;
         //Rectangle house2;
@@ -167,7 +167,7 @@ namespace SurvivingOppositeDay
         //KeyboardState current;
 
         public static GameState gameState = GameState.Menu;
-        
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -184,18 +184,18 @@ namespace SurvivingOppositeDay
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-                        
+
             // set up static screen access
             Playfield = new Rectangle(0, 0, 4000, 4000);
             Screen = new Rectangle(0, 0, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
 
             // health bar
             healthPosition = new Vector2(10, 10);
-            
+
             // camera
             camera = new Camera(GraphicsDevice.Viewport);
             //cameraPos = player.Position;
-            
+
             //// collision detection
             //house1 = new Rectangle(0, 0, 300, 350);
 
@@ -280,14 +280,16 @@ namespace SurvivingOppositeDay
             syringeAmmo = Content.Load<Texture2D>("Sprite/syringecontainer");
             donutStandAmmo = Content.Load<Texture2D>("Sprite/donutstand");
 
-            garabeAmmoRec = new Rectangle(50, 50, garabeAmmo.Width, garabeAmmo.Height);
-            hoseAmmoRec = new Rectangle(1950, 50, hoseAmmo.Width, hoseAmmo.Height);
-            syringeAmmoRec = new Rectangle(50, 1950, syringeAmmo.Width, syringeAmmo.Height);
-            donutStandAmmoRec = new Rectangle(1950, 1950, donutStandAmmo.Width, donutStandAmmo.Height);
+            garabeAmmoRec = new Rectangle(170, 660, garabeAmmo.Width, garabeAmmo.Height);
+            hoseAmmoRec = new Rectangle(1560, 1680, hoseAmmo.Width, hoseAmmo.Height);
+            syringeAmmoRec = new Rectangle(1620, 300, syringeAmmo.Width, syringeAmmo.Height);
+            donutStandAmmoRec = new Rectangle(620, 1340, donutStandAmmo.Width, donutStandAmmo.Height);
 
             // health boxes
             health = Content.Load<Texture2D>("Sprite/redCross");
-            healthDrawRactangle = new Rectangle(1350, 50, health.Width, health.Height);
+            healthDrawRactangle = new Rectangle(480, 420, health.Width, health.Height);
+            health2 = Content.Load<Texture2D>("Sprite/redCross");
+            healthDrawRactangle2 = new Rectangle(1400, 1560, health.Width, health.Height);
 
             //score stuff1
             scoreFont = Content.Load<SpriteFont>("Menu Items/Arial");
@@ -297,12 +299,6 @@ namespace SurvivingOppositeDay
             ammoText = AMMO_STRING + player.Ammo;
             //scoreTextLocation = new Vector2(TEXT_OFFSET, 20);
             //scoreTextLocation2 = new Vector2(TEXT_OFFSET_GAME_OVER, 350);
-
-            // spawn Rate timer
-            spawnTimeSpan = TimeSpan.FromSeconds(10);
-            spawnTimer = new Timer();
-            spawnTimer.OnExpire += () => canSpawn = true;
-            spawnTimer.Start(spawnTimeSpan);
 
             ammoTimeSpan = TimeSpan.FromSeconds(2);
             ammoTimer = new Timer();
@@ -324,10 +320,10 @@ namespace SurvivingOppositeDay
 
             //GUI Hud
             hudRectangle = new Rectangle(0, 0, Screen.Width, 60);
-            scoreTextLocation = new Vector2(Screen.Width*((float)5/12), 15);
-            ammoTextLocation = new Vector2(Screen.Width*((float)9/12), 15);
-            scoreTextLocation2 = new Vector2(Screen.Width*((float)5/12), Screen.Height*((float)3/4));
-                        
+            scoreTextLocation = new Vector2(Screen.Width * ((float)5 / 12), 15);
+            ammoTextLocation = new Vector2(Screen.Width * ((float)9 / 12), 15);
+            scoreTextLocation2 = new Vector2(Screen.Width * ((float)5 / 12), Screen.Height * ((float)3 / 4));
+
             // background
             backgroundTexture = spriteDictionary["mainRoom"];
             backgroundPosition = new Vector2(0, 0);
@@ -381,7 +377,7 @@ namespace SurvivingOppositeDay
                 {
                     return true;
                 }
-                else 
+                else
                 {
                     return false;
                 }
@@ -426,8 +422,6 @@ namespace SurvivingOppositeDay
             roomStateMachine.AddState(RoomState.ParamedicRoom).OnEnter += EnterMedicRoom;
             roomStateMachine.AddState(RoomState.FireFighterRoom).OnEnter += EnterFireRoom;
 
-            
-
             // Add Room Transitions
             roomStateMachine.AddTransition(RoomState.MainRoom, RoomState.PoliceRoom, playerExitsToPoliceRoom);
             roomStateMachine.AddTransition(RoomState.PoliceRoom, RoomState.MainRoom, playerExitsToMainRoom);
@@ -435,6 +429,9 @@ namespace SurvivingOppositeDay
             roomStateMachine.AddTransition(RoomState.ParamedicRoom, RoomState.MainRoom, playerExitsToMainRoom);
             roomStateMachine.AddTransition(RoomState.MainRoom, RoomState.FireFighterRoom, playerExitsToFireRoom);
             roomStateMachine.AddTransition(RoomState.FireFighterRoom, RoomState.MainRoom, playerExitsToMainRoom);
+
+            // random number generator
+            enemySpawnNum = new Random();
 
             // Example 
             //example = new BasicSprite(this, spriteBatch, spriteDictionary["exampleSprite"], Tools.Math.Vectors.FromPoint(Screen.Center));
@@ -462,6 +459,16 @@ namespace SurvivingOppositeDay
 
         void EnterFireRoom(State<RoomState> obj)
         {
+            // remove enemy and bullets on enterance
+            foreach (BasicEnemy enemy in Components.OfType<BasicEnemy>().ToList())
+            {
+                enemy.Remove = true;
+            }
+            foreach (EnemyBullet bullet in Components.OfType<EnemyBullet>().ToList())
+            {
+                bullet.Remove = true;
+            }
+
             player.Position = new Vector2(1960, 1000);
             mainTransitionRectangle = new Rectangle(1980, 800, 20, 400);
             backgroundTexture = spriteDictionary["fireRoom"];
@@ -471,6 +478,16 @@ namespace SurvivingOppositeDay
 
         void EnterMedicRoom(State<RoomState> obj)
         {
+            // remove enemy and bullets on enterance
+            foreach (BasicEnemy enemy in Components.OfType<BasicEnemy>().ToList())
+            {
+                enemy.Remove = true;
+            }
+            foreach (EnemyBullet bullet in Components.OfType<EnemyBullet>().ToList())
+            {
+                bullet.Remove = true;
+            }
+
             player.Position = new Vector2(40, 1000);
             mainTransitionRectangle = new Rectangle(0, 800, 20, 400);
             backgroundTexture = spriteDictionary["medicRoom"];
@@ -480,6 +497,16 @@ namespace SurvivingOppositeDay
 
         void EnterPoliceRoom(State<RoomState> obj)
         {
+            // remove enemy and bullets on enterance
+            foreach (BasicEnemy enemy in Components.OfType<BasicEnemy>().ToList())
+            {
+                enemy.Remove = true;
+            }
+            foreach (EnemyBullet bullet in Components.OfType<EnemyBullet>().ToList())
+            {
+                bullet.Remove = true;
+            }
+
             player.Position = new Vector2(1000, 1960);
             mainTransitionRectangle = new Rectangle(800, 1980, 400, 20);
             backgroundTexture = spriteDictionary["policeRoom"];
@@ -489,6 +516,16 @@ namespace SurvivingOppositeDay
 
         void EnterMain(State<RoomState> obj)
         {
+            // remove enemy and bullets on enterance
+            foreach (BasicEnemy enemy in Components.OfType<BasicEnemy>().ToList())
+            {
+                enemy.Remove = true;
+            }
+            foreach (EnemyBullet bullet in Components.OfType<EnemyBullet>().ToList())
+            {
+                bullet.Remove = true;
+            }
+
             if (previousRoom == RoomState.PoliceRoom)
             {
                 player.Position = new Vector2(1000, 40);
@@ -497,11 +534,11 @@ namespace SurvivingOppositeDay
             {
                 player.Position = new Vector2(1960, 1000);
             }
-            else if(previousRoom == RoomState.FireFighterRoom)
+            else if (previousRoom == RoomState.FireFighterRoom)
             {
                 player.Position = new Vector2(40, 1000);
             }
-            if(previousRoom == RoomState.MainRoom)
+            if (previousRoom == RoomState.MainRoom)
             {
                 player.Position = new Vector2(1700, 1650);
             }
@@ -517,7 +554,7 @@ namespace SurvivingOppositeDay
         {
             #region WaterGun - Spawn
             //water gun bullet spawn
-            if(player.weaponType == WeaponType.WaterGun)
+            if (player.weaponType == WeaponType.WaterGun)
             {
                 if (inputEvent == InputTypes.LeftMouse)
                 {
@@ -705,7 +742,7 @@ namespace SurvivingOppositeDay
             if (gameState == GameState.Play)
             {
                 //Health Bar
-                healthRectangle = new Rectangle(Screen.Width/12, 20, this.player.Health, 20);
+                healthRectangle = new Rectangle(Screen.Width / 12, 20, this.player.Health, 20);
 
                 //Give enemy player position
                 foreach (BasicEnemy enemy in enemies)
@@ -740,8 +777,63 @@ namespace SurvivingOppositeDay
                     }
                 }
 
+                else if (this.player.collisionRectangle.Intersects(healthDrawRactangle2))
+                {
+                    if (canGetHealth)
+                    {
+                        if (this.player.Health < 100)
+                        {
+                            this.player.Health += 30;
+                            canGetHealth = false;
+                            healthTimer.Start(healthTimeSpan);
+                        }
+                    }
+                }
+
                 healthTimer.Update(gameTime.ElapsedGameTime);
 
+                // update spawns for ammo/health boxes
+                // paramedic room
+                if (roomStateMachine.Current == RoomState.ParamedicRoom)
+                {
+                    // ammo boxes
+                    garabeAmmoRec = new Rectangle(340, 740, garabeAmmo.Width, garabeAmmo.Height);
+                    hoseAmmoRec = new Rectangle(40, 60, hoseAmmo.Width, hoseAmmo.Height);
+                    syringeAmmoRec = new Rectangle(1760, 1480, syringeAmmo.Width, syringeAmmo.Height);
+                    donutStandAmmoRec = new Rectangle(320, 1260, donutStandAmmo.Width, donutStandAmmo.Height);
+
+                    // health boxes
+                    healthDrawRactangle = new Rectangle(960, 80, health.Width, health.Height);
+                    healthDrawRactangle2 = new Rectangle(960, 1900, health.Width, health.Height);
+                }
+
+                // police room
+                if (roomStateMachine.Current == RoomState.PoliceRoom)
+                {
+                    // ammo boxes
+                    garabeAmmoRec = new Rectangle(1340, 1160, garabeAmmo.Width, garabeAmmo.Height);
+                    hoseAmmoRec = new Rectangle(40, 1960, hoseAmmo.Width, hoseAmmo.Height);
+                    syringeAmmoRec = new Rectangle(1400, 1760, syringeAmmo.Width, syringeAmmo.Height);
+                    donutStandAmmoRec = new Rectangle(660, 1160, donutStandAmmo.Width, donutStandAmmo.Height);
+
+                    // health boxes
+                    healthDrawRactangle = new Rectangle(80, 1040, health.Width, health.Height);
+                    healthDrawRactangle2 = new Rectangle(1870, 1040, health.Width, health.Height);
+                }
+
+                // firefighter room
+                if (roomStateMachine.Current == RoomState.FireFighterRoom)
+                {
+                    // ammo boxes
+                    garabeAmmoRec = new Rectangle(960, 600, garabeAmmo.Width, garabeAmmo.Height);
+                    hoseAmmoRec = new Rectangle(1930, 1940, hoseAmmo.Width, hoseAmmo.Height);
+                    syringeAmmoRec = new Rectangle(1740, 620, syringeAmmo.Width, syringeAmmo.Height);
+                    donutStandAmmoRec = new Rectangle(1640, 1260, donutStandAmmo.Width, donutStandAmmo.Height);
+
+                    // health boxes
+                    healthDrawRactangle = new Rectangle(1000, 1920, health.Width, health.Height);
+                    healthDrawRactangle2 = new Rectangle(1000, 80, health.Width, health.Height);
+                }
                 //check for Collisions
                 List<DrawableGameComponent> removals = new List<DrawableGameComponent>();
                 List<DrawableGameComponent> additions = new List<DrawableGameComponent>();
@@ -758,7 +850,7 @@ namespace SurvivingOppositeDay
                         {
                             Player player = collider as Player;
                             EnemyBullet bullet = other as EnemyBullet;
-                            
+
                             //checks collision
                             if (player.Enabled && bullet.Enabled && player.collisionRectangle.Intersects(bullet.collisionRectangle))
                             {
@@ -848,7 +940,7 @@ namespace SurvivingOppositeDay
                                     //Explosion explosion = new Explosion(this, spriteBatch, spriteDictionary["jellyExplosion"], bullet.Position, 7);
                                     //additions.Add(explosion);
                                     // damage, 1 shot kills
-                                    enemy.Health -=100;
+                                    enemy.Health -= 100;
                                 }
                                 else
                                 {
@@ -1030,8 +1122,6 @@ namespace SurvivingOppositeDay
                     }
                 }
 
-                
-
                 ////removes bullet outside screen
                 //foreach (BasicBullet bullet in bullets)
                 //{
@@ -1041,50 +1131,6 @@ namespace SurvivingOppositeDay
                 //        removals.Add(bullet);
                 //    }
                 //}
-
-                //spawn enemies if spawn timer expires
-                if (canSpawn)
-                {
-                    // spawn paramedics
-                    for (int i = 1; i <= 3; i++)
-                    {
-                        ParamedicEnemy enemy = new ParamedicEnemy(this, spriteBatch, spriteDictionary["paramedic"], new Vector2(Screen.Width - (150 * i), 0));
-                        //FireFighterEnemy enemy = new FireFighterEnemy(this, spriteBatch, spriteDictionary["firefighter"], new Vector2(Screen.Width - (150 * i), 0));
-                        //PoliceEnemy enemy = new PoliceEnemy(this, spriteBatch, spriteDictionary["police"], new Vector2(Screen.Width - (150 * i), 0));
-                        //enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
-                        Components.Add(enemy);
-                    }
-
-                    // spawn firefighters
-                    for (int i = 1; i <= 3; i++)
-                    {
-                        //ParamedicEnemy enemy = new ParamedicEnemy(this, spriteBatch, spriteDictionary["paramedic"], new Vector2(Screen.Width - (150 * i), 0));
-                        FireFighterEnemy enemy = new FireFighterEnemy(this, spriteBatch, spriteDictionary["firefighter"], new Vector2(0, Screen.Height - (150 * i)));
-                        //PoliceEnemy enemy = new PoliceEnemy(this, spriteBatch, spriteDictionary["police"], new Vector2(Screen.Width - (150 * i), 0));
-                        enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
-                        Components.Add(enemy);
-                    }
-
-                    // spawn police
-                    for (int i = 1; i <= 3; i++)
-                    {
-                        //ParamedicEnemy enemy = new ParamedicEnemy(this, spriteBatch, spriteDictionary["paramedic"], new Vector2(Screen.Width - (150 * i), 0));
-                        //FireFighterEnemy enemy = new FireFighterEnemy(this, spriteBatch, spriteDictionary["firefighter"], new Vector2(Screen.Width - (150 * i), 0));
-                        PoliceEnemy enemy = new PoliceEnemy(this, spriteBatch, spriteDictionary["police"], new Vector2(Screen.Width - (150 * i), Screen.Height + 150 * i), i);
-                        enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
-                        Components.Add(enemy);
-                    }
-
-                    // spawn pedestrians
-                    for (int i = 1; i <= 3; i++)
-                    {
-                        Pedestrian pedestrian = new Pedestrian(this, spriteBatch, spriteDictionary["pedestrian"], new Vector2(Screen.Width - (150 * i), Screen.Height - 50), i, true);
-                    }
-
-                    //restart timer
-                    canSpawn = false;
-                    spawnTimer.Start(spawnTimeSpan);
-                }
 
                 foreach (BasicSprite sprite in Components.OfType<BasicSprite>().Where(sprite => sprite.Remove))
                 {
@@ -1097,6 +1143,120 @@ namespace SurvivingOppositeDay
                     Components.Remove(removal);
                 }
 
+                //spawn enemies if spawn timer expires
+                while (Components.OfType<BasicEnemy>().ToList().Count <= 20)
+                {
+                    int spawnNum = enemySpawnNum.Next(1, 100);
+                    int spawnX = enemySpawnNum.Next(20, 1980);
+                    int spawnY = enemySpawnNum.Next(20, 1980);
+                    int spawnSeed = enemySpawnNum.Next(10);
+
+                    if (roomStateMachine.Current == RoomState.MainRoom)
+                    {
+                        // spawn firefighter
+                        if (spawnNum >= 0 && spawnNum <= 33)
+                        {
+                            FireFighterEnemy enemy = new FireFighterEnemy(this, spriteBatch, spriteDictionary["firefighter"], new Vector2(spawnX, spawnY));
+                            enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
+                            Components.Add(enemy);
+                        }
+
+                        else if (spawnNum >= 34 && spawnNum <= 66)
+                        {
+                            ParamedicEnemy enemy = new ParamedicEnemy(this, spriteBatch, spriteDictionary["paramedic"], new Vector2(spawnX, spawnY));
+                            Components.Add(enemy);
+                        }
+
+                        else
+                        {
+                            PoliceEnemy enemy = new PoliceEnemy(this, spriteBatch, spriteDictionary["police"], new Vector2(spawnX, spawnY), spawnSeed);
+                            enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
+                            Components.Add(enemy);
+                        }
+                    }
+
+                    // police area spawns
+                    if (roomStateMachine.Current == RoomState.PoliceRoom)
+                    {
+                        // spawn firefighter
+                        if (spawnNum >= 0 && spawnNum <= 22)
+                        {
+                            FireFighterEnemy enemy = new FireFighterEnemy(this, spriteBatch, spriteDictionary["firefighter"], new Vector2(spawnX, spawnY));
+                            enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
+                            Components.Add(enemy);
+                        }
+
+                        // spawn paramedic
+                        else if (spawnNum >= 23 && spawnNum <= 45)
+                        {
+                            ParamedicEnemy enemy = new ParamedicEnemy(this, spriteBatch, spriteDictionary["paramedic"], new Vector2(spawnX, spawnY));
+                            Components.Add(enemy);
+                        }
+
+                        // spawn police
+                        else
+                        {
+                            PoliceEnemy enemy = new PoliceEnemy(this, spriteBatch, spriteDictionary["police"], new Vector2(spawnX, spawnY), spawnSeed);
+                            enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
+                            Components.Add(enemy);
+                        }
+                    }
+
+                    // firefighter area spawns
+                    if (roomStateMachine.Current == RoomState.FireFighterRoom)
+                    {
+                        // spawn firefighter
+                        if (spawnNum >= 0 && spawnNum <= 66)
+                        {
+                            FireFighterEnemy enemy = new FireFighterEnemy(this, spriteBatch, spriteDictionary["firefighter"], new Vector2(spawnX, spawnY));
+                            enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
+                            Components.Add(enemy);
+                        }
+
+                        // spawn paramedic
+                        else if (spawnNum >= 68 && spawnNum <= 80)
+                        {
+                            ParamedicEnemy enemy = new ParamedicEnemy(this, spriteBatch, spriteDictionary["paramedic"], new Vector2(spawnX, spawnY));
+                            Components.Add(enemy);
+                        }
+
+                        // spawn police
+                        else
+                        {
+                            PoliceEnemy enemy = new PoliceEnemy(this, spriteBatch, spriteDictionary["police"], new Vector2(spawnX, spawnY), spawnSeed);
+                            enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
+                            Components.Add(enemy);
+                        }
+                    }
+
+                    // paramedic area spawns
+                    if (roomStateMachine.Current == RoomState.ParamedicRoom)
+                    {
+                        // spawn firefighter
+                        if (spawnNum >= 0 && spawnNum <= 22)
+                        {
+                            FireFighterEnemy enemy = new FireFighterEnemy(this, spriteBatch, spriteDictionary["firefighter"], new Vector2(spawnX, spawnY));
+                            enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
+                            Components.Add(enemy);
+                        }
+
+                        // spawn paramedic
+                        else if (spawnNum >= 24 && spawnNum <= 80)
+                        {
+                            ParamedicEnemy enemy = new ParamedicEnemy(this, spriteBatch, spriteDictionary["paramedic"], new Vector2(spawnX, spawnY));
+                            Components.Add(enemy);
+                        }
+
+                        // spawn police
+                        else
+                        {
+                            PoliceEnemy enemy = new PoliceEnemy(this, spriteBatch, spriteDictionary["police"], new Vector2(spawnX, spawnY), spawnSeed);
+                            enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
+                            Components.Add(enemy);
+                        }
+                    }
+                }
+
                 // add all additions
                 additions.ForEach(addition => Components.Add(addition));
 
@@ -1104,9 +1264,6 @@ namespace SurvivingOppositeDay
                 //healthText = HEALTH_STRING + this.player.Health;
                 scoreText = SCORE_STRING + score;
                 ammoText = AMMO_STRING + this.player.Ammo;
-
-                //update timer
-                spawnTimer.Update(gameTime.ElapsedGameTime);
 
                 // update camera
                 camera.Update(gameTime, this.player);
@@ -1143,7 +1300,7 @@ namespace SurvivingOppositeDay
                 }
             }
 
-            
+
             base.Update(gameTime);
 
             // update gui
@@ -1203,8 +1360,8 @@ namespace SurvivingOppositeDay
             if (gameState == GameState.Play)
             {
                 // draw background
-                spriteBatch.Draw(backgroundTexture , backgroundPosition, Color.White);
-                
+                spriteBatch.Draw(backgroundTexture, backgroundPosition, Color.White);
+
                 //draw ammo
                 spriteBatch.Draw(garabeAmmo, garabeAmmoRec, Color.White);
                 spriteBatch.Draw(hoseAmmo, hoseAmmoRec, Color.White);
@@ -1213,6 +1370,7 @@ namespace SurvivingOppositeDay
 
                 // draw health boxes
                 spriteBatch.Draw(health, healthDrawRactangle, Color.White);
+                spriteBatch.Draw(health2, healthDrawRactangle2, Color.White);
             }
 
             base.Draw(gameTime);
@@ -1293,7 +1451,7 @@ namespace SurvivingOppositeDay
             //draw gui
             foreach (DrawableGameComponent guiComponent in GUIComponents.OfType<DrawableGameComponent>())
             {
-                guiComponent.Draw(gameTime); 
+                guiComponent.Draw(gameTime);
             }
 
             //Game State Dead
