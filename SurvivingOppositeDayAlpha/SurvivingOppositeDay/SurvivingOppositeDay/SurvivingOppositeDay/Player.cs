@@ -35,10 +35,12 @@ namespace SurvivingOppositeDay
 
         public new Game1 Game { get; private set; }
 
-        
-        //public static bool wgiFlag = true;
-        //public static bool ssiFlag = false;
-        //public static bool dgiFlag = false;
+        bool mmFlag = true;
+        bool srFlag = true;
+        bool glFlag = true;
+        bool wgFlag = true;
+        bool ssFlag = true;
+        bool dgFlag = true;
 
         // icon flags
         //1 = watergun 2 = slingshot 3 = donutgun 4 = machinegun 5 = sniperrifle 6 = gernadelauncher
@@ -414,15 +416,27 @@ namespace SurvivingOppositeDay
                 if (this.pickups[1] == 1)
                 {
                     weaponType = WeaponType.WaterGun;
-                    soundEffectInstanceWaterGun.Play();
+                    if (wgFlag == true)
+                    {
+                        soundEffectInstanceWaterGun.Play();
+                        wgFlag = false;
+                    }
                     weaponIconFlag = 1;
                 }
                 else
                 {
                     weaponType = WeaponType.MachineGun;
-                    soundEffectInstanceMachineGun.Play();
+                    if (mmFlag == true)
+                    {
+                        soundEffectInstanceMachineGun.Play();
+                        mmFlag = false;
+                    }
                     weaponIconFlag = 4;
                 }
+                srFlag = true;
+                glFlag = true;
+                ssFlag = true;
+                dgFlag = true;
 
             }
             if (keyboardState.IsKeyDown(Keys.D2))
@@ -430,30 +444,54 @@ namespace SurvivingOppositeDay
                 if (this.pickups[2] == 1)
                 {
                     weaponType = WeaponType.SlingShot;
-                    soundEffectInstanceSlingShot.Play();
+                    if (ssFlag == true)
+                    {
+                        soundEffectInstanceSlingShot.Play();
+                        ssFlag = false;
+                    }
                     weaponIconFlag = 2;
                 }
                 else
                 {
                     weaponType = WeaponType.SniperRifle;
-                    soundEffectInstanceSniperRifle.Play();
+                    if (srFlag == true)
+                    {
+                        soundEffectInstanceSniperRifle.Play();
+                        srFlag = false;
+                    }
                     weaponIconFlag = 5;
                 }
+                mmFlag = true;
+                glFlag = true;
+                wgFlag = true;
+                dgFlag = true;
             }
             if (keyboardState.IsKeyDown(Keys.D3))
             {
                 if (this.pickups[3] == 1)
                 {
                     weaponType = WeaponType.DonutGun;
-                    soundEffectInstanceDonutGun.Play();
+                    if (dgFlag == true)
+                    {
+                        soundEffectInstanceDonutGun.Play();
+                        dgFlag = false;
+                    }
                     weaponIconFlag = 3;
                 }
                 else
                 {
                     weaponType = WeaponType.GernadeLauncher;
-                    soundEffectInstanceGrenadeLauncher.Play();
+                    if (glFlag == true)
+                    {
+                        soundEffectInstanceGrenadeLauncher.Play();
+                        glFlag = false;
+                    }
                     weaponIconFlag = 6;
                 }
+                mmFlag = true;
+                srFlag = true;
+                wgFlag = true;
+                ssFlag = true;
 
             }
             #endregion
