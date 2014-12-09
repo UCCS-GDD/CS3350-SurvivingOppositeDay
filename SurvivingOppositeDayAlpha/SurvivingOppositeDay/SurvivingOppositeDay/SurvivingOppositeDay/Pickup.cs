@@ -28,6 +28,7 @@ namespace SurvivingOppositeDay
                     player.weaponType = WeaponType.WaterGun;
                     Player.weaponIconFlag = 1;
                     Player.soundEffectInstanceWaterGun.Play();
+                    Game1.pickup1Flag = true;
                 }
 
                 if (type == 2)
@@ -35,6 +36,7 @@ namespace SurvivingOppositeDay
                     player.weaponType = WeaponType.SlingShot;
                     Player.weaponIconFlag = 2;
                     Player.soundEffectInstanceSlingShot.Play();
+                    Game1.pickup2Flag = false;
                 }
 
                 if (type == 3)
@@ -42,6 +44,7 @@ namespace SurvivingOppositeDay
                     player.weaponType = WeaponType.DonutGun;
                     Player.weaponIconFlag = 3;
                     Player.soundEffectInstanceDonutGun.Play();
+                    Game1.pickup3Flag = false;
                 }
 
                 this.Remove = true;

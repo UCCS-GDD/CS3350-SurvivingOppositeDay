@@ -175,6 +175,14 @@ namespace SurvivingOppositeDay
         Rectangle paramedicRoomSign;
         Rectangle fireFighterRoomSign;
 
+        // pickups
+        Pickup pickUp1;
+        Pickup pickUp2;
+        Pickup pickUp3;
+        public static bool pickup1Flag = false;
+        public static bool pickup2Flag = false;
+        public static bool pickup3Flag = false;
+
         //// invisible collision detection
         //public static Rectangle house1;
         //Rectangle house2;
@@ -403,6 +411,11 @@ namespace SurvivingOppositeDay
             // weapon icons
             gunIconPos = new Vector2(Screen.Width - waterGunIcon.Width, Screen.Height - waterGunIcon.Height);
 
+            // pickups
+            pickUp1 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup1"), new Vector2(500, 250), 1, player);
+            pickUp2 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup2"), new Vector2(1500, 250), 2, player);
+            pickUp3 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup3"), new Vector2(1500, 500), 3, player);
+
             // Room State Machine
             roomStateMachine = new StateMachine<RoomState>();
 
@@ -517,8 +530,12 @@ namespace SurvivingOppositeDay
             previousRoom = RoomState.FireFighterRoom;
 
             // add pickup
-            Components.Add(new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup1"), new Vector2(500, 250), 1, player));
-
+            //Components.Add(new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup1"), new Vector2(500, 250), 1, player));
+            Components.Add(pickUp1);
+            if (pickup1Flag == true)
+            {
+                Components.Remove(pickUp1);
+            }
         }
 
         void EnterMedicRoom(State<RoomState> obj)
@@ -539,7 +556,12 @@ namespace SurvivingOppositeDay
             previousRoom = RoomState.ParamedicRoom;
 
             // add pickup
-            Components.Add(new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup2"), new Vector2(1500, 250), 2, player));
+            //Components.Add(new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup2"), new Vector2(1500, 250), 2, player));
+            Components.Add(pickUp2);
+            if (pickup2Flag == true)
+            {
+                Components.Remove(pickUp2);
+            }
         }
 
         void EnterPoliceRoom(State<RoomState> obj)
@@ -560,7 +582,12 @@ namespace SurvivingOppositeDay
             previousRoom = RoomState.PoliceRoom;
             
             // add pickup
-            Components.Add(new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup3"), new Vector2(1500, 500), 3, player));
+            //Components.Add(new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup3"), new Vector2(1500, 500), 3, player));
+            Components.Add(pickUp3);
+            if (pickup3Flag == true)
+            {
+                Components.Remove(pickUp3);
+            }
         }
 
         void EnterMain(State<RoomState> obj)
