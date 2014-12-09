@@ -937,7 +937,7 @@ namespace SurvivingOppositeDay
                 if (this.player.collisionRectangle.Intersects(garabeAmmoRec) || this.player.collisionRectangle.Intersects(hoseAmmoRec)
                     || this.player.collisionRectangle.Intersects(syringeAmmoRec) || this.player.collisionRectangle.Intersects(donutStandAmmoRec))
                 {
-                    if (canAmmo)
+                    if (canAmmo && this.player.Ammo <= 300)
                     {
                         this.player.Ammo += 30;
                         canAmmo = false;
