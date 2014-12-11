@@ -260,9 +260,9 @@ namespace SurvivingOppositeDay
             spriteDictionary.Add("jellyExplosion", "Sprite/JellyExplosion");
             spriteDictionary.Add("pedestrian", "Sprite/PedestrianF_base");
             spriteDictionary.Add("mainRoom", "Sprite/MainRoom");
-            spriteDictionary.Add("fireRoom", "Sprite/FireRoom");
-            spriteDictionary.Add("policeRoom", "Sprite/PoliceRoom");
-            spriteDictionary.Add("medicRoom", "Sprite/MedicRoom");
+            spriteDictionary.Add("fireRoom", "Sprite/FireRoom2");
+            spriteDictionary.Add("policeRoom", "Sprite/PoliceRoom2");
+            spriteDictionary.Add("medicRoom", "Sprite/MedicRoom2");
             spriteDictionary.Add("bar", "Sprite/bar");
             TestTexture = Content.Load<Texture2D>("Sprite/CollisionDebugTexture");
 

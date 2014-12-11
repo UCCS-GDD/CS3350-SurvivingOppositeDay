@@ -28,7 +28,5 @@ namespace SurvivingOppositeDay
             LinearVelocity = 2;
             base.Update(gameTime);
         }
-
-
     }
 }

@@ -123,71 +123,71 @@ namespace SurvivingOppositeDay
                         }
                     }
 
-                    // checking walls of police station
-                    if (Game1.roomStateMachine.Current == RoomState.PoliceRoom)
-                    {
-                        // left entrance wall
-                        if (Position.Y <= 1145 && Position.Y >= 1100 && Position.X <= 715)
-                        {
-                            Position.Y = 1150;
-                        }
+                //    // checking walls of police station
+                //    if (Game1.roomStateMachine.Current == RoomState.PoliceRoom)
+                //    {
+                //        // left entrance wall
+                //        if (Position.Y <= 1145 && Position.Y >= 1100 && Position.X <= 715)
+                //        {
+                //            Position.Y = 1150;
+                //        }
 
-                        // right  entrance wall
-                        if (Position.Y <= 1145 && Position.Y >= 1100 && Position.X >= 1315)
-                        {
-                            Position.Y = 1150;
-                        }
+                //        // right  entrance wall
+                //        if (Position.Y <= 1145 && Position.Y >= 1100 && Position.X >= 1315)
+                //        {
+                //            Position.Y = 1150;
+                //        }
 
-                        // top wall
-                        if (Position.Y <= 40)
-                        {
-                            Position.Y = 45;
-                        }
-                    }
+                //        // top wall
+                //        if (Position.Y <= 40)
+                //        {
+                //            Position.Y = 45;
+                //        }
+                //    }
 
-                    // checking walls of paramedic room
-                    if (Game1.roomStateMachine.Current == RoomState.ParamedicRoom)
-                    {
-                        // top entrance wall
-                        if (Position.Y <= 725 && Position.X >= 870 && Position.X <= 930 && !keyboardState.IsKeyDown(Keys.A))
-                        {
-                            Position.Y = 730;
-                        }
+                //    // checking walls of paramedic room
+                //    if (Game1.roomStateMachine.Current == RoomState.ParamedicRoom)
+                //    {
+                //        // top entrance wall
+                //        if (Position.Y <= 725 && Position.X >= 870 && Position.X <= 930 && !keyboardState.IsKeyDown(Keys.A))
+                //        {
+                //            Position.Y = 730;
+                //        }
 
-                        // top wall
-                        if (Position.Y <= 45)
-                        {
-                            Position.Y = 50;
-                        }
-                    }
+                //        // top wall
+                //        if (Position.Y <= 45)
+                //        {
+                //            Position.Y = 50;
+                //        }
+                //    }
 
-                    // checking walls of firefighter room
-                    if (Game1.roomStateMachine.Current == RoomState.FireFighterRoom)
-                    {
-                        // top entrance wall
-                        if (Position.Y <= 725 && Position.X >= 1100 && Position.X <= 1140)
-                        {
-                            Position.Y = 730;
-                        }
+                //    // checking walls of firefighter room
+                //    if (Game1.roomStateMachine.Current == RoomState.FireFighterRoom)
+                //    {
+                //        // top entrance wall
+                //        if (Position.Y <= 725 && Position.X >= 1100 && Position.X <= 1140)
+                //        {
+                //            Position.Y = 730;
+                //        }
 
-                        // top wall
-                        if (Position.Y <= 45)
-                        {
-                            Position.Y = 50;
-                        }
-                    }
+                //        // top wall
+                //        if (Position.Y <= 45)
+                //        {
+                //            Position.Y = 50;
+                //        }
+                //    }
                 }
 
-                //// get list of collision objects
-                //CollisionCollection colliders = Game.Colliders[Game1.roomStateMachine.Current];
+                ////// get list of collision objects
+                ////CollisionCollection colliders = Game.Colliders[Game1.roomStateMachine.Current];
 
-                // if player collides with an object in collision list
-                //foreach (Rectangle collider in colliders.Colliders)
-                //{
-                //    if(collider)
-                //     set player to previous position
-                //    Position = PreviousPosition;
-                //}
+                //// if player collides with an object in collision list
+                ////foreach (Rectangle collider in colliders.Colliders)
+                ////{
+                ////    if(collider)
+                ////     set player to previous position
+                ////    Position = PreviousPosition;
+                ////}
             }
 
             if (keyboardState.IsKeyDown(Keys.S))
@@ -205,41 +205,41 @@ namespace SurvivingOppositeDay
                         }
                     }
 
-                    // checking walls of police station
-                    if (Game1.roomStateMachine.Current == RoomState.PoliceRoom)
-                    {
-                        // left entrance wall 
-                        if (Position.Y <= 1145 && Position.Y >= 1090 && Position.X <= 715)
-                        {
-                            Position.Y = 1085;
-                        }
+                //    // checking walls of police station
+                //    if (Game1.roomStateMachine.Current == RoomState.PoliceRoom)
+                //    {
+                //        // left entrance wall 
+                //        if (Position.Y <= 1145 && Position.Y >= 1090 && Position.X <= 715)
+                //        {
+                //            Position.Y = 1085;
+                //        }
 
-                        // right  entrance wall
-                        if (Position.Y <= 1145 && Position.Y >= 1090 && Position.X >= 1315)
-                        {
-                            Position.Y = 1085;
-                        }
-                    }
+                //        // right  entrance wall
+                //        if (Position.Y <= 1145 && Position.Y >= 1090 && Position.X >= 1315)
+                //        {
+                //            Position.Y = 1085;
+                //        }
+                //    }
 
-                    // checking walls of paramedic room
-                    if (Game1.roomStateMachine.Current == RoomState.ParamedicRoom)
-                    {
-                        // top entrance wall
-                        if (Position.Y >= 1310 && Position.X >= 870 && Position.X <= 930)
-                        {
-                            Position.Y = 1305;
-                        }
-                    }
+                //    // checking walls of paramedic room
+                //    if (Game1.roomStateMachine.Current == RoomState.ParamedicRoom)
+                //    {
+                //        // top entrance wall
+                //        if (Position.Y >= 1310 && Position.X >= 870 && Position.X <= 930)
+                //        {
+                //            Position.Y = 1305;
+                //        }
+                //    }
 
-                    // checking walls of firefighter room
-                    if (Game1.roomStateMachine.Current == RoomState.FireFighterRoom)
-                    {
-                        // bottom entrance wall
-                        if (Position.Y >= 1310 && Position.X >= 1100 && Position.X <= 1140)
-                        {
-                            Position.Y = 1305;
-                        }
-                    }
+                //    // checking walls of firefighter room
+                //    if (Game1.roomStateMachine.Current == RoomState.FireFighterRoom)
+                //    {
+                //        // bottom entrance wall
+                //        if (Position.Y >= 1310 && Position.X >= 1100 && Position.X <= 1140)
+                //        {
+                //            Position.Y = 1305;
+                //        }
+                //    }
                 }
             }
             if (keyboardState.IsKeyDown(Keys.A))
@@ -257,59 +257,59 @@ namespace SurvivingOppositeDay
                         }
                     }
 
-                    // checking walls of police station
-                    if (Game1.roomStateMachine.Current == RoomState.PoliceRoom)
-                    {
-                        // left entrance wall
-                        if (Position.Y <= 1145 && Position.Y >= 1100 && Position.X <= 725)
-                        {
-                            Position.X = 730;
-                        }
+                //    // checking walls of police station
+                //    if (Game1.roomStateMachine.Current == RoomState.PoliceRoom)
+                //    {
+                //        // left entrance wall
+                //        if (Position.Y <= 1145 && Position.Y >= 1100 && Position.X <= 725)
+                //        {
+                //            Position.X = 730;
+                //        }
 
-                        // top wall
-                        if (Position.X <= 45)
-                        {
-                            Position.X = 50;
-                        }
-                    }
+                //        // top wall
+                //        if (Position.X <= 45)
+                //        {
+                //            Position.X = 50;
+                //        }
+                //    }
 
-                    // checking walls of paramedic room
-                    if (Game1.roomStateMachine.Current == RoomState.ParamedicRoom)
-                    {
-                        // top entrance wall 
-                        if (Position.Y <= 730 && Position.X >= 870 && Position.X <= 930)
-                        {
-                            Position.X = 935;
-                        }
+                //    // checking walls of paramedic room
+                //    if (Game1.roomStateMachine.Current == RoomState.ParamedicRoom)
+                //    {
+                //        // top entrance wall 
+                //        if (Position.Y <= 730 && Position.X >= 870 && Position.X <= 930)
+                //        {
+                //            Position.X = 935;
+                //        }
 
-                        // bottom  entrance wall
-                        if (Position.X >= 870 && Position.X <= 930 && Position.Y >= 1315)
-                        {
-                            Position.X = 935;
-                        }
-                    }
+                //        // bottom  entrance wall
+                //        if (Position.X >= 870 && Position.X <= 930 && Position.Y >= 1315)
+                //        {
+                //            Position.X = 935;
+                //        }
+                //    }
 
-                    // checking walls of firefighter room
-                    if (Game1.roomStateMachine.Current == RoomState.FireFighterRoom)
-                    {
-                        // top entrance wall 
-                        if (Position.Y <= 730 && Position.X >= 1100 && Position.X <= 1140)
-                        {
-                            Position.X = 1145;
-                        }
+                //    // checking walls of firefighter room
+                //    if (Game1.roomStateMachine.Current == RoomState.FireFighterRoom)
+                //    {
+                //        // top entrance wall 
+                //        if (Position.Y <= 730 && Position.X >= 1100 && Position.X <= 1140)
+                //        {
+                //            Position.X = 1145;
+                //        }
 
-                        // bottom  entrance wall
-                        if (Position.X >= 1100 && Position.X <= 1140 && Position.Y >= 1315)
-                        {
-                            Position.X = 1145;
-                        }
+                //        // bottom  entrance wall
+                //        if (Position.X >= 1100 && Position.X <= 1140 && Position.Y >= 1315)
+                //        {
+                //            Position.X = 1145;
+                //        }
 
-                        // back wall
-                        if (Position.X <= 45)
-                        {
-                            Position.X = 50;
-                        }
-                    }
+                //        // back wall
+                //        if (Position.X <= 45)
+                //        {
+                //            Position.X = 50;
+                //        }
+                //    }
                 }
             }
             if (keyboardState.IsKeyDown(Keys.D))
@@ -327,47 +327,47 @@ namespace SurvivingOppositeDay
                         }
                     }
 
-                    // checking walls of police station
-                    if (Game1.roomStateMachine.Current == RoomState.PoliceRoom)
-                    {
-                        // left entrance wall
-                        if (Position.Y <= 1145 && Position.Y >= 1100 && Position.X >= 1310)
-                        {
-                            Position.X = 1305;
-                        }
-                    }
+                //    // checking walls of police station
+                //    if (Game1.roomStateMachine.Current == RoomState.PoliceRoom)
+                //    {
+                //        // left entrance wall
+                //        if (Position.Y <= 1145 && Position.Y >= 1100 && Position.X >= 1310)
+                //        {
+                //            Position.X = 1305;
+                //        }
+                //    }
 
-                    // checking walls of paramedic room
-                    if (Game1.roomStateMachine.Current == RoomState.ParamedicRoom)
-                    {
-                        // top entrance wall 
-                        if (Position.Y <= 730 && Position.X >= 870 && Position.X <= 930)
-                        {
-                            Position.X = 865;
-                        }
+                //    // checking walls of paramedic room
+                //    if (Game1.roomStateMachine.Current == RoomState.ParamedicRoom)
+                //    {
+                //        // top entrance wall 
+                //        if (Position.Y <= 730 && Position.X >= 870 && Position.X <= 930)
+                //        {
+                //            Position.X = 865;
+                //        }
 
-                        // bottom  entrance wall
-                        if (Position.X >= 870 && Position.X <= 930 && Position.Y >= 1315)
-                        {
-                            Position.X = 865;
-                        }
-                    }
+                //        // bottom  entrance wall
+                //        if (Position.X >= 870 && Position.X <= 930 && Position.Y >= 1315)
+                //        {
+                //            Position.X = 865;
+                //        }
+                //    }
 
-                    // checking walls of firefighter room
-                    if (Game1.roomStateMachine.Current == RoomState.FireFighterRoom)
-                    {
-                        // top entrance wall 
-                        if (Position.Y <= 730 && Position.X >= 1090 && Position.X <= 1140)
-                        {
-                            Position.X = 1085;
-                        }
+                //    // checking walls of firefighter room
+                //    if (Game1.roomStateMachine.Current == RoomState.FireFighterRoom)
+                //    {
+                //        // top entrance wall 
+                //        if (Position.Y <= 730 && Position.X >= 1090 && Position.X <= 1140)
+                //        {
+                //            Position.X = 1085;
+                //        }
 
-                        // bottom  entrance wall
-                        if (Position.X >= 1090 && Position.X <= 1140 && Position.Y >= 1315)
-                        {
-                            Position.X = 1085;
-                        }
-                    }
+                //        // bottom  entrance wall
+                //        if (Position.X >= 1090 && Position.X <= 1140 && Position.Y >= 1315)
+                //        {
+                //            Position.X = 1085;
+                //        }
+                //    }
                 }
             }
             #endregion

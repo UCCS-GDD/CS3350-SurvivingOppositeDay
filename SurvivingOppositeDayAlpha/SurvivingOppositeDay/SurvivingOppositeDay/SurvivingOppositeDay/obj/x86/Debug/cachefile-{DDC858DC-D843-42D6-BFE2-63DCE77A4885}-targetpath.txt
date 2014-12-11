@@ -72,3 +72,6 @@ Content\Sounds\grenadeLauncher.xnb
 Content\Sounds\machineGun.xnb
 Content\Sounds\paramedicDeath.xnb
 Content\Sounds\sniperRifle.xnb
+Content\Sprite\FireRoom2.xnb
+Content\Sprite\MedicRoom2.xnb
+Content\Sprite\PoliceRoom2.xnb
