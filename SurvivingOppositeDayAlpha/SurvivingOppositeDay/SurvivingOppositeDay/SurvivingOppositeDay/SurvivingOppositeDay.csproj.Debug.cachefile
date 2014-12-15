@@ -55,7 +55,6 @@ Content\Menu Items\aboutMenu.xnb
 Content\Menu Items\objectiveMenu.xnb
 Content\Sprite\fireStationIcon.xnb
 Content\Sprite\hospitalIcon.xnb
-Content\Sprite\mainRoomIcon.xnb
 Content\Sprite\policeIcon.xnb
 Content\Menu Items\aboutButton.xnb
 Content\Menu Items\nextButton.xnb
@@ -74,4 +73,7 @@ Content\Sounds\sniperRifle.xnb
 Content\Sprite\FireRoom2.xnb
 Content\Sprite\MedicRoom2.xnb
 Content\Sprite\PoliceRoom2.xnb
+Content\Sprite\mainRoomIconDown.xnb
+Content\Sprite\mainRoomIconLeft.xnb
+Content\Sprite\mainRoomIconRight.xnb
 Content\Sounds\Sound.wma

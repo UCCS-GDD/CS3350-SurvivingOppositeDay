@@ -499,13 +499,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sprite\mainRoomIcon.png">
-      <Name>mainRoomIcon</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Sprite\policeIcon.png">
       <Name>policeIcon</Name>
       <Importer>TextureImporter</Importer>
@@ -543,6 +536,27 @@
   <ItemGroup>
     <Compile Include="Sprite\PoliceRoom2.png">
       <Name>PoliceRoom2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprite\mainRoomIconDown.png">
+      <Name>mainRoomIconDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprite\mainRoomIconLeft.png">
+      <Name>mainRoomIconLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprite\mainRoomIconRight.png">
+      <Name>mainRoomIconRight</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

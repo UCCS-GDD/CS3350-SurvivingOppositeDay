@@ -503,7 +503,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\fireStationIcon.xnb</Output>
-      <Time>2014-11-20T07:32:06.2567673-07:00</Time>
+      <Time>2014-12-15T15:24:27.3911734-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\hospitalIcon.png</Source>
@@ -512,16 +512,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\hospitalIcon.xnb</Output>
-      <Time>2014-11-20T07:31:09.5805048-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprite\mainRoomIcon.png</Source>
-      <Name>Sprite\mainRoomIcon</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\mainRoomIcon.xnb</Output>
-      <Time>2014-11-20T07:33:27.9319752-07:00</Time>
+      <Time>2014-12-15T15:24:27.4429131-07:00</Time>
     </Item>
     <Item>
       <Source>Sprite\policeIcon.png</Source>
@@ -530,7 +521,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\policeIcon.xnb</Output>
-      <Time>2014-11-20T07:28:50.5974031-07:00</Time>
+      <Time>2014-12-15T15:24:27.5071853-07:00</Time>
     </Item>
     <Item>
       <Source>Menu Items\aboutButton.png</Source>
@@ -685,6 +676,33 @@
       <Options>None</Options>
       <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\PoliceRoom2.xnb</Output>
       <Time>2014-12-10T19:23:07.5919232-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\mainRoomIconDown.png</Source>
+      <Name>Sprite\mainRoomIconDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\mainRoomIconDown.xnb</Output>
+      <Time>2014-12-15T15:24:27.2910984-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\mainRoomIconLeft.png</Source>
+      <Name>Sprite\mainRoomIconLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\mainRoomIconLeft.xnb</Output>
+      <Time>2014-12-15T15:24:27.2599865-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprite\mainRoomIconRight.png</Source>
+      <Name>Sprite\mainRoomIconRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\mainRoomIconRight.xnb</Output>
+      <Time>2014-12-15T15:24:27.3490962-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

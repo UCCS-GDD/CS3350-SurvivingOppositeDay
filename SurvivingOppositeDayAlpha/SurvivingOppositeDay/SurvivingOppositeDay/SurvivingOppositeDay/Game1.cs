@@ -170,7 +170,9 @@ namespace SurvivingOppositeDay
         Random enemySpawnNum;
 
         // room signs
-        Rectangle mainRoomSign;
+        Rectangle mainRoomSignDown;
+        Rectangle mainRoomSignLeft;
+        Rectangle mainRoomSignRight;
         Rectangle policeRoomSign;
         Rectangle paramedicRoomSign;
         Rectangle fireFighterRoomSign;
@@ -281,7 +283,9 @@ namespace SurvivingOppositeDay
             spriteDictionary.Add("aboutButton", "Menu Items/aboutButton");
 
             // room signs
-            spriteDictionary.Add("mainRoomSign", "Sprite/mainRoomIcon");
+            spriteDictionary.Add("mainRoomSignDown", "Sprite/mainRoomIconDown");
+            spriteDictionary.Add("mainRoomSignLeft", "Sprite/mainRoomIconLeft");
+            spriteDictionary.Add("mainRoomSignRight", "Sprite/mainRoomIconRight");
             spriteDictionary.Add("policeRoomSign", "Sprite/policeIcon");
             spriteDictionary.Add("paramedicRoomSign", "Sprite/hospitalIcon");
             spriteDictionary.Add("fireFighterRoomSign", "Sprite/fireStationIcon");
@@ -913,20 +917,20 @@ namespace SurvivingOppositeDay
 
                 if (roomStateMachine.Current == RoomState.FireFighterRoom)
                 {
-                    mainRoomSign = new Rectangle(1780, 960, spriteDictionary["mainRoomSign"].Width,
-                        spriteDictionary["mainRoomSign"].Height);
+                    mainRoomSignRight = new Rectangle(1780, 960, spriteDictionary["mainRoomSignRight"].Width,
+                        spriteDictionary["mainRoomSignRight"].Height);
                 }
 
                 if (roomStateMachine.Current == RoomState.ParamedicRoom)
                 {
-                    mainRoomSign = new Rectangle(80, 930, spriteDictionary["mainRoomSign"].Width,
-                       spriteDictionary["mainRoomSign"].Height);
+                    mainRoomSignLeft = new Rectangle(80, 930, spriteDictionary["mainRoomSignLeft"].Width,
+                       spriteDictionary["mainRoomSignLeft"].Height);
                 }
 
                 if (roomStateMachine.Current == RoomState.PoliceRoom)
                 {
-                    mainRoomSign = new Rectangle(940, 1860, spriteDictionary["mainRoomSign"].Width,
-                       spriteDictionary["mainRoomSign"].Height);
+                    mainRoomSignDown = new Rectangle(940, 1860, spriteDictionary["mainRoomSignDown"].Width,
+                       spriteDictionary["mainRoomSignDown"].Height);
                 }
                 //Give enemy player position
                 foreach (BasicEnemy enemy in enemies)
@@ -1365,7 +1369,7 @@ namespace SurvivingOppositeDay
                             Components.Add(enemy);
                         }
 
-                        else if (spawnSeed >= 67 && spawnSeed <= 95)
+                        else if (spawnSeed >= 67 && spawnSeed <= 98)
                         {
                             PoliceEnemy enemy = new PoliceEnemy(this, spriteBatch, spriteDictionary["police"], new Vector2(spawnX, spawnY), spawnSeed);
                             enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
@@ -1398,7 +1402,7 @@ namespace SurvivingOppositeDay
                         }
 
                         // spawn police
-                        else if (spawnNum >= 46 && spawnNum <= 95)
+                        else if (spawnNum >= 46 && spawnNum <= 98)
                         {
                             PoliceEnemy enemy = new PoliceEnemy(this, spriteBatch, spriteDictionary["police"], new Vector2(spawnX, spawnY), spawnSeed);
                             enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
@@ -1431,7 +1435,7 @@ namespace SurvivingOppositeDay
                         }
 
                         // spawn police
-                        else if (spawnNum >= 81 && spawnNum <= 95)
+                        else if (spawnNum >= 81 && spawnNum <= 98)
                         {
                             PoliceEnemy enemy = new PoliceEnemy(this, spriteBatch, spriteDictionary["police"], new Vector2(spawnX, spawnY), spawnSeed);
                             enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
@@ -1449,7 +1453,7 @@ namespace SurvivingOppositeDay
                     if (roomStateMachine.Current == RoomState.ParamedicRoom)
                     {
                         // spawn firefighter
-                        if (spawnNum >= 0 && spawnNum <= 22)
+                        if (spawnNum >= 0 && spawnNum <= 45)
                         {
                             FireFighterEnemy enemy = new FireFighterEnemy(this, spriteBatch, spriteDictionary["firefighter"], new Vector2(spawnX, spawnY));
                             enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
@@ -1457,14 +1461,14 @@ namespace SurvivingOppositeDay
                         }
 
                         // spawn paramedic
-                        else if (spawnNum >= 24 && spawnNum <= 80)
+                        else if (spawnNum >= 45 && spawnNum <= 75)
                         {
                             ParamedicEnemy enemy = new ParamedicEnemy(this, spriteBatch, spriteDictionary["paramedic"], new Vector2(spawnX, spawnY));
                             Components.Add(enemy);
                         }
 
                         // spawn police
-                        else if (spawnNum >= 81 && spawnNum <= 95)
+                        else if (spawnNum >= 75 && spawnNum <= 98)
                         {
                             PoliceEnemy enemy = new PoliceEnemy(this, spriteBatch, spriteDictionary["police"], new Vector2(spawnX, spawnY), spawnSeed);
                             enemy.EnemyActionTriggeredEvent += SpawnEnemyBullet;
@@ -1595,8 +1599,12 @@ namespace SurvivingOppositeDay
                 spriteBatch.Draw(health2, healthDrawRactangle2, Color.White);
 
                 // draw signs
-                if (roomStateMachine.Current != RoomState.MainRoom)
-                    spriteBatch.Draw(spriteDictionary["mainRoomSign"], mainRoomSign, Color.White);
+                if (roomStateMachine.Current == RoomState.PoliceRoom)
+                    spriteBatch.Draw(spriteDictionary["mainRoomSignDown"], mainRoomSignDown, Color.White);
+                if (roomStateMachine.Current == RoomState.ParamedicRoom)
+                    spriteBatch.Draw(spriteDictionary["mainRoomSignLeft"], mainRoomSignLeft, Color.White);
+                if (roomStateMachine.Current == RoomState.FireFighterRoom)
+                    spriteBatch.Draw(spriteDictionary["mainRoomSignRight"], mainRoomSignRight, Color.White);
                 if (roomStateMachine.Current == RoomState.MainRoom)
                     spriteBatch.Draw(spriteDictionary["policeRoomSign"], policeRoomSign, Color.White);
                 if (roomStateMachine.Current == RoomState.MainRoom)

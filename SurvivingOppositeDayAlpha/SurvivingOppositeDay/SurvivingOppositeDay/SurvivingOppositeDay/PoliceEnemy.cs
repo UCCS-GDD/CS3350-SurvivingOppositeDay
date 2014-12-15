@@ -58,6 +58,16 @@ namespace SurvivingOppositeDay
             Action policeWalkingAction = () =>
             {
                 LinearVelocity = 1;
+                if (Position.X < 0 || Position.X > 2000)
+                {
+                    Position.X = 1000;
+                    Position.Y = 1000;
+                }
+                if (Position.Y < 0 || Position.Y > 2000)
+                {
+                    Position.X = 1000;
+                    Position.Y = 1000;
+                }
                 if (canTurn)
                 {
                     Rotation = (random.Next(3) - 1) * (random.Next(10));
