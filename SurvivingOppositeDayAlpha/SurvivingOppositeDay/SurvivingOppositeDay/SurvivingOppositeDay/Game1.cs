@@ -907,17 +907,17 @@ namespace SurvivingOppositeDay
                 healthRectangle = new Rectangle(Screen.Width / 12, 20, this.player.Health, 20);
                 if (roomStateMachine.Current == RoomState.MainRoom)
                 {
-                    policeRoomSign = new Rectangle(970, 80, spriteDictionary["policeRoomSign"].Width,
+                    policeRoomSign = new Rectangle(925, 40, spriteDictionary["policeRoomSign"].Width,
                         spriteDictionary["policeRoomSign"].Height);
-                    paramedicRoomSign = new Rectangle(1880, 960, spriteDictionary["paramedicRoomSign"].Width,
+                    paramedicRoomSign = new Rectangle(1750, 960, spriteDictionary["paramedicRoomSign"].Width,
                         spriteDictionary["paramedicRoomSign"].Height);
-                    fireFighterRoomSign = new Rectangle(80, 930, spriteDictionary["fireFighterRoomSign"].Width,
+                    fireFighterRoomSign = new Rectangle(40, 930, spriteDictionary["fireFighterRoomSign"].Width,
                        spriteDictionary["fireFighterRoomSign"].Height);
                 }
 
                 if (roomStateMachine.Current == RoomState.FireFighterRoom)
                 {
-                    mainRoomSignRight = new Rectangle(1780, 960, spriteDictionary["mainRoomSignRight"].Width,
+                    mainRoomSignRight = new Rectangle(1680, 960, spriteDictionary["mainRoomSignRight"].Width,
                         spriteDictionary["mainRoomSignRight"].Height);
                 }
 
@@ -929,7 +929,7 @@ namespace SurvivingOppositeDay
 
                 if (roomStateMachine.Current == RoomState.PoliceRoom)
                 {
-                    mainRoomSignDown = new Rectangle(940, 1860, spriteDictionary["mainRoomSignDown"].Width,
+                    mainRoomSignDown = new Rectangle(920, 1780, spriteDictionary["mainRoomSignDown"].Width,
                        spriteDictionary["mainRoomSignDown"].Height);
                 }
                 //Give enemy player position
@@ -986,8 +986,8 @@ namespace SurvivingOppositeDay
                 {
                     // ammo boxes
                     garabeAmmoRec = new Rectangle(340, 740, garabeAmmo.Width, garabeAmmo.Height);
-                    hoseAmmoRec = new Rectangle(40, 60, hoseAmmo.Width, hoseAmmo.Height);
-                    syringeAmmoRec = new Rectangle(1760, 1480, syringeAmmo.Width, syringeAmmo.Height);
+                    hoseAmmoRec = new Rectangle(140, 100, hoseAmmo.Width, hoseAmmo.Height);
+                    syringeAmmoRec = new Rectangle(1760, 1000, syringeAmmo.Width, syringeAmmo.Height);
                     donutStandAmmoRec = new Rectangle(320, 1260, donutStandAmmo.Width, donutStandAmmo.Height);
 
                     // health boxes
@@ -1000,7 +1000,7 @@ namespace SurvivingOppositeDay
                 {
                     // ammo boxes
                     garabeAmmoRec = new Rectangle(1340, 1160, garabeAmmo.Width, garabeAmmo.Height);
-                    hoseAmmoRec = new Rectangle(40, 1960, hoseAmmo.Width, hoseAmmo.Height);
+                    hoseAmmoRec = new Rectangle(140, 1900, hoseAmmo.Width, hoseAmmo.Height);
                     syringeAmmoRec = new Rectangle(1400, 1760, syringeAmmo.Width, syringeAmmo.Height);
                     donutStandAmmoRec = new Rectangle(660, 1160, donutStandAmmo.Width, donutStandAmmo.Height);
 
@@ -1013,10 +1013,10 @@ namespace SurvivingOppositeDay
                 if (roomStateMachine.Current == RoomState.FireFighterRoom)
                 {
                     // ammo boxes
-                    garabeAmmoRec = new Rectangle(960, 600, garabeAmmo.Width, garabeAmmo.Height);
-                    hoseAmmoRec = new Rectangle(1930, 1940, hoseAmmo.Width, hoseAmmo.Height);
+                    garabeAmmoRec = new Rectangle(300, 900, garabeAmmo.Width, garabeAmmo.Height);
+                    hoseAmmoRec = new Rectangle(130, 1940, hoseAmmo.Width, hoseAmmo.Height);
                     syringeAmmoRec = new Rectangle(1740, 620, syringeAmmo.Width, syringeAmmo.Height);
-                    donutStandAmmoRec = new Rectangle(1640, 1260, donutStandAmmo.Width, donutStandAmmo.Height);
+                    donutStandAmmoRec = new Rectangle(1640, 1660, donutStandAmmo.Width, donutStandAmmo.Height);
 
                     // health boxes
                     healthDrawRactangle = new Rectangle(1000, 1920, health.Width, health.Height);
