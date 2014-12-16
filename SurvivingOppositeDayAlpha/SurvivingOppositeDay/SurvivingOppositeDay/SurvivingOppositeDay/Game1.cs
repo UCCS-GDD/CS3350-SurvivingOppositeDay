@@ -807,11 +807,21 @@ namespace SurvivingOppositeDay
 
             if (gameState == GameState.Help)
             {
-                if (backButtonRec.Contains(mousePos))
+                //if (backButtonRec.Contains(mousePos))
+                //{
+                //    if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
+                //    {
+                //        gameState = GameState.Menu;
+                //        clickable = false;
+                //        clickTimer.Start(clickTimeSpan);
+                //    }
+                //}
+
+                if (continueButtonRec.Contains(mousePos))
                 {
                     if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
                     {
-                        gameState = GameState.Menu;
+                        gameState = GameState.Legend;
                         clickable = false;
                         clickTimer.Start(clickTimeSpan);
                     }
@@ -833,11 +843,21 @@ namespace SurvivingOppositeDay
 
             if (gameState == GameState.Objective)
             {
-                if (continueButtonRec.Contains(mousePos))
+                //if (continueButtonRec.Contains(mousePos))
+                //{
+                //    if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
+                //    {
+                //        gameState = GameState.Legend;
+                //        clickable = false;
+                //        clickTimer.Start(clickTimeSpan);
+                //    }
+                //}
+
+                if (backButtonRec.Contains(mousePos))
                 {
                     if (mouseState.LeftButton == ButtonState.Pressed && clickable == true)
                     {
-                        gameState = GameState.Legend;
+                        gameState = GameState.Menu;
                         clickable = false;
                         clickTimer.Start(clickTimeSpan);
                     }
@@ -884,8 +904,9 @@ namespace SurvivingOppositeDay
             clickTimer.Update(gameTime.ElapsedGameTime);
 
             // test what menu player is in, then draw quit button accordingly
-            //if (gameState == GameState.Help)
-            //    backButtonRec = new Rectangle(400, 350, quitButton.Width, quitButton.Height);
+            if (gameState == GameState.Help)
+                //backButtonRec = new Rectangle(400, 350, quitButton.Width, quitButton.Height);
+                continueButtonRec = new Rectangle(310, 370, continueButton.Width, continueButton.Height);
             if (gameState == GameState.Dead)
                 continueButtonRec = new Rectangle(550, 350, continueButton.Width, continueButton.Height);
             if (gameState == GameState.Credits)
@@ -893,7 +914,8 @@ namespace SurvivingOppositeDay
             if (gameState == GameState.About)
                 continueButtonRec = new Rectangle(510, 370, continueButton.Width, continueButton.Height);
             if (gameState == GameState.Objective)
-                continueButtonRec = new Rectangle(310, 370, continueButton.Width, continueButton.Height);
+                //continueButtonRec = new Rectangle(310, 370, continueButton.Width, continueButton.Height);
+                backButtonRec = new Rectangle(310, 370, backButton.Width, backButton.Height);
             if (gameState == GameState.Legend)
                 backButtonRec = new Rectangle(310, 370, backButton.Width, backButton.Height);
 
@@ -1631,8 +1653,11 @@ namespace SurvivingOppositeDay
 
             if (gameState == GameState.Help)
             {
+                //spriteBatch.Draw(helpScreen, helpScreenPos, Color.White);
+                //spriteBatch.Draw(backButton, backButtonRec, Color.White);
+
                 spriteBatch.Draw(helpScreen, helpScreenPos, Color.White);
-                spriteBatch.Draw(backButton, backButtonRec, Color.White);
+                spriteBatch.Draw(continueButton, continueButtonRec, Color.White);
             }
 
             if (gameState == GameState.About)
@@ -1644,7 +1669,8 @@ namespace SurvivingOppositeDay
             if (gameState == GameState.Objective)
             {
                 spriteBatch.Draw(objectiveScreen, objectiveScreenPos, Color.White);
-                spriteBatch.Draw(continueButton, continueButtonRec, Color.White);
+                //spriteBatch.Draw(continueButton, continueButtonRec, Color.White);
+                spriteBatch.Draw(backButton, backButtonRec, Color.White);
             }
 
             if (gameState == GameState.Legend)
