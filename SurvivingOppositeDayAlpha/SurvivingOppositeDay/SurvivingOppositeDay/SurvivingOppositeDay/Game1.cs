@@ -244,67 +244,67 @@ namespace SurvivingOppositeDay
 
             // set up spriteDictionary
             spriteDictionary = new SpriteDictionary(Content);
-            spriteDictionary.Add("exampleSprite", "Sprite/explosion");
-            spriteDictionary.Add("player", "Sprite/player2");
-            spriteDictionary.Add("playerMain", "Sprite/player_waterbase");
-            spriteDictionary.Add("police", "Sprite/cop_base");
-            spriteDictionary.Add("firefighter", "Sprite/Fireman");
-            spriteDictionary.Add("paramedic", "Sprite/medic_base");
-            spriteDictionary.Add("waterBullet", "Sprite/waterBullet");
-            spriteDictionary.Add("needleBullet", "Sprite/needleBullet");
-            spriteDictionary.Add("donutBullet", "Sprite/donutBullet");
-            spriteDictionary.Add("bullet", "Sprite/bullet");
-            spriteDictionary.Add("sniperBullet", "Sprite/sniperBullet");
-            spriteDictionary.Add("gernade", "Sprite/gernade");
-            spriteDictionary.Add("ammoCrate", "Sprite/ammo");
-            spriteDictionary.Add("redCross", "Sprite/redCross");
-            spriteDictionary.Add("fireball", "Sprite/fireball");
-            spriteDictionary.Add("jellyExplosion", "Sprite/JellyExplosion");
-            spriteDictionary.Add("pedestrian", "Sprite/PedestrianF_base");
-            spriteDictionary.Add("mainRoom", "Sprite/MainRoom");
-            spriteDictionary.Add("fireRoom", "Sprite/FireRoom2");
-            spriteDictionary.Add("policeRoom", "Sprite/PoliceRoom2");
-            spriteDictionary.Add("medicRoom", "Sprite/MedicRoom2");
-            spriteDictionary.Add("bar", "Sprite/bar");
-            TestTexture = Content.Load<Texture2D>("Sprite/CollisionDebugTexture");
+            spriteDictionary.Add("exampleSprite", "SPR/explosion");
+            spriteDictionary.Add("player", "SPR/player2");
+            spriteDictionary.Add("playerMain", "SPR/playerbase");
+            spriteDictionary.Add("police", "SPR/cop_base");
+            spriteDictionary.Add("firefighter", "SPR/Fireman");
+            spriteDictionary.Add("paramedic", "SPR/medic_base");
+            spriteDictionary.Add("waterBullet", "SPR/waterBullet");
+            spriteDictionary.Add("needleBullet", "SPR/needleBullet");
+            spriteDictionary.Add("donutBullet", "SPR/donutBullet");
+            spriteDictionary.Add("bullet", "SPR/bullet");
+            spriteDictionary.Add("sniperBullet", "SPR/sniperBullet");
+            spriteDictionary.Add("gernade", "SPR/gernade");
+            spriteDictionary.Add("ammoCrate", "SPR/ammo");
+            spriteDictionary.Add("redCross", "SPR/redCross");
+            spriteDictionary.Add("fireball", "SPR/fireball");
+            spriteDictionary.Add("jellyExplosion", "SPR/jelly");
+            spriteDictionary.Add("pedestrian", "SPR/pedF");
+            spriteDictionary.Add("mainRoom", "SPR/MainRoom");
+            spriteDictionary.Add("fireRoom", "SPR/FireRoom2");
+            spriteDictionary.Add("policeRoom", "SPR/PoliceRoom2");
+            spriteDictionary.Add("medicRoom", "SPR/MedicRoom2");
+            spriteDictionary.Add("bar", "SPR/bar");
+            TestTexture = Content.Load<Texture2D>("SPR/collision");
 
             // Menu Items
-            spriteDictionary.Add("titleScreen", "Menu Items/sodTitle");
-            spriteDictionary.Add("helpScreen", "Menu Items/controlsMenu");
-            spriteDictionary.Add("aboutScreen", "Menu Items/aboutMenu");
-            spriteDictionary.Add("objectiveScreen", "Menu Items/objectiveMenu");
-            spriteDictionary.Add("creditsScreen", "Menu Items/creditsMenu");
-            spriteDictionary.Add("legendScreen", "Menu Items/legendMenu");
-            spriteDictionary.Add("playButton", "Menu Items/play_button");
-            spriteDictionary.Add("helpButton", "Menu Items/help_button");
-            spriteDictionary.Add("quitButton", "Menu Items/quit_button");
-            spriteDictionary.Add("backButton", "Menu Items/spr_back_button");
-            spriteDictionary.Add("continueButton", "Menu Items/nextButton");
-            spriteDictionary.Add("aboutButton", "Menu Items/aboutButton");
+            spriteDictionary.Add("titleScreen", "MI/sodTitle");
+            spriteDictionary.Add("helpScreen", "MI/controlsMenu");
+            spriteDictionary.Add("aboutScreen", "MI/aboutMenu");
+            spriteDictionary.Add("objectiveScreen", "MI/objectiveMenu");
+            spriteDictionary.Add("creditsScreen", "MI/creditsMenu");
+            spriteDictionary.Add("legendScreen", "MI/legendMenu");
+            spriteDictionary.Add("playButton", "MI/play_button");
+            spriteDictionary.Add("helpButton", "MI/help_button");
+            spriteDictionary.Add("quitButton", "MI/quit_button");
+            spriteDictionary.Add("backButton", "MI/back_button");
+            spriteDictionary.Add("continueButton", "MI/nextButton");
+            spriteDictionary.Add("aboutButton", "MI/aboutButton");
 
             // room signs
-            spriteDictionary.Add("mainRoomSignDown", "Sprite/mainRoomIconDown");
-            spriteDictionary.Add("mainRoomSignLeft", "Sprite/mainRoomIconLeft");
-            spriteDictionary.Add("mainRoomSignRight", "Sprite/mainRoomIconRight");
-            spriteDictionary.Add("policeRoomSign", "Sprite/policeIcon");
-            spriteDictionary.Add("paramedicRoomSign", "Sprite/hospitalIcon");
-            spriteDictionary.Add("fireFighterRoomSign", "Sprite/fireStationIcon");
+            spriteDictionary.Add("mainRoomSignDown", "SPR/mrIconDown");
+            spriteDictionary.Add("mainRoomSignLeft", "SPR/mrIconLeft");
+            spriteDictionary.Add("mainRoomSignRight", "SPR/mrIconRight");
+            spriteDictionary.Add("policeRoomSign", "SPR/policeIcon");
+            spriteDictionary.Add("paramedicRoomSign", "SPR/hospitalIcon");
+            spriteDictionary.Add("fireFighterRoomSign", "SPR/fsIcon");
 
             //Sound
-            legitMusic = Content.Load<Song>(@"Sounds/Sound");
+            legitMusic = Content.Load<Song>(@"SDS/Sound");
             soundDictionary = new SoundDictionary(Content);
-            soundDictionary.Add("DonutGun", "Sounds/DonutGun");
-            soundDictionary.Add("SlingShot", "Sounds/SlingShot");
-            soundDictionary.Add("WaterGun", "Sounds/WaterGun");
-            soundDictionary.Add("SlingShotBullet", "Sounds/SlingShotBullet");
-            soundDictionary.Add("WaterBullet", "Sounds/Waterbullet");
-            soundDictionary.Add("MachineGun", "Sounds/machineGun");
-            soundDictionary.Add("SniperRifle", "Sounds/sniperRifle");
-            soundDictionary.Add("GrenadeLauncher", "Sounds/grenadeLauncher");
+            soundDictionary.Add("DonutGun", "SDS/DonutGun");
+            soundDictionary.Add("SlingShot", "SDS/SlingShot");
+            soundDictionary.Add("WaterGun", "SDS/WaterGun");
+            soundDictionary.Add("SlingShotBullet", "SDS/ssBullet");
+            soundDictionary.Add("WaterBullet", "SDS/Waterbullet");
+            soundDictionary.Add("MachineGun", "SDS/machineGun");
+            soundDictionary.Add("SniperRifle", "SDS/sniperRifle");
+            soundDictionary.Add("GrenadeLauncher", "SDS/grelauncher");
 
             // enemy death sounds
-            soundDictionary.Add("DeathSound", "Sounds/deathSound");
-            soundDictionary.Add("ParamedicDeath", "Sounds/paramedicDeath");
+            soundDictionary.Add("DeathSound", "SDS/deathSound");
+            soundDictionary.Add("ParamedicDeath", "SDS/pmDeath");
 
             soundEffectInstanceDeathSound = soundDictionary["DeathSound"].CreateInstance();
             soundEffectInstanceParamedicDeath = soundDictionary["ParamedicDeath"].CreateInstance();
@@ -315,13 +315,13 @@ namespace SurvivingOppositeDay
             player.InputTriggeredEvent += SpawnBullet;
 
             //ammo
-            ammo = Content.Load<Texture2D>("Sprite/ammo");
+            ammo = Content.Load<Texture2D>("SPR/ammo");
             ammoDrawRectangle = new Rectangle(1950, 50, ammo.Width, ammo.Height);
 
-            garabeAmmo = Content.Load<Texture2D>("Sprite/garabecan");
-            hoseAmmo = Content.Load<Texture2D>("Sprite/hose");
-            syringeAmmo = Content.Load<Texture2D>("Sprite/syringecontainer");
-            donutStandAmmo = Content.Load<Texture2D>("Sprite/donutstand");
+            garabeAmmo = Content.Load<Texture2D>("SPR/garabecan");
+            hoseAmmo = Content.Load<Texture2D>("SPR/hose");
+            syringeAmmo = Content.Load<Texture2D>("SPR/syringeammo");
+            donutStandAmmo = Content.Load<Texture2D>("SPR/donutstand");
 
             garabeAmmoRec = new Rectangle(170, 660, garabeAmmo.Width, garabeAmmo.Height);
             hoseAmmoRec = new Rectangle(1560, 1680, hoseAmmo.Width, hoseAmmo.Height);
@@ -329,13 +329,13 @@ namespace SurvivingOppositeDay
             donutStandAmmoRec = new Rectangle(620, 1340, donutStandAmmo.Width, donutStandAmmo.Height);
 
             // health boxes
-            health = Content.Load<Texture2D>("Sprite/redCross");
+            health = Content.Load<Texture2D>("SPR/redCross");
             healthDrawRactangle = new Rectangle(480, 420, health.Width, health.Height);
-            health2 = Content.Load<Texture2D>("Sprite/redCross");
+            health2 = Content.Load<Texture2D>("SPR/redCross");
             healthDrawRactangle2 = new Rectangle(1400, 1560, health.Width, health.Height);
 
             //score stuff1
-            scoreFont = Content.Load<SpriteFont>("Menu Items/Arial");
+            scoreFont = Content.Load<SpriteFont>("MI/Arial");
             score = 0;
             scoreText = SCORE_STRING + score;
             healthText = HEALTH_STRING + player.Health;
@@ -355,11 +355,11 @@ namespace SurvivingOppositeDay
             healthTimer.Start(healthTimeSpan);
 
             //game over screen
-            gameOver = Content.Load<Texture2D>("Menu Items/youDied");
+            gameOver = Content.Load<Texture2D>("MI/youDied");
             drawRectangle = new Rectangle(0, 0, gameOver.Width, gameOver.Height);
 
             // health bar
-            healthTexture = Content.Load<Texture2D>("Sprite/health");
+            healthTexture = Content.Load<Texture2D>("SPR/health");
 
             //GUI Hud
             hudRectangle = new Rectangle(0, 0, Screen.Width, 60);
@@ -405,20 +405,20 @@ namespace SurvivingOppositeDay
             clickTimer.Start(clickTimeSpan);
 
             // weapon icons
-            waterGunIcon = Content.Load<Texture2D>("Sprite/waterGunIcon");
-            slingShotIcon = Content.Load<Texture2D>("Sprite/slingShotIcon");
-            donutGunIcon = Content.Load<Texture2D>("Sprite/donutGunIcon");
-            machineGunIcon = Content.Load<Texture2D>("Sprite/machineGunIcon");
-            sniperRifleIcon = Content.Load<Texture2D>("Sprite/sniperRifleIcon");
-            gernadeLauncherIcon = Content.Load<Texture2D>("Sprite/gernadeLauncherIcon");
+            waterGunIcon = Content.Load<Texture2D>("SPR/wgIcon");
+            slingShotIcon = Content.Load<Texture2D>("SPR/ssIcon");
+            donutGunIcon = Content.Load<Texture2D>("SPR/dgIcon");
+            machineGunIcon = Content.Load<Texture2D>("SPR/mgIcon");
+            sniperRifleIcon = Content.Load<Texture2D>("SPR/srIcon");
+            gernadeLauncherIcon = Content.Load<Texture2D>("SPR/glIcon");
 
             // weapon icons
             gunIconPos = new Vector2(Screen.Width - waterGunIcon.Width, Screen.Height - waterGunIcon.Height);
 
             // pickups
-            pickUp1 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup1"), new Vector2(500, 250), 1, player);
-            pickUp2 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup2"), new Vector2(1500, 250), 2, player);
-            pickUp3 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("Sprite/pickup3"), new Vector2(1500, 500), 3, player);
+            pickUp1 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("SPR/pickup1"), new Vector2(500, 250), 1, player);
+            pickUp2 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("SPR/pickup2"), new Vector2(1500, 250), 2, player);
+            pickUp3 = new Pickup(this, spriteBatch, Content.Load<Texture2D>("SPR/pickup3"), new Vector2(1500, 500), 3, player);
 
             // Room State Machine
             roomStateMachine = new StateMachine<RoomState>();

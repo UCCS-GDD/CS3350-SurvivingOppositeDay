@@ -1,79 +1,79 @@
-Content\Sprite\player.xnb
-Content\Sprite\explosion.xnb
-Content\Sprite\waterBullet.xnb
-Content\Sprite\CollisionDebugTexture.xnb
-Content\Sprite\player2.xnb
-Content\Sprite\needleBullet.xnb
-Content\Sprite\donutBullet.xnb
-Content\Menu Items\youDied.xnb
-Content\Sprite\ammo.xnb
-Content\Sprite\police.xnb
-Content\Sprite\firefighter.xnb
-Content\Sprite\paramedic.xnb
-Content\Sprite\health.xnb
-Content\Sprite\background.xnb
-Content\Sprite\donutstand.xnb
-Content\Sprite\garabecan.xnb
-Content\Sprite\hose.xnb
-Content\Sprite\syringecontainer.xnb
-Content\Sprite\fireball.xnb
-Content\Sprite\JellyExplosion.xnb
-Content\Sprite\bullet.xnb
-Content\Sprite\gernade.xnb
-Content\Sprite\sniperBullet.xnb
-Content\Sprite\waterGunIcon.xnb
-Content\Sprite\slingShotIcon.xnb
-Content\Sprite\donutGunIcon.xnb
-Content\Sprite\redCross.xnb
-Content\Sprite\pedestrian.xnb
-Content\Sprite\Player_waterbase.xnb
-Content\Sprite\FireRoom.xnb
-Content\Sprite\MainRoom.xnb
-Content\Sprite\MedicRoom.xnb
-Content\Sprite\PoliceRoom.xnb
-Content\Sprite\gernadeLauncherIcon.xnb
-Content\Sprite\machineGunIcon.xnb
-Content\Sprite\pickup1.xnb
-Content\Sprite\pickup2.xnb
-Content\Sprite\pickup3.xnb
-Content\Sprite\sniperRifleIcon.xnb
-Content\Sprite\bar.xnb
-Content\Menu Items\play_button.xnb
-Content\Menu Items\help_button.xnb
-Content\Menu Items\quit_button.xnb
-Content\Menu Items\sodTitle.xnb
-Content\Menu Items\sodHelp.xnb
-Content\Menu Items\spr_back_button.xnb
-Content\Sprite\Cop_base.xnb
-Content\Sprite\Medic_base.xnb
-Content\Sprite\Fireman.xnb
-Content\Sprite\PedestrianF_base.xnb
-Content\Menu Items\controlsMenu.xnb
-Content\Menu Items\creditsMenu.xnb
-Content\Menu Items\legendMenu.xnb
-Content\Menu Items\aboutMenu.xnb
-Content\Menu Items\objectiveMenu.xnb
-Content\Sprite\fireStationIcon.xnb
-Content\Sprite\hospitalIcon.xnb
-Content\Sprite\policeIcon.xnb
-Content\Menu Items\aboutButton.xnb
-Content\Menu Items\nextButton.xnb
-Content\Menu Items\Arial.xnb
-Content\Sounds\DonutGun.xnb
-Content\Sounds\SlingShot.xnb
-Content\Sounds\SlingShotBullet.xnb
-Content\Sounds\Waterbullet.xnb
-Content\Sounds\WaterGun.xnb
-Content\Sounds\Sound.xnb
-Content\Sounds\Sound.wma
-Content\Sounds\deathSound.xnb
-Content\Sounds\grenadeLauncher.xnb
-Content\Sounds\machineGun.xnb
-Content\Sounds\paramedicDeath.xnb
-Content\Sounds\sniperRifle.xnb
-Content\Sprite\FireRoom2.xnb
-Content\Sprite\MedicRoom2.xnb
-Content\Sprite\PoliceRoom2.xnb
-Content\Sprite\mainRoomIconDown.xnb
-Content\Sprite\mainRoomIconLeft.xnb
-Content\Sprite\mainRoomIconRight.xnb
+Content\SPR\player.xnb
+Content\SPR\explosion.xnb
+Content\SPR\waterBullet.xnb
+Content\SPR\player2.xnb
+Content\SPR\needleBullet.xnb
+Content\SPR\donutBullet.xnb
+Content\MI\youDied.xnb
+Content\SPR\ammo.xnb
+Content\SPR\police.xnb
+Content\SPR\firefighter.xnb
+Content\SPR\paramedic.xnb
+Content\SPR\health.xnb
+Content\SPR\background.xnb
+Content\SPR\donutstand.xnb
+Content\SPR\garabecan.xnb
+Content\SPR\hose.xnb
+Content\SPR\fireball.xnb
+Content\SPR\bullet.xnb
+Content\SPR\gernade.xnb
+Content\SPR\sniperBullet.xnb
+Content\SPR\redCross.xnb
+Content\SPR\pedestrian.xnb
+Content\SPR\FireRoom.xnb
+Content\SPR\MainRoom.xnb
+Content\SPR\MedicRoom.xnb
+Content\SPR\PoliceRoom.xnb
+Content\SPR\pickup1.xnb
+Content\SPR\pickup2.xnb
+Content\SPR\pickup3.xnb
+Content\SPR\bar.xnb
+Content\MI\play_button.xnb
+Content\MI\help_button.xnb
+Content\MI\quit_button.xnb
+Content\MI\sodTitle.xnb
+Content\MI\sodHelp.xnb
+Content\SPR\Cop_base.xnb
+Content\SPR\Medic_base.xnb
+Content\SPR\Fireman.xnb
+Content\MI\controlsMenu.xnb
+Content\MI\creditsMenu.xnb
+Content\MI\legendMenu.xnb
+Content\MI\aboutMenu.xnb
+Content\MI\objectiveMenu.xnb
+Content\SPR\hospitalIcon.xnb
+Content\SPR\policeIcon.xnb
+Content\MI\aboutButton.xnb
+Content\MI\nextButton.xnb
+Content\SPR\FireRoom2.xnb
+Content\SPR\MedicRoom2.xnb
+Content\SPR\PoliceRoom2.xnb
+Content\MI\Arial.xnb
+Content\SDS\DonutGun.xnb
+Content\SDS\SlingShot.xnb
+Content\SDS\Waterbullet.xnb
+Content\SDS\WaterGun.xnb
+Content\SDS\Sound.xnb
+Content\SDS\Sound.wma
+Content\SDS\deathSound.xnb
+Content\SDS\machineGun.xnb
+Content\SDS\sniperRifle.xnb
+Content\SPR\collision.xnb
+Content\SPR\syringeammo.xnb
+Content\SPR\jelly.xnb
+Content\SPR\playerbase.xnb
+Content\SPR\dgIcon.xnb
+Content\SPR\glIcon.xnb
+Content\SPR\mgIcon.xnb
+Content\SPR\srIcon.xnb
+Content\SPR\ssIcon.xnb
+Content\SPR\wgIcon.xnb
+Content\SPR\fsIcon.xnb
+Content\SPR\mrIconDown.xnb
+Content\SPR\mrIconLeft.xnb
+Content\SPR\mrIconRight.xnb
+Content\SPR\pedF.xnb
+Content\MI\back_button.xnb
+Content\SDS\grelauncher.xnb
+Content\SDS\pmDeath.xnb
+Content\SDS\ssBullet.xnb

@@ -2,707 +2,707 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>Sprite\player.png</Source>
-      <Name>Sprite\player</Name>
+      <Source>SPR\player.png</Source>
+      <Name>SPR\player</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\player.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\player.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\explosion.png</Source>
-      <Name>Sprite\explosion</Name>
+      <Source>SPR\explosion.png</Source>
+      <Name>SPR\explosion</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\explosion.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\explosion.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\waterBullet.png</Source>
-      <Name>Sprite\waterBullet</Name>
+      <Source>SPR\waterBullet.png</Source>
+      <Name>SPR\waterBullet</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\waterBullet.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\waterBullet.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\CollisionDebugTexture.png</Source>
-      <Name>Sprite\CollisionDebugTexture</Name>
+      <Source>SPR\player2.png</Source>
+      <Name>SPR\player2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\CollisionDebugTexture.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\player2.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\player2.png</Source>
-      <Name>Sprite\player2</Name>
+      <Source>SPR\needleBullet.png</Source>
+      <Name>SPR\needleBullet</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\player2.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\needleBullet.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\needleBullet.png</Source>
-      <Name>Sprite\needleBullet</Name>
+      <Source>SPR\donutBullet.png</Source>
+      <Name>SPR\donutBullet</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\needleBullet.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\donutBullet.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\donutBullet.png</Source>
-      <Name>Sprite\donutBullet</Name>
+      <Source>MI\youDied.png</Source>
+      <Name>MI\youDied</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\donutBullet.xnb</Output>
-      <Time>2014-11-13T14:48:30-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu Items\youDied.png</Source>
-      <Name>Menu Items\youDied</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\youDied.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\MI\youDied.xnb</Output>
       <Time>2014-11-19T21:13:25.305211-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\ammo.png</Source>
-      <Name>Sprite\ammo</Name>
+      <Source>SPR\ammo.png</Source>
+      <Name>SPR\ammo</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\ammo.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\ammo.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\police.png</Source>
-      <Name>Sprite\police</Name>
+      <Source>SPR\police.png</Source>
+      <Name>SPR\police</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\police.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\police.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\firefighter.png</Source>
-      <Name>Sprite\firefighter</Name>
+      <Source>SPR\firefighter.png</Source>
+      <Name>SPR\firefighter</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\firefighter.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\firefighter.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\paramedic.png</Source>
-      <Name>Sprite\paramedic</Name>
+      <Source>SPR\paramedic.png</Source>
+      <Name>SPR\paramedic</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\paramedic.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\paramedic.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\health.png</Source>
-      <Name>Sprite\health</Name>
+      <Source>SPR\health.png</Source>
+      <Name>SPR\health</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\health.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\health.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\background.png</Source>
-      <Name>Sprite\background</Name>
+      <Source>SPR\background.png</Source>
+      <Name>SPR\background</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\background.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\background.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\donutstand.png</Source>
-      <Name>Sprite\donutstand</Name>
+      <Source>SPR\donutstand.png</Source>
+      <Name>SPR\donutstand</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\donutstand.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\donutstand.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\garabecan.png</Source>
-      <Name>Sprite\garabecan</Name>
+      <Source>SPR\garabecan.png</Source>
+      <Name>SPR\garabecan</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\garabecan.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\garabecan.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\hose.png</Source>
-      <Name>Sprite\hose</Name>
+      <Source>SPR\hose.png</Source>
+      <Name>SPR\hose</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\hose.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\hose.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\syringecontainer.png</Source>
-      <Name>Sprite\syringecontainer</Name>
+      <Source>SPR\fireball.png</Source>
+      <Name>SPR\fireball</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\syringecontainer.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\fireball.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\fireball.png</Source>
-      <Name>Sprite\fireball</Name>
+      <Source>SPR\bullet.png</Source>
+      <Name>SPR\bullet</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\fireball.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\bullet.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\JellyExplosion.png</Source>
-      <Name>Sprite\JellyExplosion</Name>
+      <Source>SPR\gernade.png</Source>
+      <Name>SPR\gernade</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\JellyExplosion.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\gernade.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\bullet.png</Source>
-      <Name>Sprite\bullet</Name>
+      <Source>SPR\sniperBullet.png</Source>
+      <Name>SPR\sniperBullet</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\bullet.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\sniperBullet.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\gernade.png</Source>
-      <Name>Sprite\gernade</Name>
+      <Source>SPR\redCross.png</Source>
+      <Name>SPR\redCross</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\gernade.xnb</Output>
-      <Time>2014-11-13T14:48:30-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprite\sniperBullet.png</Source>
-      <Name>Sprite\sniperBullet</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\sniperBullet.xnb</Output>
-      <Time>2014-11-13T14:48:30-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprite\waterGunIcon.png</Source>
-      <Name>Sprite\waterGunIcon</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\waterGunIcon.xnb</Output>
-      <Time>2014-11-13T14:48:30-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprite\slingShotIcon.png</Source>
-      <Name>Sprite\slingShotIcon</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\slingShotIcon.xnb</Output>
-      <Time>2014-11-13T14:48:30-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprite\donutGunIcon.png</Source>
-      <Name>Sprite\donutGunIcon</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\donutGunIcon.xnb</Output>
-      <Time>2014-11-13T14:48:30-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprite\redCross.png</Source>
-      <Name>Sprite\redCross</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\redCross.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\redCross.xnb</Output>
       <Time>2014-11-19T21:36:27.5675279-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\pedestrian.png</Source>
-      <Name>Sprite\pedestrian</Name>
+      <Source>SPR\pedestrian.png</Source>
+      <Name>SPR\pedestrian</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pedestrian.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\pedestrian.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\Player_waterbase.png</Source>
-      <Name>Sprite\Player_waterbase</Name>
+      <Source>SPR\FireRoom.png</Source>
+      <Name>SPR\FireRoom</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\Player_waterbase.xnb</Output>
-      <Time>2014-11-13T14:48:30-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprite\FireRoom.png</Source>
-      <Name>Sprite\FireRoom</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\FireRoom.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\FireRoom.xnb</Output>
       <Time>2014-11-20T07:17:17.6665672-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\MainRoom.png</Source>
-      <Name>Sprite\MainRoom</Name>
+      <Source>SPR\MainRoom.png</Source>
+      <Name>SPR\MainRoom</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\MainRoom.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\MainRoom.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\MedicRoom.png</Source>
-      <Name>Sprite\MedicRoom</Name>
+      <Source>SPR\MedicRoom.png</Source>
+      <Name>SPR\MedicRoom</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\MedicRoom.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\MedicRoom.xnb</Output>
       <Time>2014-11-20T07:17:17.6845705-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\PoliceRoom.png</Source>
-      <Name>Sprite\PoliceRoom</Name>
+      <Source>SPR\PoliceRoom.png</Source>
+      <Name>SPR\PoliceRoom</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\PoliceRoom.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\PoliceRoom.xnb</Output>
       <Time>2014-11-20T07:17:17.6995721-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\gernadeLauncherIcon.png</Source>
-      <Name>Sprite\gernadeLauncherIcon</Name>
+      <Source>SPR\pickup1.png</Source>
+      <Name>SPR\pickup1</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\gernadeLauncherIcon.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\pickup1.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\machineGunIcon.png</Source>
-      <Name>Sprite\machineGunIcon</Name>
+      <Source>SPR\pickup2.png</Source>
+      <Name>SPR\pickup2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\machineGunIcon.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\pickup2.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\pickup1.png</Source>
-      <Name>Sprite\pickup1</Name>
+      <Source>SPR\pickup3.png</Source>
+      <Name>SPR\pickup3</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup1.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\pickup3.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\pickup2.png</Source>
-      <Name>Sprite\pickup2</Name>
+      <Source>SPR\bar.png</Source>
+      <Name>SPR\bar</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup2.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\bar.xnb</Output>
       <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\pickup3.png</Source>
-      <Name>Sprite\pickup3</Name>
+      <Source>MI\play_button.png</Source>
+      <Name>MI\play_button</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\pickup3.xnb</Output>
-      <Time>2014-11-13T14:48:30-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprite\sniperRifleIcon.png</Source>
-      <Name>Sprite\sniperRifleIcon</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\sniperRifleIcon.xnb</Output>
-      <Time>2014-11-13T14:48:30-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprite\bar.png</Source>
-      <Name>Sprite\bar</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\bar.xnb</Output>
-      <Time>2014-11-13T14:48:30-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu Items\play_button.png</Source>
-      <Name>Menu Items\play_button</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\play_button.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\MI\play_button.xnb</Output>
       <Time>2014-11-17T13:36:08-07:00</Time>
     </Item>
     <Item>
-      <Source>Menu Items\help_button.png</Source>
-      <Name>Menu Items\help_button</Name>
+      <Source>MI\help_button.png</Source>
+      <Name>MI\help_button</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\help_button.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\MI\help_button.xnb</Output>
       <Time>2014-11-17T13:36:08-07:00</Time>
     </Item>
     <Item>
-      <Source>Menu Items\quit_button.png</Source>
-      <Name>Menu Items\quit_button</Name>
+      <Source>MI\quit_button.png</Source>
+      <Name>MI\quit_button</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\quit_button.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\MI\quit_button.xnb</Output>
       <Time>2014-11-17T13:36:08-07:00</Time>
     </Item>
     <Item>
-      <Source>Menu Items\sodTitle.png</Source>
-      <Name>Menu Items\sodTitle</Name>
+      <Source>MI\sodTitle.png</Source>
+      <Name>MI\sodTitle</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\sodTitle.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\MI\sodTitle.xnb</Output>
       <Time>2014-11-20T07:46:24.4053058-07:00</Time>
     </Item>
     <Item>
-      <Source>Menu Items\sodHelp.png</Source>
-      <Name>Menu Items\sodHelp</Name>
+      <Source>MI\sodHelp.png</Source>
+      <Name>MI\sodHelp</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\sodHelp.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\MI\sodHelp.xnb</Output>
       <Time>2014-11-17T13:36:08-07:00</Time>
     </Item>
     <Item>
-      <Source>Menu Items\spr_back_button.png</Source>
-      <Name>Menu Items\spr_back_button</Name>
+      <Source>SPR\Cop_base.png</Source>
+      <Name>SPR\Cop_base</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\spr_back_button.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\Cop_base.xnb</Output>
       <Time>2014-11-17T13:36:08-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\Cop_base.png</Source>
-      <Name>Sprite\Cop_base</Name>
+      <Source>SPR\Medic_base.png</Source>
+      <Name>SPR\Medic_base</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\Cop_base.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\Medic_base.xnb</Output>
       <Time>2014-11-17T13:36:08-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\Medic_base.png</Source>
-      <Name>Sprite\Medic_base</Name>
+      <Source>SPR\Fireman.png</Source>
+      <Name>SPR\Fireman</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\Medic_base.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\Fireman.xnb</Output>
       <Time>2014-11-17T13:36:08-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\Fireman.png</Source>
-      <Name>Sprite\Fireman</Name>
+      <Source>MI\controlsMenu.png</Source>
+      <Name>MI\controlsMenu</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\Fireman.xnb</Output>
-      <Time>2014-11-17T13:36:08-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprite\PedestrianF_base.png</Source>
-      <Name>Sprite\PedestrianF_base</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\PedestrianF_base.xnb</Output>
-      <Time>2014-11-20T07:17:29.9233432-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu Items\controlsMenu.png</Source>
-      <Name>Menu Items\controlsMenu</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\controlsMenu.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\MI\controlsMenu.xnb</Output>
       <Time>2014-11-20T07:41:00.5296575-07:00</Time>
     </Item>
     <Item>
-      <Source>Menu Items\creditsMenu.png</Source>
-      <Name>Menu Items\creditsMenu</Name>
+      <Source>MI\creditsMenu.png</Source>
+      <Name>MI\creditsMenu</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\creditsMenu.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\MI\creditsMenu.xnb</Output>
       <Time>2014-11-20T07:39:20.624884-07:00</Time>
     </Item>
     <Item>
-      <Source>Menu Items\legendMenu.png</Source>
-      <Name>Menu Items\legendMenu</Name>
+      <Source>MI\legendMenu.png</Source>
+      <Name>MI\legendMenu</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\legendMenu.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\MI\legendMenu.xnb</Output>
       <Time>2014-11-20T07:41:55.4804421-07:00</Time>
     </Item>
     <Item>
-      <Source>Menu Items\aboutMenu.png</Source>
-      <Name>Menu Items\aboutMenu</Name>
+      <Source>MI\aboutMenu.png</Source>
+      <Name>MI\aboutMenu</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\aboutMenu.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\MI\aboutMenu.xnb</Output>
       <Time>2014-11-19T21:10:27.6460369-07:00</Time>
     </Item>
     <Item>
-      <Source>Menu Items\objectiveMenu.png</Source>
-      <Name>Menu Items\objectiveMenu</Name>
+      <Source>MI\objectiveMenu.png</Source>
+      <Name>MI\objectiveMenu</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\objectiveMenu.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\MI\objectiveMenu.xnb</Output>
       <Time>2014-12-01T09:18:08.6661951-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\fireStationIcon.png</Source>
-      <Name>Sprite\fireStationIcon</Name>
+      <Source>SPR\hospitalIcon.png</Source>
+      <Name>SPR\hospitalIcon</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\fireStationIcon.xnb</Output>
-      <Time>2014-12-15T15:24:27.3911734-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprite\hospitalIcon.png</Source>
-      <Name>Sprite\hospitalIcon</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\hospitalIcon.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\hospitalIcon.xnb</Output>
       <Time>2014-12-15T15:24:27.4429131-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\policeIcon.png</Source>
-      <Name>Sprite\policeIcon</Name>
+      <Source>SPR\policeIcon.png</Source>
+      <Name>SPR\policeIcon</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\policeIcon.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\policeIcon.xnb</Output>
       <Time>2014-12-15T15:24:27.5071853-07:00</Time>
     </Item>
     <Item>
-      <Source>Menu Items\aboutButton.png</Source>
-      <Name>Menu Items\aboutButton</Name>
+      <Source>MI\aboutButton.png</Source>
+      <Name>MI\aboutButton</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\aboutButton.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\MI\aboutButton.xnb</Output>
       <Time>2014-11-20T07:12:35.145472-07:00</Time>
     </Item>
     <Item>
-      <Source>Menu Items\nextButton.png</Source>
-      <Name>Menu Items\nextButton</Name>
+      <Source>MI\nextButton.png</Source>
+      <Name>MI\nextButton</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\nextButton.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\MI\nextButton.xnb</Output>
       <Time>2014-11-20T07:14:22.0286801-07:00</Time>
     </Item>
     <Item>
-      <Source>Menu Items\Arial.spritefont</Source>
-      <Name>Menu Items\Arial</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Menu Items\Arial.xnb</Output>
-      <Time>2014-11-17T13:36:08-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\DonutGun.mp3</Source>
-      <Name>Sounds\DonutGun</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\DonutGun.xnb</Output>
-      <Time>2014-11-13T14:48:30-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\SlingShot.mp3</Source>
-      <Name>Sounds\SlingShot</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\SlingShot.xnb</Output>
-      <Time>2014-11-13T14:48:30-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\SlingShotBullet.mp3</Source>
-      <Name>Sounds\SlingShotBullet</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\SlingShotBullet.xnb</Output>
-      <Time>2014-11-13T14:48:30-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\Waterbullet.mp3</Source>
-      <Name>Sounds\Waterbullet</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Waterbullet.xnb</Output>
-      <Time>2014-11-13T14:48:30-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\WaterGun.mp3</Source>
-      <Name>Sounds\WaterGun</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\WaterGun.xnb</Output>
-      <Time>2014-11-13T14:48:30-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\Sound.mp3</Source>
-      <Name>Sounds\Sound</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Sound.xnb</Output>
-      <Extra>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\Sound.wma</Extra>
-      <Time>2014-11-13T14:48:30-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\deathSound.mp3</Source>
-      <Name>Sounds\deathSound</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\deathSound.xnb</Output>
-      <Time>2014-11-19T15:42:14-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\grenadeLauncher.mp3</Source>
-      <Name>Sounds\grenadeLauncher</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\grenadeLauncher.xnb</Output>
-      <Time>2014-11-19T15:39:58-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\machineGun.mp3</Source>
-      <Name>Sounds\machineGun</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\machineGun.xnb</Output>
-      <Time>2014-11-19T15:34:20-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\paramedicDeath.mp3</Source>
-      <Name>Sounds\paramedicDeath</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\paramedicDeath.xnb</Output>
-      <Time>2014-11-19T15:45:00-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\sniperRifle.mp3</Source>
-      <Name>Sounds\sniperRifle</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sounds\sniperRifle.xnb</Output>
-      <Time>2014-11-19T15:38:38-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprite\FireRoom2.png</Source>
-      <Name>Sprite\FireRoom2</Name>
+      <Source>SPR\FireRoom2.png</Source>
+      <Name>SPR\FireRoom2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\FireRoom2.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\FireRoom2.xnb</Output>
       <Time>2014-12-10T19:22:38.0922338-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\MedicRoom2.png</Source>
-      <Name>Sprite\MedicRoom2</Name>
+      <Source>SPR\MedicRoom2.png</Source>
+      <Name>SPR\MedicRoom2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\MedicRoom2.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\MedicRoom2.xnb</Output>
       <Time>2014-12-10T19:22:43.6555549-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\PoliceRoom2.png</Source>
-      <Name>Sprite\PoliceRoom2</Name>
+      <Source>SPR\PoliceRoom2.png</Source>
+      <Name>SPR\PoliceRoom2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\PoliceRoom2.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\PoliceRoom2.xnb</Output>
       <Time>2014-12-16T10:30:07.5669866-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\mainRoomIconDown.png</Source>
-      <Name>Sprite\mainRoomIconDown</Name>
+      <Source>MI\Arial.spritefont</Source>
+      <Name>MI\Arial</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\MI\Arial.xnb</Output>
+      <Time>2014-11-17T13:36:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SDS\DonutGun.mp3</Source>
+      <Name>SDS\DonutGun</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SDS\DonutGun.xnb</Output>
+      <Time>2014-11-13T14:48:30-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SDS\SlingShot.mp3</Source>
+      <Name>SDS\SlingShot</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SDS\SlingShot.xnb</Output>
+      <Time>2014-11-13T14:48:30-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SDS\Waterbullet.mp3</Source>
+      <Name>SDS\Waterbullet</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SDS\Waterbullet.xnb</Output>
+      <Time>2014-11-13T14:48:30-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SDS\WaterGun.mp3</Source>
+      <Name>SDS\WaterGun</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SDS\WaterGun.xnb</Output>
+      <Time>2014-11-13T14:48:30-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SDS\Sound.mp3</Source>
+      <Name>SDS\Sound</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SDS\Sound.xnb</Output>
+      <Extra>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SDS\Sound.wma</Extra>
+      <Time>2014-11-13T14:48:30-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SDS\deathSound.mp3</Source>
+      <Name>SDS\deathSound</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SDS\deathSound.xnb</Output>
+      <Time>2014-11-19T15:42:14-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SDS\machineGun.mp3</Source>
+      <Name>SDS\machineGun</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SDS\machineGun.xnb</Output>
+      <Time>2014-11-19T15:34:20-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SDS\sniperRifle.mp3</Source>
+      <Name>SDS\sniperRifle</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SDS\sniperRifle.xnb</Output>
+      <Time>2014-11-19T15:38:38-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SPR\collision.png</Source>
+      <Name>SPR\collision</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\mainRoomIconDown.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\collision.xnb</Output>
+      <Time>2014-11-13T14:48:30-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SPR\syringeammo.png</Source>
+      <Name>SPR\syringeammo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\syringeammo.xnb</Output>
+      <Time>2014-11-13T14:48:30-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SPR\jelly.png</Source>
+      <Name>SPR\jelly</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\jelly.xnb</Output>
+      <Time>2014-11-13T14:48:30-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SPR\playerbase.png</Source>
+      <Name>SPR\playerbase</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\playerbase.xnb</Output>
+      <Time>2014-11-13T14:48:30-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SPR\dgIcon.png</Source>
+      <Name>SPR\dgIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\dgIcon.xnb</Output>
+      <Time>2014-11-13T14:48:30-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SPR\glIcon.png</Source>
+      <Name>SPR\glIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\glIcon.xnb</Output>
+      <Time>2014-11-13T14:48:30-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SPR\mgIcon.png</Source>
+      <Name>SPR\mgIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\mgIcon.xnb</Output>
+      <Time>2014-11-13T14:48:30-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SPR\srIcon.png</Source>
+      <Name>SPR\srIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\srIcon.xnb</Output>
+      <Time>2014-11-13T14:48:30-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SPR\ssIcon.png</Source>
+      <Name>SPR\ssIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\ssIcon.xnb</Output>
+      <Time>2014-11-13T14:48:30-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SPR\wgIcon.png</Source>
+      <Name>SPR\wgIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\wgIcon.xnb</Output>
+      <Time>2014-11-13T14:48:30-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SPR\fsIcon.png</Source>
+      <Name>SPR\fsIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\fsIcon.xnb</Output>
+      <Time>2014-12-15T15:24:27.3911734-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SPR\mrIconDown.png</Source>
+      <Name>SPR\mrIconDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\mrIconDown.xnb</Output>
       <Time>2014-12-15T15:24:27.2910984-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\mainRoomIconLeft.png</Source>
-      <Name>Sprite\mainRoomIconLeft</Name>
+      <Source>SPR\mrIconLeft.png</Source>
+      <Name>SPR\mrIconLeft</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\mainRoomIconLeft.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\mrIconLeft.xnb</Output>
       <Time>2014-12-15T15:24:27.2599865-07:00</Time>
     </Item>
     <Item>
-      <Source>Sprite\mainRoomIconRight.png</Source>
-      <Name>Sprite\mainRoomIconRight</Name>
+      <Source>SPR\mrIconRight.png</Source>
+      <Name>SPR\mrIconRight</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\Sprite\mainRoomIconRight.xnb</Output>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\mrIconRight.xnb</Output>
       <Time>2014-12-15T15:24:27.3490962-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SPR\pedF.png</Source>
+      <Name>SPR\pedF</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SPR\pedF.xnb</Output>
+      <Time>2014-11-20T07:17:29.9233432-07:00</Time>
+    </Item>
+    <Item>
+      <Source>MI\back_button.png</Source>
+      <Name>MI\back_button</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\MI\back_button.xnb</Output>
+      <Time>2014-11-17T13:36:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SDS\grelauncher.mp3</Source>
+      <Name>SDS\grelauncher</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SDS\grelauncher.xnb</Output>
+      <Time>2014-11-19T15:39:58-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SDS\pmDeath.mp3</Source>
+      <Name>SDS\pmDeath</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SDS\pmDeath.xnb</Output>
+      <Time>2014-11-19T15:45:00-07:00</Time>
+    </Item>
+    <Item>
+      <Source>SDS\ssBullet.mp3</Source>
+      <Name>SDS\ssBullet</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Collin\Documents\GitHub\CS3350-SurvivingOppositeDay\SurvivingOppositeDayAlpha\SurvivingOppositeDay\SurvivingOppositeDay\SurvivingOppositeDay\bin\x86\Debug\Content\SDS\ssBullet.xnb</Output>
+      <Time>2014-11-13T14:48:30-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
